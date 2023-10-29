@@ -1,8 +1,7 @@
 import * as React from "react";
+import "../App.css";
 import PropTypes from "prop-types";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
@@ -14,17 +13,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+// import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = [
-  "Home",
-  "About Us",
-  "Shop",
-  "Recipies",
-  "Health Book",
-  "Events",
-  "Contact",
-];
 
 function NavBar(props) {
   const { window } = props;
@@ -34,21 +25,50 @@ function NavBar(props) {
     setMobileOpen((prevState) => !prevState);
   };
 
+  NavBar.propTypes = {
+    window: PropTypes.func,
+  };
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Sheba Foods
       </Typography>
       <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+      <Box>
+        <List sx={{ flexDirection: "column" }}>
+          <ListItem disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText>Home</ListItemText>
             </ListItemButton>
           </ListItem>
-        ))}
-      </List>
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>About Us</ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>Shop</ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>Recipies</ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>Events</ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>Contact</ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Box>
     </Box>
   );
 
@@ -56,9 +76,8 @@ function NavBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <AppBar>
+    <Box>
+      <nav>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -72,19 +91,28 @@ function NavBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" }, ml: 3 }}
           >
-            MUI
+            👨‍🍳 Sheba Foods
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#000" }}>
-                {item}
-              </Button>
-            ))}
+
+          <Box>
+            <Box
+              sx={{
+                display: { xs: "none", sm: "flex", md: "flex" },
+              }}
+            >
+              <Button sx={{ mr: 2 }}>Home</Button>
+              <Button sx={{ mr: 2 }}>About Us</Button>
+              <Button sx={{ mr: 2 }}>Shop</Button>
+              <Button sx={{ mr: 2 }}>Recipies</Button>
+              <Button sx={{ mr: 2 }}>Health Book</Button>
+              <Button sx={{ mr: 2 }}>Events</Button>
+              <Button sx={{ mr: { md: 4, sm: 1 } }}>Contact</Button>
+            </Box>
           </Box>
         </Toolbar>
-      </AppBar>
+      </nav>
       <nav>
         <Drawer
           container={container}
@@ -92,7 +120,7 @@ function NavBar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },

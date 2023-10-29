@@ -6,15 +6,28 @@ import PageNotFound from "./Pages/404";
 import NavBar from "./Components/Nav";
 import Footer from "./Components/Footer";
 import Landing from "./Pages/Landing";
+import About from "./Pages/About";
+import Recipies from "./Pages/Recipies";
+import HealthBook from "./Pages/HealthBook";
+import Events from "./Pages/Events";
+import Contact from "./Pages/Contact";
 
 let theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#FFFBE7",
+      main: "#000",
     },
     secondary: {
-      main: "#000",
+      main: "#d68c0e",
+    },
+    text: {
+      primary: "#2b2929",
+      secondary: "rgba(222,219,219,0.7)",
+    },
+    background: {
+      default: "#FFFBE7",
+      // paper: "#FEFFEA",
     },
   },
 });
@@ -24,6 +37,26 @@ function App() {
     {
       path: "/",
       element: <Landing />,
+    },
+    {
+      path: "/about",
+      element: <About />,
+    },
+    {
+      path: "/recipies",
+      element: <Recipies />,
+    },
+    {
+      path: "/healthbook",
+      element: <HealthBook />,
+    },
+    {
+      path: "/events",
+      element: <Events />,
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
     },
     {
       path: "*",
