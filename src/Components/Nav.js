@@ -91,25 +91,46 @@ function NavBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" }, ml: 3 }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block" },
+              ml: { md: 5, sm: 2 },
+              mt: { md: 5, sm: 2 },
+            }}
           >
             👨‍🍳 Sheba Foods
           </Typography>
 
-          <Box>
-            <Box
-              sx={{
-                display: { xs: "none", sm: "flex", md: "flex" },
-              }}
-            >
-              <Button sx={{ mr: 2 }}>Home</Button>
-              <Button sx={{ mr: 2 }}>About Us</Button>
-              <Button sx={{ mr: 2 }}>Shop</Button>
-              <Button sx={{ mr: 2 }}>Recipies</Button>
-              <Button sx={{ mr: 2 }}>Health Book</Button>
-              <Button sx={{ mr: 2 }}>Events</Button>
-              <Button sx={{ mr: { md: 4, sm: 1 } }}>Contact</Button>
-            </Box>
+          <Box
+            sx={{
+              display: {
+                xs: "none",
+                sm: "block",
+                md: "block",
+              },
+            }}
+          >
+            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+              Home
+            </Button>
+            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+              About Us
+            </Button>
+            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+              Shop
+            </Button>
+            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+              Recipies
+            </Button>
+            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+              Health Book
+            </Button>
+            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+              Events
+            </Button>
+            <Button sx={{ mr: { md: 5, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+              Contact
+            </Button>
           </Box>
         </Toolbar>
       </nav>
