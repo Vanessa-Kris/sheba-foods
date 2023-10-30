@@ -2,20 +2,23 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Box, Typography, IconButton, Grid } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const renderArrowPrev = (clickHandler, hasPrev, label) => (
   <IconButton
     onClick={clickHandler}
     disabled={!hasPrev}
-    style={{ position: "absolute", top: "47%", left: "40px", zIndex: 2 }}
+    sx={{
+      position: "absolute",
+      top: { md: "47%", xs: "38%" },
+      left: { md: "40px", xs: 0 },
+      zIndex: 2,
+    }}
   >
     <Box
       component="img"
-      src="/leaficon.png"
+      src="/doublewheat.png"
       alt="leaf"
-      sx={{ width: "97% !important", rotate: "-90deg" }}
+      sx={{ width: "60% !important", rotate: "-100deg" }}
     />
   </IconButton>
 );
@@ -24,26 +27,35 @@ const renderArrowNext = (clickHandler, hasNext, label) => (
   <IconButton
     onClick={clickHandler}
     disabled={!hasNext}
-    style={{ position: "absolute", top: "47%", right: "40px", zIndex: 2 }}
+    sx={{
+      position: "absolute",
+      top: { md: "47%", xs: "38%" },
+      right: { md: "47px", xs: 0 },
+      zIndex: 2,
+    }}
   >
     <Box
       component="img"
-      src="/leaficon.png"
+      src="/doublewheat.png"
       alt="leaf"
-      sx={{ width: "97% !important", rotate: "90deg" }}
+      sx={{
+        width: "60% !important",
+        rotate: "80deg",
+      }}
     />
   </IconButton>
 );
 
 export default function BannerCarousel() {
+  const isMobileView = window.innerWidth <= 600; // Adjust the breakpoint as needed
   return (
     <Carousel
       // autoPlay
-      renderArrowPrev={renderArrowPrev}
-      renderArrowNext={renderArrowNext}
+      renderArrowPrev={isMobileView ? undefined : renderArrowPrev}
+      renderArrowNext={isMobileView ? undefined : renderArrowNext}
     >
       <Box component="div">
-        <Grid container sx={{ px: 10 }}>
+        <Grid container sx={{ px: { md: 10, sm: 8, xs: 1 } }}>
           <Grid item md={6} sm={6} xs={12}>
             <Typography
               variant="h2"
@@ -56,7 +68,7 @@ export default function BannerCarousel() {
                 justifyContent: "center",
                 textAlign: "center",
                 height: "100%",
-                fontSize: { md: 90, sm: 60, xs: 60 },
+                fontSize: { md: 90, sm: 60, xs: 55 },
               }}
             >
               <span
@@ -73,7 +85,7 @@ export default function BannerCarousel() {
           <Grid item md={6} sm={6} xs={12}>
             <Box
               component="img"
-              sx={{ width: { md: "95% !important", xs: "100%" } }}
+              sx={{ width: { md: "95% !important", xs: "100% !important" } }}
               src="/tombrown.png"
               alt="Legend 2"
             />
@@ -81,7 +93,10 @@ export default function BannerCarousel() {
         </Grid>
       </Box>
       <Box>
-        <Grid container sx={{ px: 10 }}>
+        <Grid
+          container
+          sx={{ px: { md: 10, sm: 8, xs: 1 }, mt: { md: 10, sm: 7, xs: 0 } }}
+        >
           <Grid item md={6} sm={6} xs={12}>
             <Typography
               variant="h2"
@@ -93,7 +108,8 @@ export default function BannerCarousel() {
                 justifyContent: "center",
                 textAlign: "center",
                 height: "100%",
-                fontSize: { md: 90, sm: 60, xs: 60 },
+                fontSize: { md: 90, sm: 55, xs: 55 },
+                px: 5,
               }}
             >
               Amazing
@@ -112,9 +128,9 @@ export default function BannerCarousel() {
             <Box
               component="img"
               sx={{
-                width: { md: "90% !important", xs: "100%" },
-                mt: { md: 10, sm: 7, xs: 0 },
-                borderRadius: 30,
+                width: { md: "90% !important", xs: "100% !important" },
+                mt: { md: 10, sm: 7, xs: 4 },
+                borderRadius: { md: 30, sm: 20, xs: 10 },
               }}
               src="/family.png"
               alt="Legend 2"
@@ -123,7 +139,10 @@ export default function BannerCarousel() {
         </Grid>
       </Box>
       <Box>
-        <Grid container sx={{ px: 10 }}>
+        <Grid
+          container
+          sx={{ px: { md: 10, sm: 8, xs: 1 }, mt: { md: 10, sm: 7, xs: 0 } }}
+        >
           <Grid item md={6} sm={6} xs={12}>
             <Typography
               variant="h2"
@@ -136,7 +155,8 @@ export default function BannerCarousel() {
                 justifyContent: "center",
                 textAlign: "center",
                 height: "100%",
-                fontSize: { md: 90, sm: 60, xs: 60 },
+                fontSize: { md: 90, sm: 55, xs: 55 },
+                px: 4,
               }}
             >
               Perfect meal for the Whole{" "}
@@ -154,8 +174,8 @@ export default function BannerCarousel() {
             <Box
               component="img"
               sx={{
-                width: { md: "90% !important", xs: "100%" },
-                mt: { md: 10, sm: 7, xs: 0 },
+                width: { md: "90% !important", xs: "100% !important" },
+                mt: { md: 10, sm: 7, xs: 4 },
                 borderRadius: { md: 30, sm: 20, xs: 10 },
               }}
               src="/father.png"
@@ -166,7 +186,10 @@ export default function BannerCarousel() {
       </Box>
 
       <Box>
-        <Grid container sx={{ px: 10 }}>
+        <Grid
+          container
+          sx={{ px: { md: 10, sm: 8, xs: 1 }, mt: { md: 10, sm: 7, xs: 0 } }}
+        >
           <Grid item md={6} sm={6} xs={12}>
             <Typography
               variant="h2"
@@ -179,7 +202,8 @@ export default function BannerCarousel() {
                 justifyContent: "center",
                 textAlign: "center",
                 height: "100%",
-                fontSize: { md: 90, sm: 60, xs: 60 },
+                fontSize: { md: 90, sm: 55, xs: 55 },
+                px: 4,
               }}
             >
               Freshly sourced from local{" "}
@@ -197,9 +221,9 @@ export default function BannerCarousel() {
             <Box
               component="img"
               sx={{
-                width: { md: "90% !important", xs: "100%" },
-                mt: { md: 10, sm: 7, xs: 0 },
-                borderRadius: 30,
+                width: { md: "90% !important", xs: "100% !important" },
+                mt: { md: 10, sm: 7, xs: 4 },
+                borderRadius: { md: 30, sm: 20, xs: 10 },
               }}
               src="/farm.jpg"
               alt="Legend 2"
