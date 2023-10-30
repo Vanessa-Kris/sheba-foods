@@ -159,7 +159,7 @@ export default function BannerCarousel() {
                 px: 4,
               }}
             >
-              Perfect meal for the Whole{" "}
+              Perfect meal for the whole{" "}
               <span
                 style={{
                   color: "#698F3C",
