@@ -1,7 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { Box, Typography, IconButton, Grid } from "@mui/material";
+import { Box, Typography, IconButton, Grid, Button } from "@mui/material";
 
 const renderArrowPrev = (clickHandler, hasPrev, label) => (
   <IconButton
@@ -68,7 +68,7 @@ export default function BannerCarousel() {
                 justifyContent: "center",
                 textAlign: "center",
                 height: "100%",
-                fontSize: { md: 90, sm: 60, xs: 55 },
+                fontSize: { md: 80, sm: 60, xs: 55 },
               }}
             >
               <span
@@ -81,6 +81,8 @@ export default function BannerCarousel() {
               </span>{" "}
               & Tasty food Choice
             </Typography>
+
+            <Button variant="contained">Buy Now</Button>
           </Grid>
           <Grid item md={6} sm={6} xs={12}>
             <Box
@@ -108,7 +110,7 @@ export default function BannerCarousel() {
                 justifyContent: "center",
                 textAlign: "center",
                 height: "100%",
-                fontSize: { md: 90, sm: 55, xs: 55 },
+                fontSize: { md: 80, sm: 55, xs: 55 },
                 px: 5,
               }}
             >
@@ -123,6 +125,8 @@ export default function BannerCarousel() {
               </span>
               recipes for you to try!
             </Typography>
+
+            <Button variant="contained">Recipes</Button>
           </Grid>
           <Grid item md={6} sm={6} xs={12}>
             <Box
@@ -155,7 +159,7 @@ export default function BannerCarousel() {
                 justifyContent: "center",
                 textAlign: "center",
                 height: "100%",
-                fontSize: { md: 90, sm: 55, xs: 55 },
+                fontSize: { md: 80, sm: 55, xs: 55 },
                 px: 4,
               }}
             >
@@ -169,6 +173,7 @@ export default function BannerCarousel() {
                 Family
               </span>
             </Typography>
+            <Button variant="contained">Buy Now</Button>
           </Grid>
           <Grid item md={6} sm={6} xs={12}>
             <Box
@@ -202,7 +207,7 @@ export default function BannerCarousel() {
                 justifyContent: "center",
                 textAlign: "center",
                 height: "100%",
-                fontSize: { md: 90, sm: 55, xs: 55 },
+                fontSize: { md: 80, sm: 55, xs: 55 },
                 px: 4,
               }}
             >
@@ -216,6 +221,7 @@ export default function BannerCarousel() {
                 Farmers
               </span>
             </Typography>
+            <Button variant="contained">Buy Now</Button>
           </Grid>
           <Grid item md={6} sm={6} xs={12}>
             <Box

@@ -10,31 +10,42 @@ export default function Landing() {
       <Box sx={{ m: { md: 15, sm: 10, xs: 5 } }}>
         <Grid container align="center" columnSpacing={2}>
           <Grid item md={3} sm={3} xs={6}>
-            <Box component="img" src="/sweet.png" alt="" />
+            <Box component="img" src="/emoj.png" alt="" sx={{ width: "50%" }} />
             <Typography variant="h6" sx={{ fontWeight: 500 }}>
               Natural sugar
             </Typography>
           </Grid>
           <Grid item md={3} sm={3} xs={6} sx={{ mb: { xs: 4 } }}>
-            <Box component="img" src="/sustainable.png" alt="" />
+            <Box
+              component="img"
+              src="/earth.png"
+              alt=""
+              sx={{ width: "40%" }}
+            />
             <Typography variant="h6" sx={{ fontWeight: 500 }}>
               Sustainable
             </Typography>
           </Grid>
           <Grid item md={3} sm={3} xs={6}>
-            <Box component="img" src="/natural.png" alt="" />
+            <Box
+              component="img"
+              src="/plant.png"
+              alt=""
+              sx={{ width: "20%" }}
+            />
             <Typography variant="h6" sx={{ fontWeight: 500 }}>
               Natural
             </Typography>
           </Grid>
           <Grid item md={3} sm={3} xs={6}>
-            <Box component="img" src="/crueltyfree.png" alt="" />
+            <Box component="img" src="/ani.png" alt="" sx={{ width: "55%" }} />
             <Typography variant="h6" sx={{ fontWeight: 500 }}>
               Cruelty Free
             </Typography>
           </Grid>
         </Grid>
       </Box>
+      {/* Pledge */}
       <Box
         align="center"
         sx={{ mt: { md: 15, sm: 10, xs: 10 }, bgcolor: "#FECC2E", py: 10 }}
@@ -85,6 +96,40 @@ export default function Landing() {
             />
           </Button>
         </Box>
+      </Box>
+      {/* Shop */}
+      <Box
+        align="center"
+        sx={{
+          mt: { md: 7, sm: 10, xs: 10 },
+          py: 10,
+          px: { md: 10, sm: 7, xs: 2 },
+        }}
+      >
+        <Typography
+          variant="h2"
+          textAlign="center"
+          sx={{
+            fontWeight: 700,
+            mb: 7,
+          }}
+        >
+          Shop
+        </Typography>
+        <Grid container columnSpacing={7}>
+          <Grid item md={4} sm={4} xs={6}>
+            <Box component="img" src="/cropped.jpeg" sx={{ width: "90%" }} />
+            <Button variant="contained">Buy Now </Button>
+          </Grid>
+          <Grid item md={4} sm={4} xs={6}>
+            <Box component="img" src="/cropped.jpeg" sx={{ width: "90%" }} />
+            <Button variant="contained">Buy Now </Button>
+          </Grid>
+          <Grid item md={4} sm={4} xs={6}>
+            <Box component="img" src="/cropped.jpeg" sx={{ width: "90%" }} />
+            <Button variant="contained">Buy Now </Button>
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );
