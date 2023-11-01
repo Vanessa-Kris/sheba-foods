@@ -95,7 +95,7 @@ function NavBar(props) {
               flexGrow: 1,
               display: { xs: "none", sm: "block" },
               ml: { md: 5, sm: 2 },
-              mt: { md: 5, sm: 2 },
+              my: { md: 3, sm: 2 },
             }}
           >
             👨‍🍳 Sheba Foods
@@ -110,25 +110,25 @@ function NavBar(props) {
               },
             }}
           >
-            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
               Home
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
               About Us
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
               Shop
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
               Recipies
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
               Health Book
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
               Events
             </Button>
-            <Button sx={{ mr: { md: 5, sm: 1 }, mt: { md: 5, sm: 2 } }}>
+            <Button sx={{ mr: { md: 5, sm: 1 }, my: { md: 3, sm: 2 } }}>
               Contact
             </Button>
           </Box>

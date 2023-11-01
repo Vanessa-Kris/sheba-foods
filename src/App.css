@@ -7,3 +7,96 @@ button {
 .navigate{
   background-color: transparent !important;
 }
+.banner {
+  position: relative;
+  background-image: url(/public/family\(2\).png);
+  height: 88vh;
+  z-index: -1;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1813136b; 
+  /* z-index: 0;  */
+   z-index: -1;
+}
+
+.banner1{
+  background-image: url(/public/pud2.jpg);
+  background-size: cover;
+  height: 88vh;
+  z-index: -1;
+  position: relative;
+}
+.banner1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1813136b; 
+  /* z-index: 0;  */
+   z-index: -1;
+}
+.banner2{
+  background-image: url(/public/father.png);
+    background-size: cover;
+    z-index: -1;
+  height: 88vh;
+  position: relative;
+}
+.banner2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1813136b; 
+  /* z-index: 0;  */
+   z-index: -1;
+}
+.banner3{
+  background-image: url(/public/farm.jpg);
+  background-size: cover;
+  height: 88vh;
+  z-index: -1;
+  position: relative;
+}
+.banner3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1813136b; 
+  /* z-index: 0;  */
+   z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+  .banner{
+  background-size: cover;
+  height: 50vh;
+}
+.banner1{
+  background-size: cover;
+  height: 50vh;
+}
+.banner2{
+  background-size: cover;
+  height: 50vh;
+}
+.banner3{
+  background-size: cover;
+  height: 50vh;
+}
+
+}
