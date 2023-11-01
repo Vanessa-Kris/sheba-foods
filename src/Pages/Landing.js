@@ -316,6 +316,10 @@ export default function Landing() {
           </Grid>
         </Grid>
       </Box>
+
+      <Box>
+        <Box component="video" autoPlay loop src="/tb.mp4" alt="" />
+      </Box>
     </Box>
   );
 }
