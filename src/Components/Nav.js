@@ -13,6 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { AppBar } from "@mui/material";
 // import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
@@ -77,7 +78,7 @@ function NavBar(props) {
 
   return (
     <Box>
-      <nav>
+      <AppBar>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -95,7 +96,7 @@ function NavBar(props) {
               flexGrow: 1,
               display: { xs: "none", sm: "block" },
               ml: { md: 5, sm: 2 },
-              my: { md: 3, sm: 2 },
+              my: { md: 1, sm: 2 },
             }}
           >
             👨‍🍳 Sheba Foods
@@ -110,30 +111,72 @@ function NavBar(props) {
               },
             }}
           >
-            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
+            <Button
+              sx={{
+                mr: { md: 2, sm: 1 },
+                my: { md: 1, sm: 2 },
+                color: "text.primary",
+              }}
+            >
               Home
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
+            <Button
+              sx={{
+                mr: { md: 2, sm: 1 },
+                my: { md: 1, sm: 2 },
+                color: "text.primary",
+              }}
+            >
               About Us
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
+            <Button
+              sx={{
+                mr: { md: 2, sm: 1 },
+                my: { md: 1, sm: 2 },
+                color: "text.primary",
+              }}
+            >
               Shop
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
+            <Button
+              sx={{
+                mr: { md: 2, sm: 1 },
+                my: { md: 1, sm: 2 },
+                color: "text.primary",
+              }}
+            >
               Recipies
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
+            <Button
+              sx={{
+                mr: { md: 2, sm: 1 },
+                my: { md: 1, sm: 2 },
+                color: "text.primary",
+              }}
+            >
               Health Book
             </Button>
-            <Button sx={{ mr: { md: 2, sm: 1 }, my: { md: 3, sm: 2 } }}>
+            <Button
+              sx={{
+                mr: { md: 2, sm: 1 },
+                my: { md: 1, sm: 2 },
+                color: "text.primary",
+              }}
+            >
               Events
             </Button>
-            <Button sx={{ mr: { md: 5, sm: 1 }, my: { md: 3, sm: 2 } }}>
+            <Button
+              sx={{
+                mr: { md: 5, sm: 1 },
+                my: { md: 1, sm: 2 },
+                color: "text.primary",
+              }}
+            >
               Contact
             </Button>
           </Box>
         </Toolbar>
-      </nav>
+      </AppBar>
       <nav>
         <Drawer
           container={container}

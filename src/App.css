@@ -4,13 +4,13 @@ body {
 button {
   text-transform: none !important;
 }
-.navigate{
+nav {
   background-color: transparent !important;
 }
 .banner {
   position: relative;
   background-image: url(/public/family\(2\).png);
-  height: 88vh;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -29,7 +29,7 @@ button {
 .banner1{
   background-image: url(/public/pud2.jpg);
   background-size: cover;
-  height: 88vh;
+ height: 100vh;
   z-index: -1;
   position: relative;
 }
@@ -48,7 +48,7 @@ button {
   background-image: url(/public/father.png);
     background-size: cover;
     z-index: -1;
-  height: 88vh;
+ height: 100vh;
   position: relative;
 }
 .banner2::before {
@@ -65,7 +65,7 @@ button {
 .banner3{
   background-image: url(/public/farm.jpg);
   background-size: cover;
-  height: 88vh;
+ height: 100vh;
   z-index: -1;
   position: relative;
 }
@@ -84,19 +84,19 @@ button {
 @media screen and (max-width: 767px) {
   .banner{
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
 }
 .banner1{
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
 }
 .banner2{
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
 }
 .banner3{
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
 }
 
 }

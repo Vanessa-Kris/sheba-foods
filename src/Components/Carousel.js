@@ -1,7 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { Box, Typography, IconButton, Grid, Button } from "@mui/material";
+import { Box, Typography, IconButton } from "@mui/material";
 
 const renderArrowPrev = (clickHandler, hasPrev, label) => (
   <IconButton
@@ -50,7 +50,7 @@ export default function BannerCarousel() {
   const isMobileView = window.innerWidth <= 600; // Adjust the breakpoint as needed
   return (
     <Carousel
-      // autoPlay
+      autoPlay
       renderArrowPrev={isMobileView ? undefined : renderArrowPrev}
       renderArrowNext={isMobileView ? undefined : renderArrowNext}
     >
