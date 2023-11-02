@@ -98,64 +98,7 @@ export default function Landing() {
           </Button>
         </Box>
       </Box>
-      {/* Shop */}
-      {/* <Box
-        align="center"
-        sx={{
-          mt: { md: 7, sm: 10, xs: 2 },
-          py: 10,
-          px: { md: 10, sm: 7, xs: 2 },
-        }}
-      >
-        <Typography
-          variant="h2"
-          textAlign="center"
-          sx={{
-            fontWeight: 700,
-            mb: 7,
-          }}
-        >
-          Shop
-        </Typography>
-        <Grid container columnSpacing={7}>
-          <Grid item md={4} sm={4} xs={12}>
-            <Box component="img" src="/shop.png" sx={{ width: "100%" }} />
-            <Button variant="contained" sx={{ my: 4 }}>
-              Buy Now{" "}
-              <Box
-                component="img"
-                src="/doublewheat.png"
-                alt="leaf"
-                sx={{ width: "20% !important", rotate: "70deg" }}
-              />
-            </Button>
-          </Grid>
-          <Grid item md={4} sm={4} xs={12}>
-            <Box component="img" src="/shop.png" sx={{ width: "100%" }} />
-            <Button variant="contained" sx={{ my: 4 }}>
-              Buy Now{" "}
-              <Box
-                component="img"
-                src="/doublewheat.png"
-                alt="leaf"
-                sx={{ width: "20% !important", rotate: "70deg" }}
-              />
-            </Button>
-          </Grid>
-          <Grid item md={4} sm={4} xs={12}>
-            <Box component="img" src="/shop.png" sx={{ width: "100%" }} />
-            <Button variant="contained" sx={{ my: 4 }}>
-              Buy Now{" "}
-              <Box
-                component="img"
-                src="/doublewheat.png"
-                alt="leaf"
-                sx={{ width: "20% !important", rotate: "70deg" }}
-              />
-            </Button>
-          </Grid>
-        </Grid>
-      </Box> */}
+      {/*  */}
       <Shop />
       {/*  */}
       <Box

@@ -47,7 +47,7 @@ function App() {
       element: <Recipies />,
     },
     {
-      path: "/healthbook",
+      path: "/health-book",
       element: <HealthBook />,
     },
     {

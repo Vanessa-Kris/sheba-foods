@@ -1,4 +1,4 @@
-import { Box, Typography, Divider, Button, Grid } from "@mui/material";
+import { Box, Typography, Button, Grid } from "@mui/material";
 import React from "react";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";

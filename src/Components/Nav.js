@@ -112,64 +112,85 @@ function NavBar(props) {
             }}
           >
             <Button
+              component="a"
+              href="/"
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
+                textTransform: "none",
               }}
             >
               Home
             </Button>
             <Button
+              component="a"
+              href="/about"
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
+                textTransform: "none",
               }}
             >
               About Us
             </Button>
             <Button
+              component="a"
+              href="/shop"
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
+                textTransform: "none",
               }}
             >
               Shop
             </Button>
             <Button
+              component="a"
+              href="/recipies"
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
+                textTransform: "none",
               }}
             >
               Recipies
             </Button>
             <Button
+              component="a"
+              href="/health-book"
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
+                textTransform: "none",
               }}
             >
               Health Book
             </Button>
             <Button
+              component="a"
+              href="/events"
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
+                textTransform: "none",
               }}
             >
               Events
             </Button>
             <Button
+              component="a"
+              href="/contact"
               sx={{
                 mr: { md: 5, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
+                textTransform: "none",
               }}
             >
               Contact
