@@ -12,6 +12,7 @@ nav {
   background-image: url(/public/family\(2\).png);
   height: 100vh;
   z-index: -1;
+  background-repeat: no-repeat;
 }
 
 .banner::before {
@@ -32,6 +33,7 @@ nav {
  height: 100vh;
   z-index: -1;
   position: relative;
+  background-repeat: no-repeat;
 }
 .banner1::before {
   content: "";
@@ -50,6 +52,7 @@ nav {
     z-index: -1;
  height: 100vh;
   position: relative;
+  background-repeat: no-repeat;
 }
 .banner2::before {
   content: "";
@@ -68,6 +71,7 @@ nav {
  height: 100vh;
   z-index: -1;
   position: relative;
+  background-repeat: no-repeat;
 }
 .banner3::before {
   content: "";
@@ -85,18 +89,56 @@ nav {
   .banner{
   background-size: cover;
   height: 70vh;
+   background-repeat: no-repeat;
 }
 .banner1{
   background-size: cover;
   height: 70vh;
+   background-repeat: no-repeat;
 }
 .banner2{
   background-size: cover;
   height: 70vh;
+   background-repeat: no-repeat;
 }
 .banner3{
   background-size: cover;
   height: 70vh;
+   background-repeat: no-repeat;
 }
 
+}
+
+/*  */
+#progress {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  transform: rotate(-90deg);
+}
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: none;
+}
+
+
+.list {
+  display: flex;
+  list-style: none;
+  /* height: 350px; */
+  overflow-x: scroll;
+  padding: 20px 0;
+  flex: 0 0 600px;
+  margin: 0 auto;
+}
+
+li {
+  flex: 0 0 300px;
+  background: var(--accent);
+  margin: 0 20px 0 0;
+}
+
+li:last-of-type {
+  margin: 0;
 }

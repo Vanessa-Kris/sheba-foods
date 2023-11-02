@@ -115,7 +115,7 @@ function NavBar(props) {
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
-                color: "text.primary",
+                color: "text.secondary",
               }}
             >
               Home
@@ -124,7 +124,7 @@ function NavBar(props) {
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
-                color: "text.primary",
+                color: "text.secondary",
               }}
             >
               About Us
@@ -133,7 +133,7 @@ function NavBar(props) {
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
-                color: "text.primary",
+                color: "text.secondary",
               }}
             >
               Shop
@@ -142,7 +142,7 @@ function NavBar(props) {
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
-                color: "text.primary",
+                color: "text.secondary",
               }}
             >
               Recipies
@@ -151,7 +151,7 @@ function NavBar(props) {
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
-                color: "text.primary",
+                color: "text.secondary",
               }}
             >
               Health Book
@@ -160,7 +160,7 @@ function NavBar(props) {
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
-                color: "text.primary",
+                color: "text.secondary",
               }}
             >
               Events
@@ -169,7 +169,7 @@ function NavBar(props) {
               sx={{
                 mr: { md: 5, sm: 1 },
                 my: { md: 1, sm: 2 },
-                color: "text.primary",
+                color: "text.secondary",
               }}
             >
               Contact

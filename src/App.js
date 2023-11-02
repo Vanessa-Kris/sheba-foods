@@ -23,11 +23,11 @@ let theme = createTheme({
     },
     text: {
       primary: "#2b2929",
-      secondary: "rgba(222,219,219,0.7)",
+      secondary: "#FFFBE7",
     },
     background: {
       default: "#FFFBE7",
-      // paper: "#FEFFEA",
+      paper: "#698F3C",
     },
   },
 });

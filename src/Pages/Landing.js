@@ -1,6 +1,7 @@
 import { Box, Divider, Grid, Typography, Button } from "@mui/material";
 import React from "react";
 import BannerCarousel from "../Components/Carousel";
+import Shop from "../Sections/Shop";
 
 export default function Landing() {
   return (
@@ -98,7 +99,7 @@ export default function Landing() {
         </Box>
       </Box>
       {/* Shop */}
-      <Box
+      {/* <Box
         align="center"
         sx={{
           mt: { md: 7, sm: 10, xs: 2 },
@@ -154,7 +155,8 @@ export default function Landing() {
             </Button>
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
+      <Shop />
       {/*  */}
       <Box
         sx={{
@@ -317,8 +319,74 @@ export default function Landing() {
         </Grid>
       </Box>
 
-      <Box>
-        <Box component="video" autoPlay loop src="/tb.mp4" alt="" />
+      <Box sx={{ my: 5 }}>
+        <Typography
+          variant="h2"
+          sx={{
+            fontWeight: 700,
+            mb: 5,
+            textAlign: "center",
+          }}
+        >
+          <span
+            style={{
+              color: "#698F3C",
+              fontFamily: "monospace",
+            }}
+          >
+            Share
+          </span>{" "}
+          With Us
+        </Typography>
+
+        <Typography variant="h6" sx={{ textAlign: "center", pb: 5 }}>
+          Share your Tom Brown Whole meal recipe with us using{" "}
+          <span style={{ fontStyle: "italic", fontWeight: 500 }}>
+            #ShebaFoodTBWM
+          </span>
+          .
+        </Typography>
+        <Grid container columnSpacing={0}>
+          <Grid item md={4} sm={4} xs={12}>
+            <Box
+              component="video"
+              autoPlay
+              loop
+              muted
+              src="/tb.mp4"
+              alt=""
+              sx={{ width: "100%" }}
+            />
+          </Grid>
+          <Grid item md={4} sm={4} xs={12}>
+            <Box
+              component="video"
+              autoPlay
+              loop
+              muted
+              src="/tb3.mp4"
+              alt=""
+              sx={{ width: "100%" }}
+            />
+          </Grid>
+          <Grid
+            item
+            md={4}
+            sm={4}
+            xs={12}
+            sx={{ display: { md: "block", sm: "block", xs: "none" } }}
+          >
+            <Box
+              component="video"
+              autoPlay
+              loop
+              muted
+              src="/tb2.mp4"
+              alt=""
+              sx={{ width: "100%" }}
+            />
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );
