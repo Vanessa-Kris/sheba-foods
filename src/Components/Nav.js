@@ -39,37 +39,61 @@ function NavBar(props) {
       <Box>
         <List sx={{ flexDirection: "column" }}>
           <ListItem disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton component="a" href="/" sx={{ textAlign: "center" }}>
               <ListItemText>Home</ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              component="a"
+              href="/about"
+              sx={{ textAlign: "center" }}
+            >
               <ListItemText>About Us</ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              component="a"
+              href="/products"
+              sx={{ textAlign: "center" }}
+            >
               <ListItemText>Shop</ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              component="a"
+              href="/stockist"
+              sx={{ textAlign: "center" }}
+            >
               <ListItemText>Stockist</ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              component="a"
+              href="/recipies"
+              sx={{ textAlign: "center" }}
+            >
               <ListItemText>Recipies</ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              component="a"
+              href="/events"
+              sx={{ textAlign: "center" }}
+            >
               <ListItemText>Events</ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              component="a"
+              href="/contact"
+              sx={{ textAlign: "center" }}
+            >
               <ListItemText>Contact</ListItemText>
             </ListItemButton>
           </ListItem>
