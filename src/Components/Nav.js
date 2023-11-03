@@ -55,6 +55,11 @@ function NavBar(props) {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>Stockist</ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText>Recipies</ListItemText>
             </ListItemButton>
           </ListItem>
@@ -137,7 +142,7 @@ function NavBar(props) {
             </Button>
             <Button
               component="a"
-              href="/shop"
+              href="/products"
               sx={{
                 mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
@@ -146,6 +151,18 @@ function NavBar(props) {
               }}
             >
               Shop
+            </Button>
+            <Button
+              component="a"
+              href="/stockist"
+              sx={{
+                mr: { md: 2, sm: 1 },
+                my: { md: 1, sm: 2 },
+                color: "text.secondary",
+                textTransform: "none",
+              }}
+            >
+              Stockist
             </Button>
             <Button
               component="a"

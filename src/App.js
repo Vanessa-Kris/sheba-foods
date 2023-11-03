@@ -11,6 +11,11 @@ import Recipies from "./Pages/Recipies";
 import HealthBook from "./Pages/HealthBook";
 import Events from "./Pages/Events";
 import Contact from "./Pages/Contact";
+import Shop from "./Pages/Shop";
+import WholeMeal from "./Products/WholeMeal";
+import Apron from "./Products/Apron";
+import Mug from "./Products/Mug";
+import Shirt from "./Products/Shirt";
 
 let theme = createTheme({
   palette: {
@@ -47,6 +52,10 @@ function App() {
       element: <Recipies />,
     },
     {
+      path: "/products",
+      element: <Shop />,
+    },
+    {
       path: "/health-book",
       element: <HealthBook />,
     },
@@ -61,6 +70,22 @@ function App() {
     {
       path: "*",
       element: <PageNotFound />,
+    },
+    {
+      path: "/products/tom-brown-whole-meal",
+      element: <WholeMeal />,
+    },
+    {
+      path: "/products/apron",
+      element: <Apron />,
+    },
+    {
+      path: "/products/mug",
+      element: <Mug />,
+    },
+    {
+      path: "/products/shirt",
+      element: <Shirt />,
     },
   ]);
   return (
