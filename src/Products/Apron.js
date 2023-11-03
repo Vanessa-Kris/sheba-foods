@@ -16,9 +16,9 @@ export default function Apron() {
         </Grid>
         <Grid item md={6} sm={6} xs={12} justifyContent="center" my="auto">
           <Typography variant="h3" sx={{ mb: 5 }}>
-            Tom Brown Whole Meal
+            Sheba Foods Merch Apron
           </Typography>
-          <Typography variant="h4">3000</Typography>
+          <Typography variant="h4">2000</Typography>
           <br />
           <Box>
             <Typography variant="h6"> Quantity :</Typography>
@@ -32,15 +32,15 @@ export default function Apron() {
                 <Typography sx={{ fontWeight: 500 }}>Category: </Typography>
                 <Typography sx={{ fontWeight: 500 }}>Brand: </Typography>
                 <Typography sx={{ fontWeight: 500 }}>
-                  Health Benefits:{" "}
+                  Product Usage:{" "}
                 </Typography>
               </Grid>
               <Grid item>
-                <Typography>Tom brown whole meal </Typography>
-                <Typography>200 grams </Typography>
-                <Typography>Grains </Typography>
+                <Typography> Sheba Foods Merch Apron </Typography>
+                <Typography>One Size </Typography>
+                <Typography>Merch </Typography>
                 <Typography>Sheba Foods </Typography>
-                <Typography>Tom brown whole meal </Typography>
+                <Typography>Cook wear </Typography>
               </Grid>
             </Grid>
           </Box>
