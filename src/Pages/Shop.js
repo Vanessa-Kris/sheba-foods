@@ -1,12 +1,12 @@
 import React from "react";
-import { Box, Divider, Grid, Typography, Button } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 export default function Shop() {
   return (
-    <Box>
+    <Box className="Shop">
       <Box
         component="img"
-        src="/shopping.png"
+        src="/shopbanner.png"
         alt=""
         sx={{ width: "100%", pt: { xs: 7 } }}
       />

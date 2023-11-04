@@ -55,9 +55,9 @@ export default function About() {
         <Grid item md={6} sm={6} xs={12}>
           <Box
             component="img"
-            src="/health.jpg"
+            src="/field.jpg"
             alt=""
-            sx={{ width: "100%" }}
+            sx={{ width: "100%", borderRadius: "30px" }}
           />
         </Grid>
         <Grid
@@ -141,7 +141,7 @@ export default function About() {
             component="img"
             src="/health.jpg"
             alt=""
-            sx={{ width: "100%" }}
+            sx={{ width: "100%", borderRadius: "30px" }}
           />
         </Grid>
       </Grid>

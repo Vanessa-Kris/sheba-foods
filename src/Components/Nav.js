@@ -15,6 +15,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { AppBar } from "@mui/material";
 // import { Link } from "react-router-dom";
+import { FaCircleXmark } from "react-icons/fa6";
 
 const drawerWidth = 240;
 
@@ -31,7 +32,10 @@ function NavBar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{ textAlign: "center", color: "text.secondary" }}
+    >
       <Typography variant="h6" sx={{ my: 2 }}>
         Sheba Foods
       </Typography>
@@ -108,6 +112,43 @@ function NavBar(props) {
   return (
     <Box>
       <AppBar>
+        <Box
+          sx={{
+            bgcolor: "orange",
+            display: "flex",
+            align: "center",
+            justifyContent: "center",
+
+            p: 1,
+          }}
+        >
+          <Box
+            sx={{
+              m: "auto",
+              display: "flex",
+              //my: "auto",
+            }}
+          >
+            <Typography variant="body2" sx={{ fontSize: { xs: "13px" } }}>
+              Get balanced diet! get Tom Brown Whole Meal Now.{" "}
+            </Typography>
+            <Button
+              variant="contained"
+              size="small"
+              sx={{
+                borderRadius: "30px",
+                mx: { md: 2, xs: 2 },
+                width: { xs: "40%", md: "100px" },
+              }}
+            >
+              Buy Now
+            </Button>
+          </Box>
+          <Box justifyContent="flex-end">
+            <FaCircleXmark style={{ marginRight: 7, fontSize: "20px" }} />{" "}
+          </Box>
+        </Box>
+
         <Toolbar>
           <IconButton
             color="inherit"
