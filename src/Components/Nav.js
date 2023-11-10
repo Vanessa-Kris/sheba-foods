@@ -91,6 +91,15 @@ function NavBar(props) {
           <ListItem disablePadding>
             <ListItemButton
               component="a"
+              href="/health-book"
+              sx={{ textAlign: "center" }}
+            >
+              <ListItemText>HealthBook</ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton
+              component="a"
               href="/events"
               sx={{ textAlign: "center" }}
             >

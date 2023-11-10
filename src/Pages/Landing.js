@@ -87,7 +87,12 @@ export default function Landing() {
             aliquip ex ea commodo consequat.
           </Typography>
           <br />
-          <Button variant="contained" sx={{ mt: 5 }}>
+          <Button
+            variant="contained"
+            sx={{ mt: 5 }}
+            component="a"
+            href="/about"
+          >
             Learn more{" "}
             <Box
               component="img"
@@ -153,7 +158,12 @@ export default function Landing() {
               within this wholemeal.
             </Typography>
             <br />
-            <Button variant="contained" sx={{ mt: 4 }}>
+            <Button
+              component="a"
+              href="/recipies"
+              variant="contained"
+              sx={{ mt: 4 }}
+            >
               Read More
             </Button>
           </Grid>
@@ -196,7 +206,12 @@ export default function Landing() {
               advantages associated with this wholesome wholemeal.
             </Typography>
             <br />
-            <Button variant="contained" sx={{ mt: 4 }}>
+            <Button
+              component="a"
+              href="/health-book"
+              variant="contained"
+              sx={{ mt: 4 }}
+            >
               Read More
             </Button>
           </Grid>
@@ -255,7 +270,12 @@ export default function Landing() {
               advantages associated with this wholesome wholemeal.
             </Typography>
             <br />
-            <Button variant="contained" sx={{ mt: 4 }}>
+            <Button
+              component="a"
+              href="/health-book"
+              variant="contained"
+              sx={{ mt: 4 }}
+            >
               Read More
             </Button>
           </Grid>

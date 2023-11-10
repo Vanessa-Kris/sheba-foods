@@ -16,6 +16,7 @@ import WholeMeal from "./Products/WholeMeal";
 import Apron from "./Products/Apron";
 import Mug from "./Products/Mug";
 import Shirt from "./Products/Shirt";
+import Stockist from "./Pages/Stockist";
 
 let theme = createTheme({
   palette: {
@@ -54,6 +55,10 @@ function App() {
     {
       path: "/products",
       element: <Shop />,
+    },
+    {
+      path: "/stockist",
+      element: <Stockist />,
     },
     {
       path: "/health-book",
