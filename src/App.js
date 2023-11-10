@@ -17,6 +17,10 @@ import Apron from "./Products/Apron";
 import Mug from "./Products/Mug";
 import Shirt from "./Products/Shirt";
 import Stockist from "./Pages/Stockist";
+import Tearecipe from "./Sections/Tearecipe";
+import Pancakerecipe from "./Sections/Pancakerecipe";
+import Puddingrecipe from "./Sections/Puddingrecipe";
+import Swallowrecipe from "./Sections/Swallowrecipe";
 
 let theme = createTheme({
   palette: {
@@ -91,6 +95,22 @@ function App() {
     {
       path: "/products/shirt",
       element: <Shirt />,
+    },
+    {
+      path: "/recipies/tea-recipe",
+      element: <Tearecipe />,
+    },
+    {
+      path: "/recipies/pancake-recipe",
+      element: <Pancakerecipe />,
+    },
+    {
+      path: "/recipies/pudding-recipe",
+      element: <Puddingrecipe />,
+    },
+    {
+      path: "/recipies/swallow-recipe",
+      element: <Swallowrecipe />,
     },
   ]);
   return (

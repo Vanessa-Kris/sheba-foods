@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function Recipies() {
   return (
-    <Box>
+    <Box className="Shop">
       <Box
         component="img"
         src="/reci.jpg"
@@ -26,9 +26,15 @@ export default function Recipies() {
                   alt=""
                   sx={{ width: "100%" }}
                 />
-                <Typography variant="subtitle1" sx={{ p: 2 }}>
-                  Tom Brown Whole Meal Tea Recipe <FaArrowRight />
-                </Typography>
+                <Box sx={{ p: 3 }}>
+                  <Typography
+                    component="a"
+                    href="/recipies/tea-recipe"
+                    variant="subtitle1"
+                  >
+                    Tom Brown Whole Meal Tea Recipe <FaArrowRight />
+                  </Typography>
+                </Box>
               </Card>
             </Grid>
             <Grid item md={6} sm={6} xs={12}>
@@ -39,9 +45,53 @@ export default function Recipies() {
                   alt=""
                   sx={{ width: "100%" }}
                 />
-                <Typography variant="subtitle1" sx={{ p: 2 }}>
-                  Tom Brown Whole Meal Fluffy Pancakes Recipe <FaArrowRight />
-                </Typography>
+                <Box sx={{ p: 3 }}>
+                  <Typography
+                    component="a"
+                    href="/recipies/pancake-recipe"
+                    variant="subtitle1"
+                  >
+                    Tom Brown Whole Meal Fluffy Pancakes Recipe <FaArrowRight />
+                  </Typography>
+                </Box>
+              </Card>
+            </Grid>
+            <Grid item md={6} sm={6} xs={12}>
+              <Card>
+                <Box
+                  component="img"
+                  src="/pud1.jpg"
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
+                <Box sx={{ p: 3 }}>
+                  <Typography
+                    component="a"
+                    href="/recipies/pudding-recipe"
+                    variant="subtitle1"
+                  >
+                    Tom Brown Whole Meal Pudding Recipe <FaArrowRight />
+                  </Typography>
+                </Box>
+              </Card>
+            </Grid>
+            <Grid item md={6} sm={6} xs={12}>
+              <Card>
+                <Box
+                  component="img"
+                  src="/pancake.jpg"
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
+                <Box sx={{ p: 3 }}>
+                  <Typography
+                    component="a"
+                    href="/recipies/swallow-recipe"
+                    variant="subtitle1"
+                  >
+                    Tom Brown Whole Meal Swallow Recipe <FaArrowRight />
+                  </Typography>
+                </Box>
               </Card>
             </Grid>
           </Grid>
