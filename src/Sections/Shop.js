@@ -59,7 +59,12 @@ export default function Shop() {
             sure....
           </Typography>
           <br />
-          <Button variant="contained" sx={{ mt: 3 }}>
+          <Button
+            component="a"
+            href="/products"
+            variant="contained"
+            sx={{ mt: 3 }}
+          >
             Shop{" "}
             <Box
               component="img"

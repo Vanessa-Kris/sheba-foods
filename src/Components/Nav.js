@@ -14,7 +14,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { AppBar } from "@mui/material";
-// import { Link } from "react-router-dom";
 import { FaCircleXmark } from "react-icons/fa6";
 
 const drawerWidth = 240;
@@ -22,9 +21,15 @@ const drawerWidth = 240;
 function NavBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [upperNavVisible, setUpperNavVisible] = React.useState(true);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+    setUpperNavVisible((prevState) => !prevState);
+  };
+
+  const handleNavToggle = () => {
+    setUpperNavVisible((prevState) => !prevState);
   };
 
   NavBar.propTypes = {
@@ -34,7 +39,7 @@ function NavBar(props) {
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", color: "text.secondary" }}
+      sx={{ textAlign: "center", color: "text.primary" }}
     >
       <Typography variant="h6" sx={{ my: 2 }}>
         Sheba Foods
@@ -71,7 +76,7 @@ function NavBar(props) {
               href="/stockist"
               sx={{ textAlign: "center" }}
             >
-              <ListItemText>Stockist</ListItemText>
+              <ListItemText>Distributors</ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
@@ -115,10 +120,9 @@ function NavBar(props) {
         <Box
           sx={{
             bgcolor: "orange",
-            display: "flex",
             align: "center",
             justifyContent: "center",
-
+            display: upperNavVisible ? "flex" : "none",
             p: 1,
           }}
         >
@@ -126,26 +130,34 @@ function NavBar(props) {
             sx={{
               m: "auto",
               display: "flex",
-              //my: "auto",
             }}
           >
-            <Typography variant="body2" sx={{ fontSize: { xs: "13px" } }}>
+            <Typography
+              variant="body2"
+              sx={{ fontSize: { xs: "13px" }, fontWeight: 500 }}
+            >
               Get balanced diet! get Tom Brown Whole Meal Now.{" "}
             </Typography>
             <Button
+              component="a"
+              href="/products"
               variant="contained"
               size="small"
               sx={{
                 borderRadius: "30px",
                 mx: { md: 2, xs: 2 },
                 width: { xs: "40%", md: "100px" },
+                textTransform: "none",
               }}
             >
               Buy Now
             </Button>
           </Box>
           <Box justifyContent="flex-end">
-            <FaCircleXmark style={{ marginRight: 7, fontSize: "20px" }} />{" "}
+            <FaCircleXmark
+              onClick={handleNavToggle}
+              style={{ marginRight: 7, fontSize: "20px" }}
+            />{" "}
           </Box>
         </Box>
 
@@ -227,7 +239,7 @@ function NavBar(props) {
                 textTransform: "none",
               }}
             >
-              Stockist
+              Distributors
             </Button>
             <Button
               component="a"
