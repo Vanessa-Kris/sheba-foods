@@ -94,7 +94,7 @@ function NavBar(props) {
               href="/health-book"
               sx={{ textAlign: "center" }}
             >
-              <ListItemText>HealthBook</ListItemText>
+              <ListItemText>Health Book</ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
