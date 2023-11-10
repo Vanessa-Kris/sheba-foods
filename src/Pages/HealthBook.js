@@ -9,6 +9,7 @@ import {
   TableHead,
   TableRow,
   Paper,
+  Grid,
 } from "@mui/material";
 
 export default function HealthBook() {
@@ -144,21 +145,32 @@ export default function HealthBook() {
         </Box>
 
         <Box sx={{ mt: 10 }}>
-          <Typography variant="h5" sx={{ mb: 3, fontWeight: 500 }}>
-            Why Is Tom Brown Whole Meal Good For Children?
-          </Typography>
-          <Typography variant="p" sx={{ mb: 3 }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </Typography>
-          <Typography variant="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </Typography>
+          <Grid container columnSpacing={5} rowSpacing={5}>
+            <Grid item md={6} sm={6} xs={12}>
+              <Box
+                component="img"
+                src="/father.png"
+                sx={{ width: "100%", borderRadius: "30px" }}
+              />
+            </Grid>
+            <Grid item md={6} sm={6} xs={12}>
+              <Typography variant="h5" sx={{ mb: 3, fontWeight: 500 }}>
+                Why Is Tom Brown Whole Meal Good For Children?
+              </Typography>
+              <Typography variant="p" sx={{ mb: 3 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </Typography>
+              <Typography variant="p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </Typography>
+            </Grid>
+          </Grid>
         </Box>
         {/*  */}
         <Box sx={{ mt: 10 }}>
