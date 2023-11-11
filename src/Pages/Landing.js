@@ -22,7 +22,7 @@ export default function Landing() {
       <Box sx={{ m: { md: 15, sm: 10, xs: 5 } }}>
         <Grid container align="center" columnSpacing={2}>
           <Grid item md={3} sm={3} xs={6}>
-            <ImageWithLoader src="/emoj.png" alt="" sx={{ width: "50%" }} />
+            <Box component="img" src="/emoj.png" alt="" sx={{ width: "50%" }} />
             <Typography variant="h6" sx={{ fontWeight: 500 }}>
               Natural sugar
             </Typography>
@@ -50,7 +50,7 @@ export default function Landing() {
             </Typography>
           </Grid>
           <Grid item md={3} sm={3} xs={6}>
-            <ImageWithLoader src="/ani.png" alt="" sx={{ width: "55%" }} />
+            <Box component="img" src="/ani.png" alt="" sx={{ width: "55%" }} />
             <Typography variant="h6" sx={{ fontWeight: 500 }}>
               Cruelty Free
             </Typography>
