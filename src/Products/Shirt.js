@@ -72,7 +72,7 @@ export default function Shirt() {
                   <Typography sx={{ fontWeight: 500 }}>Brand: </Typography>
                   <Typography sx={{ fontWeight: 500 }}>Use: </Typography>
                 </Grid>
-                <Grid item md={6} sm={6} xs={8}>
+                <Grid item md={6} sm={6} xs={8} sx={{ color: "#505050" }}>
                   <Typography> Sheba Foods Merch Shirt </Typography>
                   <Typography>Merch</Typography>
                   <Typography>Sheba Foods </Typography>

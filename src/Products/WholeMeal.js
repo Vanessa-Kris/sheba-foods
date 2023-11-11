@@ -180,7 +180,7 @@ export default function WholeMeal() {
               <Grid container columnSpacing={2}>
                 <Grid item md={6} sm={6} xs={4}>
                   <Typography sx={{ fontWeight: "500 !important" }}>
-                    Product{" "}
+                    Product:{" "}
                   </Typography>
                   <Typography sx={{ fontWeight: 500 }}>Size: </Typography>
                   <Typography sx={{ fontWeight: 500 }}>Category: </Typography>
@@ -189,12 +189,12 @@ export default function WholeMeal() {
                     Health Benefits:{" "}
                   </Typography>
                 </Grid>
-                <Grid item md={6} sm={6} xs={8}>
+                <Grid item md={6} sm={6} xs={8} sx={{ color: "#505050" }}>
                   <Typography>Tom brown whole meal </Typography>
                   <Typography>200 grams </Typography>
                   <Typography>Grains </Typography>
                   <Typography>Sheba Foods </Typography>
-                  <Typography>Tom brown whole meal </Typography>
+                  <Typography>See here </Typography>
                 </Grid>
               </Grid>
             </Box>

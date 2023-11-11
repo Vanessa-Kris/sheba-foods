@@ -24,13 +24,14 @@ export default function Recipies() {
                   component="img"
                   src="/tea.jpg"
                   alt=""
-                  sx={{ width: "100%" }}
+                  sx={{ width: "100%", color: "#505050" }}
                 />
                 <Box sx={{ p: 3 }}>
                   <Typography
                     component="a"
                     href="/recipies/tea-recipe"
                     variant="subtitle1"
+                    sx={{ color: "#505050" }}
                   >
                     Tom Brown Whole Meal Tea Recipe <FaArrowRight />
                   </Typography>

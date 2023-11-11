@@ -54,7 +54,7 @@ export default function Shop() {
           <Typography variant="h4" sx={{ mb: 3 }}>
             Get All Your Faves Right Here
           </Typography>
-          <Typography variant="p">
+          <Typography variant="p" sx={{ color: "#505050" }}>
             Some random text about shopping that I'd definitely add later for
             sure....
           </Typography>
@@ -63,7 +63,7 @@ export default function Shop() {
             component="a"
             href="/products"
             variant="contained"
-            sx={{ mt: 3 }}
+            sx={{ mt: 3, textTransform: "none" }}
           >
             Shop{" "}
             <Box
@@ -77,54 +77,66 @@ export default function Shop() {
         <Grid item md={6} sm={6} xs={12}>
           <ul ref={ref} className="list">
             <li className="listitems">
-              <Box
-                component="img"
-                sx={{ width: "100%" }}
-                src="/shop1.png"
-                alt=""
-              />
+              <a href="/products/tom-brown-whole-meal">
+                <Box
+                  component="img"
+                  sx={{ width: "100%" }}
+                  src="/shop1.png"
+                  alt=""
+                />{" "}
+              </a>
             </li>
 
             <li className="listitems">
-              <Box
-                component="img"
-                sx={{ width: "100%" }}
-                src="/shirt.png"
-                alt=""
-              />
+              <a href="/products/shirt">
+                <Box
+                  component="img"
+                  sx={{ width: "100%" }}
+                  src="/shirt.png"
+                  alt=""
+                />
+              </a>
             </li>
 
             <li className="listitems">
-              <Box
-                component="img"
-                sx={{ width: "100%" }}
-                src="apron.png"
-                alt=""
-              />
+              <a href="/products/apron">
+                <Box
+                  component="img"
+                  sx={{ width: "100%" }}
+                  src="apron.png"
+                  alt=""
+                />
+              </a>
             </li>
             <li className="listitems">
-              <Box
-                component="img"
-                sx={{ width: "100%" }}
-                src="shop.png"
-                alt=""
-              />
+              <a href="/products/tom-brown-whole-meal">
+                <Box
+                  component="img"
+                  sx={{ width: "100%" }}
+                  src="shop.png"
+                  alt=""
+                />
+              </a>
             </li>
             <li className="listitems">
-              <Box
-                component="img"
-                sx={{ width: "100%" }}
-                src="mug.png"
-                alt=""
-              />
+              <a href="/products/mug">
+                <Box
+                  component="img"
+                  sx={{ width: "100%" }}
+                  src="mug.png"
+                  alt=""
+                />
+              </a>
             </li>
             <li className="listitems">
-              <Box
-                component="img"
-                sx={{ width: "100%" }}
-                src="shop1.png"
-                alt=""
-              />
+              <a href="/products/tom-brown-whole-meal">
+                <Box
+                  component="img"
+                  sx={{ width: "100%" }}
+                  src="shop1.png"
+                  alt=""
+                />
+              </a>
             </li>
           </ul>
         </Grid>

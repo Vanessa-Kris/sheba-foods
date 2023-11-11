@@ -35,14 +35,14 @@ export default function Shop() {
               sx={{ width: "100%" }}
             />
             <Typography variant="h6">Tom Brown Whole Meal</Typography>
-            <Typography variant="p" sx={{ fontWeight: 500 }}>
+            <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
               NGN 3000
             </Typography>
           </Grid>
           <Grid item md={4} sm={6} xs={12} component="a" href="/products/mug">
             <Box component="img" src="/mug.png" alt="" sx={{ width: "100%" }} />
             <Typography variant="h6">Sheba Foods Coffee Mug</Typography>
-            <Typography variant="p" sx={{ fontWeight: 500 }}>
+            <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
               NGN 3000
             </Typography>
           </Grid>
@@ -54,7 +54,7 @@ export default function Shop() {
               sx={{ width: "100%" }}
             />
             <Typography variant="h6">Sheba Foods Coffee TShirt</Typography>
-            <Typography variant="p" sx={{ fontWeight: 500 }}>
+            <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
               NGN 5000
             </Typography>
           </Grid>
@@ -66,7 +66,7 @@ export default function Shop() {
               sx={{ width: "100%" }}
             />
             <Typography variant="h6">Sheba Foods Apron</Typography>
-            <Typography variant="p" sx={{ fontWeight: 500 }}>
+            <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
               NGN 2000
             </Typography>
           </Grid>

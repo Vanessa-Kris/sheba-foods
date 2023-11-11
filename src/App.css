@@ -1,9 +1,34 @@
+
+@font-face {
+  font-family: 'Josefine Sans';
+  src:  
+       url('/public/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('woff');
+       }
+
+* {
+  font-family: 'Josefine Sans', sans-serif !important;
+  font-style: normal;
+}
+
 body {
+  
   background-color: #FFFBE7 !important;
 }
-button {
+
+ button {
   text-transform: none !important;
+  border-radius: 30px;
 }
+
+img {
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+img:hover {
+  transform: scale(1.1); /* Increase the scale on hover */
+}
+
+
 .banner {
   position: relative;
   background-image: url(/public/family\(2\).png);

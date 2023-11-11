@@ -24,18 +24,26 @@ export default function Stockist() {
           </Typography>
           <Card variant="outlined" sx={{ p: 3 }}>
             <Typography variant="h6">Port Harcourt</Typography>
-            <Typography>New Supermarket</Typography>
-            <Typography>Adress: N0 15 some street, Port Harcourt.</Typography>
-            <Typography>Contact: 123 457 891.</Typography>
+            <Typography sx={{ color: "#505050" }}>New Supermarket</Typography>
+            <Typography sx={{ color: "#505050" }}>
+              Adress: N0 15 some street, Port Harcourt.
+            </Typography>
+            <Typography sx={{ color: "#505050" }}>
+              Contact: 123 457 891.
+            </Typography>
           </Card>
         </Box>
 
         <Box sx={{ mt: 3 }}>
           <Card variant="outlined" sx={{ p: 3 }}>
             <Typography variant="h6">Port Harcourt</Typography>
-            <Typography>New Supermarket</Typography>
-            <Typography>Adress: N0 15 some street, Port Harcourt.</Typography>
-            <Typography>Contact: 123 457 891.</Typography>
+            <Typography sx={{ color: "#505050" }}>New Supermarket</Typography>
+            <Typography sx={{ color: "#505050" }}>
+              Adress: N0 15 some street, Port Harcourt.
+            </Typography>
+            <Typography sx={{ color: "#505050" }}>
+              Contact: 123 457 891.
+            </Typography>
           </Card>
         </Box>
 
@@ -48,9 +56,13 @@ export default function Stockist() {
           </Typography>
           <Card variant="outlined" sx={{ p: 3 }}>
             <Typography variant="h6">Port Harcourt</Typography>
-            <Typography>New Supermarket</Typography>
-            <Typography>Adress: N0 15 some street, Port Harcourt.</Typography>
-            <Typography>Contact: 123 457 891.</Typography>
+            <Typography sx={{ color: "#505050" }}>New Supermarket</Typography>
+            <Typography sx={{ color: "#505050" }}>
+              Adress: N0 15 some street, Port Harcourt.
+            </Typography>
+            <Typography sx={{ color: "#505050" }}>
+              Contact: 123 457 891.
+            </Typography>
           </Card>
         </Box>
 
@@ -63,9 +75,13 @@ export default function Stockist() {
           </Typography>
           <Card variant="outlined" sx={{ p: 3 }}>
             <Typography variant="h6">Port Harcourt</Typography>
-            <Typography>New Supermarket</Typography>
-            <Typography>Adress: N0 15 some street, Port Harcourt.</Typography>
-            <Typography>Contact: 123 457 891.</Typography>
+            <Typography sx={{ color: "#505050" }}>New Supermarket</Typography>
+            <Typography sx={{ color: "#505050" }}>
+              Adress: N0 15 some street, Port Harcourt.
+            </Typography>
+            <Typography sx={{ color: "#505050" }}>
+              Contact: 123 457 891.
+            </Typography>
           </Card>
         </Box>
       </Box>

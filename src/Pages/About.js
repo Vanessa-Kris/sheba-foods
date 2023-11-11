@@ -5,7 +5,7 @@ export default function About() {
   return (
     <Box
       sx={{
-        mt: { md: 5, sm: 5, xs: 0 },
+        mt: { md: 7, sm: 5, xs: 5 },
         py: 10,
         px: { md: 10, sm: 7, xs: 2 },
       }}
@@ -34,7 +34,12 @@ export default function About() {
             Us
           </span>
         </Typography>
-        <Typography align="center" variant="p" textAlign="center">
+        <Typography
+          align="center"
+          variant="p"
+          textAlign="center"
+          sx={{ color: "#505050" }}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -42,7 +47,12 @@ export default function About() {
         </Typography>
         <br />
         <br />
-        <Typography align="center" variant="p" textAlign="center">
+        <Typography
+          align="center"
+          variant="p"
+          textAlign="center"
+          sx={{ color: "#505050" }}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -87,12 +97,12 @@ export default function About() {
             </span>
           </Typography>
 
-          <Typography variant="p">
+          <Typography variant="p" sx={{ color: "#505050" }}>
             Explore the comprehensive nutritional profile and myriad health
             advantages associated with this wholesome wholemeal.
           </Typography>
           <br />
-          <Typography variant="p">
+          <Typography variant="p" sx={{ color: "#505050" }}>
             Explore the comprehensive nutritional profile and myriad health
             advantages associated with this wholesome wholemeal.
           </Typography>
@@ -126,12 +136,12 @@ export default function About() {
             </span>
           </Typography>
 
-          <Typography variant="p">
+          <Typography variant="p" sx={{ color: "#505050" }}>
             Explore the comprehensive nutritional profile and myriad health
             advantages associated with this wholesome wholemeal.
           </Typography>
           <br />
-          <Typography variant="p">
+          <Typography variant="p" sx={{ color: "#505050" }}>
             Explore the comprehensive nutritional profile and myriad health
             advantages associated with this wholesome wholemeal.
           </Typography>

@@ -79,7 +79,7 @@ export default function Landing() {
             align="center"
             variant="p"
             textAlign="center"
-            sx={{ px: { md: 20 } }}
+            sx={{ color: "#505050" }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -89,7 +89,7 @@ export default function Landing() {
           <br />
           <Button
             variant="contained"
-            sx={{ mt: 5 }}
+            sx={{ mt: 5, textTransform: "none" }}
             component="a"
             href="/about"
           >
@@ -150,7 +150,7 @@ export default function Landing() {
               </span>
             </Typography>
 
-            <Typography variant="p">
+            <Typography variant="p" sx={{ color: "#505050" }}>
               Embark on a delightful culinary journey, where you can uncover a
               treasure trove of mouthwatering dishes, all made possible with
               this incredibly nutritious whole meal. You'll reveal a multitude
@@ -162,9 +162,9 @@ export default function Landing() {
               component="a"
               href="/recipies"
               variant="contained"
-              sx={{ mt: 4 }}
+              sx={{ mt: 4, textTransform: "none" }}
             >
-              Read More
+              Read More{" "}
             </Button>
           </Grid>
         </Grid>
@@ -201,7 +201,7 @@ export default function Landing() {
               Book
             </Typography>
 
-            <Typography variant="p">
+            <Typography variant="p" sx={{ color: "#505050" }}>
               Explore the comprehensive nutritional profile and myriad health
               advantages associated with this wholesome wholemeal.
             </Typography>
@@ -210,7 +210,7 @@ export default function Landing() {
               component="a"
               href="/health-book"
               variant="contained"
-              sx={{ mt: 4 }}
+              sx={{ mt: 4, textTransform: "none" }}
             >
               Read More
             </Button>
@@ -265,7 +265,7 @@ export default function Landing() {
               Book
             </Typography>
 
-            <Typography variant="p">
+            <Typography variant="p" sx={{ color: "#505050" }}>
               Explore the comprehensive nutritional profile and myriad health
               advantages associated with this wholesome wholemeal.
             </Typography>
@@ -302,7 +302,10 @@ export default function Landing() {
           With Us
         </Typography>
 
-        <Typography variant="h6" sx={{ textAlign: "center", pb: 5 }}>
+        <Typography
+          variant="h6"
+          sx={{ textAlign: "center", pb: 5, color: "#505050" }}
+        >
           Share your Tom Brown Whole meal recipe with us using{" "}
           <span style={{ fontStyle: "italic", fontWeight: 500 }}>
             #ShebaFoodTBWM

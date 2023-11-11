@@ -10,6 +10,9 @@ import {
   TableRow,
   Paper,
   Grid,
+  List,
+  ListItem,
+  ListItemText,
 } from "@mui/material";
 
 export default function HealthBook() {
@@ -97,6 +100,12 @@ export default function HealthBook() {
         </Typography>
 
         <Box sx={{ mt: 10 }}>
+          <Typography
+            variant="p"
+            sx={{ fontStyle: "italic", color: "#505050" }}
+          >
+            Verified by the nigerian food association
+          </Typography>
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
@@ -157,13 +166,13 @@ export default function HealthBook() {
               <Typography variant="h5" sx={{ mb: 3, fontWeight: 500 }}>
                 Why Is Tom Brown Whole Meal Good For Children?
               </Typography>
-              <Typography variant="p" sx={{ mb: 3 }}>
+              <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </Typography>
-              <Typography variant="p">
+              <Typography variant="p" sx={{ color: "#505050" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -174,21 +183,61 @@ export default function HealthBook() {
         </Box>
         {/*  */}
         <Box sx={{ mt: 10 }}>
-          <Typography variant="h5" sx={{ mb: 3, fontWeight: 500 }}>
-            Health Benefits of Tom Brown Whole Meal For Aged Adults
+          <Typography variant="h4" sx={{ mb: 3, fontWeight: 500 }}>
+            Health Benefits of Tom Brown Whole Meal For Different Health
+            Conditions
           </Typography>
-          <Typography variant="p" sx={{ mb: 3 }}>
+          <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </Typography>
-          <Typography variant="p">
+          <Typography variant="p" sx={{ color: "#505050" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </Typography>
+
+          <Grid container columnSpacing={5} rowSpacing={5} sx={{ mt: 3 }}>
+            <Grid item md={6} sm={6} xs={12}>
+              <Typography variant="h5" sx={{ mb: 3, fontWeight: 500 }}>
+                Diabeties
+              </Typography>
+              <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </Typography>
+              <List sx={{ color: "#505050" }}>
+                <ListItemText>Lorem</ListItemText>
+                <ListItemText>Lorem</ListItemText>
+                <ListItemText>Lorem</ListItemText>
+                <ListItemText>Lorem</ListItemText>
+                <ListItemText>Lorem</ListItemText>
+              </List>
+            </Grid>
+            <Grid item md={6} sm={6} xs={12}>
+              <Typography variant="h5" sx={{ mb: 3, fontWeight: 500 }}>
+                High Blood Pressure
+              </Typography>
+              <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </Typography>
+              <List sx={{ color: "#505050" }}>
+                <ListItemText>Lorem</ListItemText>
+                <ListItemText>Lorem</ListItemText>
+                <ListItemText>Lorem</ListItemText>
+                <ListItemText>Lorem</ListItemText>
+                <ListItemText>Lorem</ListItemText>
+              </List>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     </Box>
