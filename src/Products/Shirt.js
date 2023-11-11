@@ -7,6 +7,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import ImageWithLoader from "../Components/ImageWithLoader";
 
 export default function Shirt() {
   const [size, setSize] = React.useState("");
@@ -118,7 +119,7 @@ export default function Shirt() {
             </Typography>
           </Grid>
           <Grid item md={4} sm={4} xs={6} component="a" href="/products/mug">
-            <Box component="img" src="/mug.png" alt="" sx={{ width: "100%" }} />
+            <ImageWithLoader src="/mug.png" alt="" sx={{ width: "100%" }} />
             <Typography variant="p" sx={{ fontWeight: 500 }}>
               Sheba Foods Coffee Mug
             </Typography>

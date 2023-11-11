@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -21,6 +22,7 @@ import Tearecipe from "./Sections/Tearecipe";
 import Pancakerecipe from "./Sections/Pancakerecipe";
 import Puddingrecipe from "./Sections/Puddingrecipe";
 import Swallowrecipe from "./Sections/Swallowrecipe";
+import Loader from "./Components/Loader";
 
 let theme = createTheme({
   palette: {
@@ -43,6 +45,15 @@ let theme = createTheme({
 });
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an async operation
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -115,12 +126,16 @@ function App() {
   ]);
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <NavBar />
-        <RouterProvider router={router} />
-        <Footer />
-      </ThemeProvider>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <NavBar />
+          <RouterProvider router={router} />
+          <Footer />
+        </ThemeProvider>
+      )}
     </>
   );
 }

@@ -3,6 +3,7 @@ import React from "react";
 import { QuantityInput } from "./WholeMeal";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import ImageWithLoader from "../Components/ImageWithLoader";
 
 export default function Apron() {
   return (
@@ -90,7 +91,7 @@ export default function Apron() {
             </Typography>
           </Grid>
           <Grid item md={4} sm={4} xs={6} component="a" href="/products/mug">
-            <Box component="img" src="/mug.png" alt="" sx={{ width: "100%" }} />
+            <ImageWithLoader src="/mug.png" alt="" sx={{ width: "100%" }} />
             <Typography variant="p" sx={{ fontWeight: 500 }}>
               Sheba Foods Coffee Mug
             </Typography>

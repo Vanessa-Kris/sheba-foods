@@ -170,7 +170,7 @@ function NavBar(props) {
           </Box>
         </Box>
 
-        <Toolbar>
+        <Toolbar sx={{ bgcolor: "#43291F" }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"

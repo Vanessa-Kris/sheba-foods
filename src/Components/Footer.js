@@ -81,16 +81,32 @@ export default function Footer() {
             Know Us
           </Typography>
           <List>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/about"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">About Us</Typography>
             </ListItem>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/about"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">Our Impact</Typography>
             </ListItem>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/about"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">Green Environment</Typography>
             </ListItem>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/about"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">OLocal Farming</Typography>
             </ListItem>
           </List>
@@ -100,16 +116,32 @@ export default function Footer() {
             Tom Brown
           </Typography>
           <List>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/about"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">Nutritional Value</Typography>
             </ListItem>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/health-book"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">Health Benfits</Typography>
             </ListItem>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/recipies"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">Recipies</Typography>
             </ListItem>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/about"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">Testimonies</Typography>
             </ListItem>
           </List>
@@ -119,16 +151,32 @@ export default function Footer() {
             Customer Service
           </Typography>
           <List>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/contact"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">Contact Us</Typography>
             </ListItem>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/about"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">FAQS</Typography>
             </ListItem>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/events"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">Events</Typography>
             </ListItem>
-            <ListItem components="a" href="/about">
+            <ListItem
+              component="a"
+              href="/about"
+              sx={{ color: "text.secondary" }}
+            >
               <Typography variant="body2">Terms & Conditions</Typography>
             </ListItem>
           </List>

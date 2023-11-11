@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
+import ImageWithLoader from "../Components/ImageWithLoader";
 
 export default function Shop() {
   return (
@@ -40,7 +41,7 @@ export default function Shop() {
             </Typography>
           </Grid>
           <Grid item md={4} sm={6} xs={12} component="a" href="/products/mug">
-            <Box component="img" src="/mug.png" alt="" sx={{ width: "100%" }} />
+            <ImageWithLoader src="/mug.png" alt="" sx={{ width: "100%" }} />
             <Typography variant="h6">Sheba Foods Coffee Mug</Typography>
             <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
               NGN 3000

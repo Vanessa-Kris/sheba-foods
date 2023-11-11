@@ -1,17 +1,28 @@
 import { Box, Divider, Grid, Typography, Button } from "@mui/material";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import BannerCarousel from "../Components/Carousel";
+import ImageWithLoader from "../Components/ImageWithLoader";
+import Loader from "../Components/Loader";
 import Shop from "../Sections/Shop";
 
 export default function Landing() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an async operation
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
   return (
     <Box>
-      <BannerCarousel />
+      {isLoading ? <Loader /> : <BannerCarousel />}
       <Divider sx={{ mx: 7 }} />
       <Box sx={{ m: { md: 15, sm: 10, xs: 5 } }}>
         <Grid container align="center" columnSpacing={2}>
           <Grid item md={3} sm={3} xs={6}>
-            <Box component="img" src="/emoj.png" alt="" sx={{ width: "50%" }} />
+            <ImageWithLoader src="/emoj.png" alt="" sx={{ width: "50%" }} />
             <Typography variant="h6" sx={{ fontWeight: 500 }}>
               Natural sugar
             </Typography>
@@ -39,7 +50,7 @@ export default function Landing() {
             </Typography>
           </Grid>
           <Grid item md={3} sm={3} xs={6}>
-            <Box component="img" src="/ani.png" alt="" sx={{ width: "55%" }} />
+            <ImageWithLoader src="/ani.png" alt="" sx={{ width: "55%" }} />
             <Typography variant="h6" sx={{ fontWeight: 500 }}>
               Cruelty Free
             </Typography>
@@ -49,7 +60,7 @@ export default function Landing() {
       {/* Pledge */}
       <Box
         align="center"
-        sx={{ mt: { md: 15, sm: 10, xs: 10 }, bgcolor: "#FECC2E", py: 10 }}
+        sx={{ mt: { md: 15, sm: 10, xs: 10 }, bgcolor: "#FFFFCC", py: 10 }}
       >
         <Box
           align="center"
@@ -116,12 +127,7 @@ export default function Landing() {
         {/* Desk COl 1 */}
         <Grid container columnSpacing={7}>
           <Grid item md={6} sm={6} xs={12}>
-            <Box
-              component="img"
-              src="/pud1.jpg"
-              alt=""
-              sx={{ width: "100%" }}
-            />
+            <ImageWithLoader src="/pud1.jpg" alt="" sx={{ width: "100%" }} />
           </Grid>
           <Grid
             item
@@ -231,12 +237,7 @@ export default function Landing() {
           sx={{ display: { md: "none", sm: "none", xs: "block" }, mt: 5 }}
         >
           <Grid item md={6} sm={6} xs={12}>
-            <Box
-              component="img"
-              src="/health.jpg"
-              alt=""
-              sx={{ width: "100%" }}
-            />
+            <ImageWithLoader src="/health.jpg" alt="" sx={{ width: "100%" }} />
           </Grid>
           <Grid
             item
@@ -274,7 +275,7 @@ export default function Landing() {
               component="a"
               href="/health-book"
               variant="contained"
-              sx={{ mt: 4 }}
+              sx={{ mt: 4, textTransform: "none" }}
             >
               Read More
             </Button>
@@ -304,7 +305,7 @@ export default function Landing() {
 
         <Typography
           variant="h6"
-          sx={{ textAlign: "center", pb: 5, color: "#505050" }}
+          sx={{ textAlign: "center", pb: 5, color: "#505050", px: 1 }}
         >
           Share your Tom Brown Whole meal recipe with us using{" "}
           <span style={{ fontStyle: "italic", fontWeight: 500 }}>
