@@ -11,8 +11,12 @@
 }
 
 body {
-  
   background-color: #FFFBE7 !important;
+}
+
+.apostrophe{
+    font-family: Arial, Helvetica, sans-serif !important;
+  /* font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important; */
 }
 
  button {

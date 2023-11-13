@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import BannerCarousel from "../Components/Carousel";
 import ImageWithLoader from "../Components/ImageWithLoader";
 import Loader from "../Components/Loader";
+import Reviews from "../Sections/Reviews";
 import Shop from "../Sections/Shop";
 
 export default function Landing() {
@@ -281,6 +282,7 @@ export default function Landing() {
             </Button>
           </Grid>
         </Grid>
+        <Reviews />
       </Box>
 
       <Box sx={{ my: 5 }}>

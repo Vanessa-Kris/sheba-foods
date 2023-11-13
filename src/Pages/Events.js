@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Card, Grid, CardMedia } from "@mui/material";
+import { Box, Typography, Card, Grid } from "@mui/material";
 
 export default function Events() {
   return (

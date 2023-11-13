@@ -107,7 +107,7 @@ export default function Footer() {
               href="/about"
               sx={{ color: "text.secondary" }}
             >
-              <Typography variant="body2">OLocal Farming</Typography>
+              <Typography variant="body2">Local Farming</Typography>
             </ListItem>
           </List>
         </Grid>
@@ -142,7 +142,7 @@ export default function Footer() {
               href="/about"
               sx={{ color: "text.secondary" }}
             >
-              <Typography variant="body2">Testimonies</Typography>
+              <Typography variant="body2">Reviews</Typography>
             </ListItem>
           </List>
         </Grid>
