@@ -1,12 +1,12 @@
 import { Box, Typography, Card, Grid } from "@mui/material";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
+import ImageWithLoader from "../Components/ImageWithLoader";
 
 export default function Recipies() {
   return (
     <Box className="Shop">
-      <Box
-        component="img"
+      <ImageWithLoader
         src="/reci.jpg"
         alt=""
         sx={{ width: "100%", pt: { xs: 7 } }}
@@ -20,8 +20,7 @@ export default function Recipies() {
           <Grid container columnSpacing={8} rowSpacing={8}>
             <Grid item md={6} sm={6} xs={12}>
               <Card>
-                <Box
-                  component="img"
+                <ImageWithLoader
                   src="/tea.jpg"
                   alt=""
                   sx={{ width: "100%", color: "#505050" }}
@@ -40,8 +39,7 @@ export default function Recipies() {
             </Grid>
             <Grid item md={6} sm={6} xs={12}>
               <Card>
-                <Box
-                  component="img"
+                <ImageWithLoader
                   src="/pancake.jpg"
                   alt=""
                   sx={{ width: "100%" }}
@@ -59,8 +57,7 @@ export default function Recipies() {
             </Grid>
             <Grid item md={6} sm={6} xs={12}>
               <Card>
-                <Box
-                  component="img"
+                <ImageWithLoader
                   src="/pud1.jpg"
                   alt=""
                   sx={{ width: "100%" }}
@@ -78,11 +75,10 @@ export default function Recipies() {
             </Grid>
             <Grid item md={6} sm={6} xs={12}>
               <Card>
-                <Box
-                  component="img"
-                  src="/pancake.jpg"
+                <ImageWithLoader
+                  src="/swallow1.jpeg"
                   alt=""
-                  sx={{ width: "100%" }}
+                  sx={{ width: "40% " }}
                 />
                 <Box sx={{ p: 3 }}>
                   <Typography

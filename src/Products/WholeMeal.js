@@ -244,12 +244,7 @@ export default function WholeMeal() {
             </Typography>
           </Grid>
           <Grid item md={4} sm={4} xs={6} component="a" href="/products/shirt">
-            <Box
-              component="img"
-              src="/shirt.png"
-              alt=""
-              sx={{ width: "100%" }}
-            />
+            <ImageWithLoader src="/shirt.png" alt="" sx={{ width: "100%" }} />
             <Typography variant="p" sx={{ fontWeight: 500 }}>
               Sheba Foods T Shirt
             </Typography>
@@ -258,12 +253,7 @@ export default function WholeMeal() {
             </Typography>
           </Grid>
           <Grid item md={4} sm={4} xs={6} component="a" href="/products/apron">
-            <Box
-              component="img"
-              src="/apron.png"
-              alt=""
-              sx={{ width: "100%" }}
-            />
+            <ImageWithLoader src="/apron.png" alt="" sx={{ width: "100%" }} />
             <Typography variant="p" sx={{ fontWeight: 500 }}>
               Sheba Foods Apron
             </Typography>
