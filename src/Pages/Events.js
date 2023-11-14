@@ -11,7 +11,7 @@ export default function Events() {
         sx={{ width: "100%", pt: { xs: 7 } }}
       />
       <Box sx={{ m: { md: 15, sm: 10, xs: 3 } }}>
-        <Typography variant="h6">Upcoming Events</Typography>
+        <Typography variant="h3">Upcoming Events</Typography>
 
         {/*  */}
         <Box sx={{ mt: 10 }}>

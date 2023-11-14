@@ -52,7 +52,7 @@ export default function Reviews() {
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
-                <Avatar src="/boy2.jpg" />
+                <Avatar />
               </CardMedia>
               <Typography variant="h6" sx={{ mt: 3 }}>
                 ND
@@ -68,7 +68,7 @@ export default function Reviews() {
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
-                <Avatar src="/boy2.jpg" />
+                <Avatar />
               </CardMedia>
               <Typography variant="h6" sx={{ mt: 3 }}>
                 ThaniBlow
@@ -85,7 +85,7 @@ export default function Reviews() {
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
-                <Avatar src="/boy2.jpg" />
+                <Avatar />
               </CardMedia>
               <Typography variant="h6" sx={{ mt: 3 }}>
                 OG Successful
@@ -101,7 +101,7 @@ export default function Reviews() {
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
-                <Avatar src="/boy2.jpg" />
+                <Avatar />
               </CardMedia>
               <Typography variant="h6" sx={{ mt: 3 }}>
                 Danino
@@ -117,7 +117,7 @@ export default function Reviews() {
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
-                <Avatar src="/boy2.jpg" />
+                <Avatar />
               </CardMedia>
               <Typography variant="h6" sx={{ mt: 3 }}>
                 OG Successful
@@ -133,7 +133,7 @@ export default function Reviews() {
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
-                <Avatar src="/boy2.jpg" />
+                <Avatar />
               </CardMedia>
               <Typography variant="h6" sx={{ mt: 3 }}>
                 ThaniBlow
@@ -149,7 +149,7 @@ export default function Reviews() {
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
-                <Avatar src="/boy2.jpg" />
+                <Avatar />
               </CardMedia>
               <Typography variant="h6" sx={{ mt: 3 }}>
                 Mr Kizz
