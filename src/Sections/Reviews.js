@@ -46,9 +46,9 @@ export default function Reviews() {
       <ul ref={ref} className="list">
         <li className="listitems">
           <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3 }}>
-              This Tom Brown Meal is heavenly. I felt like superman at the gym
-              yesterday
+            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
+              " This Tom Brown Meal is heavenly. I felt like superman at the gym
+              yesterday "
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
@@ -63,8 +63,8 @@ export default function Reviews() {
 
         <li className="listitems">
           <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3 }}>
-              This your product really go well, I enjoyed it to the fullest!
+            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
+              "This your product really go well, I enjoyed it to the fullest!"
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
@@ -79,9 +79,9 @@ export default function Reviews() {
 
         <li className="listitems">
           <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3 }}>
-              Sheba Foods you be doing the most, mehn! this is so good, so so
-              good.
+            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
+              "Sheba Foods you be doing the most, mehn! this is so good, so so
+              good."
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
@@ -95,9 +95,9 @@ export default function Reviews() {
         </li>
         <li className="listitems">
           <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3 }}>
-              I eat it everyday. It's really nice. I like the tase no dislikes
-              at all
+            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
+              "I eat it everyday. It's really nice. I like the tase no dislikes
+              at all"
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
@@ -111,9 +111,9 @@ export default function Reviews() {
         </li>
         <li className="listitems">
           <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3 }}>
-              Omo person no believe say na 2k I buy am oo, e goessss. I dey make
-              am like pap!
+            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
+              "Omo person no believe say na 2k I buy am oo, e goessss. I dey
+              make am like pap!"
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
@@ -127,9 +127,9 @@ export default function Reviews() {
         </li>
         <li className="listitems">
           <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3 }}>
-              Omo say I dey do all my guys gather we chop am with bread come
-              sleep wella!
+            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
+              " Omo as I dey do am all my guys gather we chop am with bread come
+              sleep wella!"
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>
@@ -143,9 +143,9 @@ export default function Reviews() {
         </li>
         <li className="listitems">
           <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3 }}>
-              I don finish am! I go need like 2 packs again . I wan buy one for
-              myself and one for the house
+            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
+              "I don finish am! I go need like 2 packs again . I wan buy one for
+              myself and one for the house"
             </Typography>
             <Box sx={{ mt: 5 }}>
               <CardMedia>

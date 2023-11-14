@@ -1,5 +1,15 @@
 import React from "react";
-import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
+import { FaArrowRight } from "react-icons/fa6";
+import ImageWithLoader from "../Components/ImageWithLoader";
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+  Card,
+  Grid,
+} from "@mui/material";
 
 export default function Tearecipe() {
   return (
@@ -75,7 +85,7 @@ export default function Tearecipe() {
           {/*  */}
           <ListItem>
             <ListItemText>
-              4. Sip on this highly nutritious tea and relish its unique flavor.
+              5. Sip on this highly nutritious tea and relish its unique flavor.
             </ListItemText>
           </ListItem>
           <ListItem>
@@ -86,6 +96,68 @@ export default function Tearecipe() {
             />
           </ListItem>
         </List>
+
+        <Box sx={{ mt: 10 }}>
+          <Typography variant="h5" sx={{ my: 4 }}>
+            Check out other Tom Brown Whole Meal recipies:
+          </Typography>
+          <Grid container columnSpacing={2} rowSpacing={2}>
+            <Grid item md={4} sm={4} xs={6}>
+              <Card>
+                <ImageWithLoader
+                  src="/pancake.jpg"
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
+                <Box sx={{ p: 3 }}>
+                  <Typography
+                    component="a"
+                    href="/recipies/pancake-recipe"
+                    variant="subtitle1"
+                  >
+                    Tom Brown Whole Meal Fluffy Pancakes Recipe <FaArrowRight />
+                  </Typography>
+                </Box>
+              </Card>
+            </Grid>
+            <Grid item md={4} sm={4} xs={6}>
+              <Card>
+                <ImageWithLoader
+                  src="/pud1.jpg"
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
+                <Box sx={{ p: 3 }}>
+                  <Typography
+                    component="a"
+                    href="/recipies/pudding-recipe"
+                    variant="subtitle1"
+                  >
+                    Tom Brown Whole Meal Pudding Recipe <FaArrowRight />
+                  </Typography>
+                </Box>
+              </Card>
+            </Grid>
+            <Grid item md={4} sm={4} xs={6}>
+              <Card>
+                <ImageWithLoader
+                  src="/swallow1.jpeg"
+                  alt=""
+                  sx={{ width: "40% " }}
+                />
+                <Box sx={{ p: 3 }}>
+                  <Typography
+                    component="a"
+                    href="/recipies/swallow-recipe"
+                    variant="subtitle1"
+                  >
+                    Tom Brown Whole Meal Swallow Recipe <FaArrowRight />
+                  </Typography>
+                </Box>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
       </Box>
     </Box>
   );
