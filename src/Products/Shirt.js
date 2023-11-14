@@ -38,7 +38,7 @@ export default function Shirt() {
             <Typography variant="h3" sx={{ mb: 3 }}>
               Sheba Foods Merch Shirt
             </Typography>
-            <Typography variant="h4">5000</Typography>
+            <Typography variant="h4">NGN 5000</Typography>
             <br />
             <Box>
               <Typography variant="h6"> Quantity :</Typography>

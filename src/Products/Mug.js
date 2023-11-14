@@ -28,7 +28,7 @@ export default function Mug() {
             <Typography variant="h3" sx={{ mb: 5 }}>
               Sheba Foods Coffee Mug
             </Typography>
-            <Typography variant="h4">3000</Typography>
+            <Typography variant="h4">NGN 3000</Typography>
             <br />
             <Box>
               <Typography variant="h6"> Quantity :</Typography>

@@ -29,7 +29,7 @@ export default function Apron() {
             <Typography variant="h3" sx={{ mb: 5 }}>
               Sheba Foods Merch Apron
             </Typography>
-            <Typography variant="h4">2000</Typography>
+            <Typography variant="h4">NGN 2000</Typography>
             <br />
             <Box>
               <Typography variant="h6"> Quantity :</Typography>

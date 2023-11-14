@@ -171,7 +171,7 @@ export default function WholeMeal() {
             <Typography variant="h3" sx={{ mb: 3 }}>
               Tom Brown Whole Meal
             </Typography>
-            <Typography variant="h4">3000</Typography>
+            <Typography variant="h4">NGN 3000</Typography>
             <br />
             <Box>
               <Typography variant="h6"> Quantity :</Typography>

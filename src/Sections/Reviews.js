@@ -142,7 +142,7 @@ export default function Reviews() {
           </Card>
         </li>
         <li className="listitems">
-          <Card sx={{ p: 3 }}>
+          <Card className="card" sx={{ p: 3 }}>
             <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
               "I don finish am! I go need like 2 packs again . I wan buy one for
               myself and one for the house"
