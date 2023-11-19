@@ -116,30 +116,85 @@ img:hover {
   color: rgb(44, 43, 43);
 }
 
-@media screen and (max-width: 767px) {
-  .banner{
+
+  .bannermobile{
   background-size: cover;
-  height: 80vh;
+   background-image: url(/public/a.png);
+  height: 60vh;
    background-repeat: no-repeat;
 }
 
-.banner1{
-  background-size: cover;
-  height: 80vh;
-   background-repeat: no-repeat;
+.bannermobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.327); 
+  pointer-events: none; 
 }
-.banner2{
+
+.banner1mobile {
+  
   background-size: cover;
-  height: 80vh;
-   background-repeat: no-repeat;
+  background-image: url(/public/e.png);
+  height: 60vh;
+  background-repeat: no-repeat;
 }
-.banner3{
+
+.banner1mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.327); 
+  pointer-events: none; 
+}
+
+.banner2mobile{
   background-size: cover;
-  height: 80vh;
+   background-image: url(/public/c.png);
+  height: 60vh;
    background-repeat: no-repeat;
 }
 
+.banner2mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.327); 
+  pointer-events: none; 
 }
+
+.banner3mobile{
+  background-size: cover;
+   background-image: url(/public/d.png);
+  height: 60vh;
+   background-repeat: no-repeat;
+}
+
+.banner3mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.327); 
+  pointer-events: none; 
+}
+
+
 
 /*  */
 #progress {
