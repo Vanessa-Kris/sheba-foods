@@ -138,12 +138,19 @@ function NavBar(props) {
           <Box
             sx={{
               m: "auto",
-              display: "flex",
+              display: { md: "flex", sm: "flex", xs: "block" },
             }}
           >
             <Typography
               variant="body2"
-              sx={{ fontSize: { xs: "13px" }, fontWeight: 500 }}
+              alignItems="center"
+              justifyContent="center"
+              my="auto"
+              sx={{
+                fontSize: { xs: "13px" },
+                fontWeight: 500,
+                px: { md: 2, sm: 2, xs: 0 },
+              }}
             >
               Get balanced diet! get Tom Brown Whole Meal Now.{" "}
             </Typography>
@@ -153,9 +160,6 @@ function NavBar(props) {
               variant="contained"
               size="small"
               sx={{
-                borderRadius: "30px",
-                mx: { md: 2, xs: 2 },
-                width: { xs: "40%", md: "100px" },
                 textTransform: "none",
               }}
             >
@@ -186,7 +190,6 @@ function NavBar(props) {
             sx={{
               flexGrow: 1,
               display: { xs: "none", sm: "block" },
-              ml: { md: 5, sm: 2 },
               my: { md: 1, sm: 2 },
             }}
           >
@@ -206,7 +209,6 @@ function NavBar(props) {
               component="a"
               href="/"
               sx={{
-                mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
                 textTransform: "none",
@@ -218,7 +220,6 @@ function NavBar(props) {
               component="a"
               href="/about"
               sx={{
-                mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
                 textTransform: "none",
@@ -230,7 +231,6 @@ function NavBar(props) {
               component="a"
               href="/products"
               sx={{
-                mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
                 textTransform: "none",
@@ -242,7 +242,6 @@ function NavBar(props) {
               component="a"
               href="/stockist"
               sx={{
-                mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
                 textTransform: "none",
@@ -254,7 +253,6 @@ function NavBar(props) {
               component="a"
               href="/recipies"
               sx={{
-                mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
                 textTransform: "none",
@@ -266,7 +264,6 @@ function NavBar(props) {
               component="a"
               href="/health-book"
               sx={{
-                mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
                 textTransform: "none",
@@ -278,7 +275,6 @@ function NavBar(props) {
               component="a"
               href="/events"
               sx={{
-                mr: { md: 2, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
                 textTransform: "none",
@@ -290,7 +286,6 @@ function NavBar(props) {
               component="a"
               href="/contact"
               sx={{
-                mr: { md: 5, sm: 1 },
                 my: { md: 1, sm: 2 },
                 color: "text.secondary",
                 textTransform: "none",
