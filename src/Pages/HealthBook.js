@@ -11,8 +11,8 @@ import {
   Paper,
   Grid,
   List,
-  ListItemText,
   ListItem,
+  ListItemText,
 } from "@mui/material";
 
 export default function HealthBook() {
@@ -275,7 +275,10 @@ export default function HealthBook() {
                 Diabeties
               </Typography>
               <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
-                Such a blend can offer a mix of nutrients, including fiber, healthy fats, and protein, which may help regulate blood sugar levels. The fiber content in corn, millet, and other ingredients can slow down the absorption of sugar, potentially aiding in better blood sugar control. Additionally, tiger nuts and soybeans provide protein, which can contribute to satiety and help manage blood sugar. However, individual responses to foods can vary, so it's advisable for a diabetic person to consult with a healthcare professional or a nutritionist for personalized advice.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
               </Typography>
               <List sx={{ color: "#505050" }}>
                 <ListItemText>Lorem</ListItemText>
