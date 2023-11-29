@@ -17,7 +17,7 @@ export default function Reviews() {
       }}
     >
       <Typography
-        variant="h2"
+        variant="h3"
         textAlign="center"
         sx={{
           fontWeight: 700,

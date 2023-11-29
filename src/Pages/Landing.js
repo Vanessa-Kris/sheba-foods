@@ -70,7 +70,7 @@ export default function Landing() {
           }}
         >
           <Typography
-            variant="h2"
+            variant="h3"
             textAlign="center"
             sx={{
               fontWeight: 700,
@@ -140,7 +140,7 @@ export default function Landing() {
             my="auto"
           >
             <Typography
-              variant="h2"
+              variant="h3"
               sx={{
                 fontWeight: 700,
                 mb: 5,
@@ -191,7 +191,7 @@ export default function Landing() {
             my="auto"
           >
             <Typography
-              variant="h2"
+              variant="h3"
               sx={{
                 fontWeight: 700,
                 mb: 5,
@@ -250,7 +250,7 @@ export default function Landing() {
             my="auto"
           >
             <Typography
-              variant="h2"
+              variant="h3"
               sx={{
                 fontWeight: 700,
                 mb: 5,
@@ -287,7 +287,7 @@ export default function Landing() {
 
       <Box sx={{ my: 5 }}>
         <Typography
-          variant="h2"
+          variant="h3"
           sx={{
             fontWeight: 700,
             mb: 5,

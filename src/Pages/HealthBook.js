@@ -12,6 +12,7 @@ import {
   Grid,
   List,
   ListItemText,
+  ListItem,
 } from "@mui/material";
 
 export default function HealthBook() {
@@ -88,7 +89,7 @@ export default function HealthBook() {
     <Box>
       <Box
         component="img"
-        src="/powder.jpg"
+        src="https://img.freepik.com/free-photo/healthy-food-medical-equipment_23-2148108966.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph"
         alt=""
         sx={{ width: "100%", pt: { xs: 7 } }}
       />
@@ -163,19 +164,88 @@ export default function HealthBook() {
             </Grid>
             <Grid item md={6} sm={6} xs={12}>
               <Typography variant="h5" sx={{ mb: 3, fontWeight: 500 }}>
-                Why Is Tom Brown Whole Meal Good For Children?
+                The Power of Tom Brown Whole Meal for Children's Health
               </Typography>
               <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Tom Brown Whole Meal can be considered a nutritious option for
+                children for several reasons, given its ingredient composition.
+                Here are some potential benefits of the ingredients you
+                mentioned:
               </Typography>
-              <Typography variant="p" sx={{ color: "#505050" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+
+              <Typography variant="p" sx={{ mt: 3, color: "#505050" }}>
+                In combination, these ingredients offer a diverse range of
+                nutrients, including carbohydrates for energy, protein for
+                growth and development, healthy fats for brain health, and a
+                variety of vitamins and minerals that are essential for overall
+                well-being.
+              </Typography>
+              <Typography variant="p" sx={{ mt: 3, color: "#505050" }}>
+                However, it's important to note that individual dietary needs
+                can vary, and any specific dietary recommendations should be
+                made in consultation with a healthcare professional or a
+                nutritionist, especially when it comes to children.
+                Additionally, it's crucial to be aware of any potential
+                allergies or sensitivities that a child may have to specific
+                ingredients in Tom Brown Whole Meal.
+              </Typography>
+            </Grid>
+            <Grid item md={12} sm={12} xs={12}>
+              <List sx={{ color: "#505050" }}>
+                <ListItem>
+                  1. Corn: Rich in fiber, vitamins, and minerals, corn provides
+                  energy and supports digestive health.
+                </ListItem>
+                <ListItem>
+                  2. Millet: Millet is a good source of essential nutrients such
+                  as magnesium, phosphorus, and iron. It also contains fiber,
+                  which aids digestion.
+                </ListItem>
+                <ListItem>
+                  3. Guinea Corn (Sorghum): This grain is high in antioxidants,
+                  rich in fiber, and provides essential nutrients like iron,
+                  magnesium, and B vitamins.
+                </ListItem>
+                <ListItem>
+                  3. Guinea Corn (Sorghum): This grain is high in antioxidants,
+                  rich in fiber, and provides essential nutrients like iron,
+                  magnesium, and B vitamins.
+                </ListItem>
+                <ListItem>
+                  4. Tiger Nut: Tiger nuts are a good source of healthy fats,
+                  fiber, and various vitamins and minerals. They provide energy
+                  and can contribute to heart health.
+                </ListItem>
+                <ListItem>
+                  5. Dates: Dates are a natural sweetener and provide natural
+                  sugars, fiber, and various vitamins and minerals.
+                </ListItem>
+                <ListItem>
+                  6. Soya Beans: Soya beans are a complete protein source,
+                  containing all essential amino acids. They also provide
+                  healthy fats, vitamins, and minerals.
+                </ListItem>
+                <Typography variant="p" sx={{ color: "#505050" }}>
+                  7. Groundnuts (Peanuts): Groundnuts are a good source of
+                  protein, healthy fats, and various vitamins and minerals,
+                  including folate and niacin.
+                </Typography>
+              </List>
+              <Typography variant="p" sx={{ mt: 3, color: "#505050" }}>
+                In combination, these ingredients offer a diverse range of
+                nutrients, including carbohydrates for energy, protein for
+                growth and development, healthy fats for brain health, and a
+                variety of vitamins and minerals that are essential for overall
+                well-being.
+              </Typography>
+              <Typography variant="p" sx={{ mt: 3, color: "#505050" }}>
+                However, it's important to note that individual dietary needs
+                can vary, and any specific dietary recommendations should be
+                made in consultation with a healthcare professional or a
+                nutritionist, especially when it comes to children.
+                Additionally, it's crucial to be aware of any potential
+                allergies or sensitivities that a child may have to specific
+                ingredients in Tom Brown Whole Meal.
               </Typography>
             </Grid>
           </Grid>

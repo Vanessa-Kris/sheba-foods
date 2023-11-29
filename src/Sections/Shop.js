@@ -17,7 +17,7 @@ export default function Shop() {
       }}
     >
       <Typography
-        variant="h2"
+        variant="h3"
         textAlign="center"
         sx={{
           fontWeight: 700,
