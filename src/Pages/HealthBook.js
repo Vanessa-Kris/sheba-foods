@@ -169,25 +169,8 @@ export default function HealthBook() {
               <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
                 Tom Brown Whole Meal can be considered a nutritious option for
                 children for several reasons, given its ingredient composition.
-                Here are some potential benefits of the ingredients you
-                mentioned:
-              </Typography>
-
-              <Typography variant="p" sx={{ mt: 3, color: "#505050" }}>
-                In combination, these ingredients offer a diverse range of
-                nutrients, including carbohydrates for energy, protein for
-                growth and development, healthy fats for brain health, and a
-                variety of vitamins and minerals that are essential for overall
-                well-being.
-              </Typography>
-              <Typography variant="p" sx={{ mt: 3, color: "#505050" }}>
-                However, it's important to note that individual dietary needs
-                can vary, and any specific dietary recommendations should be
-                made in consultation with a healthcare professional or a
-                nutritionist, especially when it comes to children.
-                Additionally, it's crucial to be aware of any potential
-                allergies or sensitivities that a child may have to specific
-                ingredients in Tom Brown Whole Meal.
+                Here are some benefits of the ingredients in Tom Brown Whole
+                Meal:
               </Typography>
             </Grid>
             <Grid item md={12} sm={12} xs={12}>
@@ -257,16 +240,10 @@ export default function HealthBook() {
             Conditions
           </Typography>
           <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </Typography>
-          <Typography variant="p" sx={{ color: "#505050" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Tom Brown whole meal offers a multitude of health benefits, making
+            it an excellent choice for treating, maintaining, and supporting
+            various health conditions. This well-rounded meal is the ideal,
+            balanced option for every member of the family.
           </Typography>
 
           <Grid container columnSpacing={5} rowSpacing={5} sx={{ mt: 3 }}>
@@ -275,36 +252,150 @@ export default function HealthBook() {
                 Diabeties
               </Typography>
               <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                The combination of soya beans, groundnuts, dates, corn, guinea
+                corn, millet, and tiger nuts can be beneficial for a diabetic
+                patient in several ways:
               </Typography>
               <List sx={{ color: "#505050" }}>
-                <ListItemText>Lorem</ListItemText>
-                <ListItemText>Lorem</ListItemText>
-                <ListItemText>Lorem</ListItemText>
-                <ListItemText>Lorem</ListItemText>
-                <ListItemText>Lorem</ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * Low Glycemic Index (GI):
+                </ListItem>
+                <ListItemText>
+                  These ingredients generally have a lower glycemic index, which
+                  means they cause a slower and steadier rise in blood sugar
+                  levels. This is important for managing diabetes as it helps
+                  prevent sudden spikes in blood sugar.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * High Fiber Content:
+                </ListItem>
+                <ListItemText>
+                  The combination is rich in dietary fiber, which aids in
+                  slowing down the absorption of glucose and helps control blood
+                  sugar levels. Fiber also contributes to a feeling of fullness,
+                  which can be helpful in managing weight, another factor in
+                  diabetes management.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * Good Source of Protein:
+                </ListItem>
+                <ListItemText>
+                  Soya beans, groundnuts, and tiger nuts are excellent sources
+                  of plant-based protein. Protein can help stabilize blood sugar
+                  levels and promote satiety, reducing the likelihood of
+                  overeating.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * Nutrient Density:
+                </ListItem>
+                <ListItemText>
+                  The combination includes a variety of nuts, seeds, and grains,
+                  providing a range of essential nutrients such as vitamins,
+                  minerals, and antioxidants. These nutrients are important for
+                  overall health and can support the immune system.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>* Healthy Fats:</ListItem>
+                <ListItemText>
+                  Groundnuts and tiger nuts contain healthy fats, including
+                  monounsaturated and polyunsaturated fats. These fats are
+                  beneficial for heart health and can be part of a balanced diet
+                  for individuals with diabetes.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * Slow Release of Energy:
+                </ListItem>
+                <ListItemText>
+                  The mix of ingredients, especially the complex carbohydrates
+                  found in millet and whole grains, can contribute to a gradual
+                  release of energy. This helps in avoiding rapid increases in
+                  blood sugar levels.
+                </ListItemText>
               </List>
+              <Typography sx={{ color: "#505050" }}>
+                However, it's crucial for individuals with diabetes to monitor
+                their blood sugar levels regularly and consult with a healthcare
+                professional or a registered dietitian. The impact of food on
+                blood sugar can vary from person to person, and individual
+                dietary needs may differ based on factors such as medications,
+                overall health, and lifestyle. It's always advisable to
+                customize dietary plans with the guidance of healthcare
+                professionals.
+              </Typography>
             </Grid>
             <Grid item md={6} sm={6} xs={12}>
               <Typography variant="h5" sx={{ mb: 3, fontWeight: 500 }}>
                 High Blood Pressure
               </Typography>
               <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                The combination of soya beans, groundnuts, dates, corn, guinea
+                corn, millet, and tiger nuts can be beneficial for individuals
+                with high blood pressure due to several reasons:
               </Typography>
               <List sx={{ color: "#505050" }}>
-                <ListItemText>Lorem</ListItemText>
-                <ListItemText>Lorem</ListItemText>
-                <ListItemText>Lorem</ListItemText>
-                <ListItemText>Lorem</ListItemText>
-                <ListItemText>Lorem</ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * Rich in Potassium:
+                </ListItem>
+                <ListItemText>
+                  These ingredients, especially dates, corn, and millet, are
+                  good sources of potassium. Potassium helps balance sodium
+                  levels in the body, which is crucial for maintaining healthy
+                  blood pressure.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * Heart-Healthy Fats:
+                </ListItem>
+                <ListItemText>
+                  Soya beans and groundnuts are rich in unsaturated fats,
+                  particularly omega-3 fatty acids. These fats can contribute to
+                  heart health by reducing inflammation and improving
+                  cholesterol levels.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>* Fiber Content:</ListItem>
+                <ListItemText>
+                  The combination provides a good amount of dietary fiber, which
+                  can help regulate blood pressure. Fiber helps in controlling
+                  blood sugar levels and promoting a healthy cardiovascular
+                  system.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * Magnesium Source:
+                </ListItem>
+                <ListItemText>
+                  Tiger nuts contain magnesium, which plays a role in relaxing
+                  blood vessels and improving blood flow. This can contribute to
+                  better blood pressure management.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * Antioxidant Properties:
+                </ListItem>
+                <ListItemText>
+                  The variety of ingredients in this combination brings in a
+                  range of antioxidants. Antioxidants help combat oxidative
+                  stress and inflammation, which are factors associated with
+                  heart disease, including high blood pressure.
+                </ListItemText>
+                <ListItem sx={{ fontWeight: 700 }}>
+                  * Low Sodium Content:
+                </ListItem>
+                <ListItemText>
+                  {" "}
+                  Nuts, seeds, and whole grains generally have low sodium
+                  content, which is favorable for individuals with high blood
+                  pressure as high sodium intake is linked to elevated blood
+                  pressure.
+                </ListItemText>
               </List>
+              <Typography sx={{ color: "#505050" }}>
+                While this combination has potential benefits, it's important to
+                note that dietary recommendations for individuals with high
+                blood pressure may vary based on individual health conditions.
+                It's advisable for individuals with hypertension to consult with
+                a healthcare professional or a registered dietitian to ensure
+                that their diet is tailored to their specific needs and doesn't
+                interfere with any prescribed medications. Additionally,
+                moderation is key, as an overall balanced and varied diet is
+                crucial for overall health.
+              </Typography>
             </Grid>
           </Grid>
         </Box>
