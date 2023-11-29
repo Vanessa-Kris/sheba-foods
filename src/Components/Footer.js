@@ -1,11 +1,6 @@
 import { Box, Divider, Grid, List, ListItem, Typography } from "@mui/material";
 import React from "react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaXTwitter,
-  FaYoutube,
-} from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -25,34 +20,48 @@ export default function Footer() {
         >
           Follow Us:
         </Typography>
-        <FaYoutube
-          style={{
-            fontSize: "23px",
-            color: "text.secondary",
-            marginLeft: 15,
-          }}
-        />
-        <FaXTwitter
-          style={{
-            fontSize: "23px",
-            color: "text.secondary",
-            marginLeft: 15,
-          }}
-        />
-        <FaFacebook
-          style={{
-            fontSize: "23px",
-            color: "text.secondary",
-            marginLeft: 15,
-          }}
-        />
-        <FaInstagram
-          style={{
-            fontSize: "23px",
-            color: "text.secondary",
-            marginLeft: 15,
-          }}
-        />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://vm.tiktok.com/ZM6egAnQV/"
+          style={{ color: "#fff" }}
+        >
+          <FaTiktok
+            style={{
+              fontSize: "23px",
+              color: "text.secondary",
+              marginLeft: 15,
+            }}
+          />
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.facebook.com/profile.php?id=61553759278999&mibextid=ZbWKwL"
+          style={{ color: "#fff" }}
+        >
+          <FaFacebook
+            style={{
+              fontSize: "23px",
+              color: "text.secondary",
+              marginLeft: 15,
+            }}
+          />
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://instagram.com/shebafoods.ng?igshid=MzNlNGNkZWQ4Mg=="
+          style={{ color: "#fff" }}
+        >
+          <FaInstagram
+            style={{
+              fontSize: "23px",
+              color: "text.secondary",
+              marginLeft: 15,
+            }}
+          />
+        </a>
       </Box>
       <Divider sx={{ color: "#fff !important" }} />
       <Grid
