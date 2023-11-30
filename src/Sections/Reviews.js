@@ -1,15 +1,28 @@
-import { Box, Typography, Card, CardMedia, Avatar } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Card,
+  CardMedia,
+  Avatar,
+  Grid,
+  Rating,
+} from "@mui/material";
 import React from "react";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import "../App.css";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaRegEnvelope,
+  FaWhatsapp,
+} from "react-icons/fa6";
 
 export default function Reviews() {
   const ref = useRef(null);
   const { scrollXProgress } = useScroll({ container: ref });
   return (
     <Box
-      align="center"
       sx={{
         mt: { md: 7, sm: 10, xs: 2 },
         py: 10,
@@ -45,19 +58,244 @@ export default function Reviews() {
 
       <ul ref={ref} className="list">
         <li className="listitems">
+          <Box component="img" src="/review1.jpeg" sx={{ width: "100%" }} />
+        </li>
+
+        <li className="listitems">
           <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
-              " This Tom Brown Meal is heavenly. I felt like superman at the gym
-              yesterday "
-            </Typography>
-            <Box sx={{ mt: 5 }}>
-              <CardMedia>
-                <Avatar />
-              </CardMedia>
-              <Typography variant="h6" sx={{ mt: 3 }}>
-                ND
-              </Typography>
+            <Box>
+              <Grid container>
+                <Grid item md={2} sm={6} xs={2}>
+                  <CardMedia>
+                    <Avatar src="/ND.jpeg" />
+                  </CardMedia>
+                </Grid>
+
+                <Grid item md={3} sm={6} xs={3}>
+                  <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
+                    ND
+                  </Typography>{" "}
+                  <Typography variant="p" sx={{ ml: 0, color: "#707070" }}>
+                    General contractor
+                  </Typography>
+                  {/* <FaWhatsapp /> <FaFacebook /> <FaEnvelope /> */}
+                </Grid>
+              </Grid>
             </Box>
+            <Typography
+              variant="h5"
+              sx={{
+                mt: 3,
+                color: "#505050",
+                // bgcolor: "#EBF2FA",
+                p: 2,
+                borderRadius: "10px",
+              }}
+            >
+              This Tom Brown Meal is heavenly. I felt like superman at the gym
+              yesterday
+            </Typography>
+            <Box sx={{ mt: 5 }}></Box>
+            <Rating name="read-only" value={4} readOnly />
+            <br />
+            <FaWhatsapp style={{ marginRight: 8, color: "green" }} />{" "}
+            <FaFacebook style={{ marginRight: 8, color: "skyblue" }} />{" "}
+            <FaRegEnvelope style={{ marginRight: 8, color: "red" }} />
+          </Card>
+        </li>
+        {/*  */}
+
+        <li className="listitems">
+          <Box component="img" src="/review2.jpeg" sx={{ width: "100%" }} />
+        </li>
+
+        <li className="listitems">
+          <Card sx={{ p: 3 }}>
+            <Box>
+              <Grid container>
+                <Grid item md={2} sm={6} xs={2}>
+                  <CardMedia>
+                    <Avatar />
+                  </CardMedia>
+                </Grid>
+
+                <Grid item md={3} sm={6} xs={3}>
+                  <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
+                    Danino
+                  </Typography>{" "}
+                  <Typography variant="p" sx={{ ml: 2, color: "#707070" }}>
+                    Doctor
+                  </Typography>
+                  {/* <FaWhatsapp /> <FaFacebook /> <FaEnvelope /> */}
+                </Grid>
+              </Grid>
+            </Box>
+            <Typography
+              variant="h5"
+              sx={{
+                mt: 3,
+                color: "#505050",
+                // bgcolor: "#EBF2FA",
+                p: 2,
+                borderRadius: "10px",
+              }}
+            >
+              I eat it everyday. It's really nice. I like the tase no dislikes
+              at all
+            </Typography>
+            <Box sx={{ mt: 5 }}></Box>
+            <Rating name="read-only" value={4} readOnly />
+            <br />
+            <FaWhatsapp style={{ marginRight: 8, color: "green" }} />{" "}
+            <FaFacebook style={{ marginRight: 8, color: "skyblue" }} />{" "}
+            <FaRegEnvelope style={{ marginRight: 8, color: "red" }} />
+          </Card>
+        </li>
+
+        {/*  */}
+
+        <li className="listitems">
+          <Box component="img" src="/review3.jpeg" sx={{ width: "100%" }} />
+        </li>
+
+        <li className="listitems">
+          <Card sx={{ p: 3 }}>
+            <Box>
+              <Grid container>
+                <Grid item md={2} sm={6} xs={2}>
+                  <CardMedia>
+                    <Avatar />
+                  </CardMedia>
+                </Grid>
+
+                <Grid item md={3} sm={6} xs={3}>
+                  <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
+                    ND
+                  </Typography>{" "}
+                  <Typography variant="p" sx={{ ml: 2, color: "#707070" }}>
+                    Doctor
+                  </Typography>
+                  {/* <FaWhatsapp /> <FaFacebook /> <FaEnvelope /> */}
+                </Grid>
+              </Grid>
+            </Box>
+            <Typography
+              variant="h5"
+              sx={{
+                mt: 3,
+                color: "#505050",
+                // bgcolor: "#EBF2FA",
+                p: 2,
+                borderRadius: "10px",
+              }}
+            >
+              This Tom Brown Meal is heavenly. I felt like superman at the gym
+              yesterday
+            </Typography>
+            <Box sx={{ mt: 5 }}></Box>
+            <Rating name="read-only" value={4} readOnly />
+            <br />
+            <FaWhatsapp style={{ marginRight: 8, color: "green" }} />{" "}
+            <FaFacebook style={{ marginRight: 8, color: "skyblue" }} />{" "}
+            <FaRegEnvelope style={{ marginRight: 8, color: "red" }} />
+          </Card>
+        </li>
+
+        {/*  */}
+
+        <li className="listitems">
+          <Box component="img" src="/review4.jpeg" sx={{ width: "100%" }} />
+        </li>
+
+        <li className="listitems">
+          <Card sx={{ p: 3 }}>
+            <Box>
+              <Grid container>
+                <Grid item md={2} sm={6} xs={2}>
+                  <CardMedia>
+                    <Avatar />
+                  </CardMedia>
+                </Grid>
+
+                <Grid item md={3} sm={6} xs={3}>
+                  <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
+                    ND
+                  </Typography>{" "}
+                  <Typography variant="p" sx={{ ml: 2, color: "#707070" }}>
+                    Doctor
+                  </Typography>
+                  {/* <FaWhatsapp /> <FaFacebook /> <FaEnvelope /> */}
+                </Grid>
+              </Grid>
+            </Box>
+            <Typography
+              variant="h5"
+              sx={{
+                mt: 3,
+                color: "#505050",
+                // bgcolor: "#EBF2FA",
+                p: 2,
+                borderRadius: "10px",
+              }}
+            >
+              This Tom Brown Meal is heavenly. I felt like superman at the gym
+              yesterday
+            </Typography>
+            <Box sx={{ mt: 5 }}></Box>
+            <Rating name="read-only" value={4} readOnly />
+            <br />
+            <FaWhatsapp style={{ marginRight: 8, color: "green" }} />{" "}
+            <FaFacebook style={{ marginRight: 8, color: "skyblue" }} />{" "}
+            <FaRegEnvelope style={{ marginRight: 8, color: "red" }} />
+          </Card>
+        </li>
+
+        {/*  */}
+
+        <li className="listitems">
+          <Box component="img" src="/review5.jpeg" sx={{ width: "100%" }} />
+        </li>
+
+        <li className="listitems">
+          <Card sx={{ p: 3 }}>
+            <Box>
+              <Grid container>
+                <Grid item md={2} sm={6} xs={2}>
+                  <CardMedia>
+                    <Avatar />
+                  </CardMedia>
+                </Grid>
+
+                <Grid item md={3} sm={6} xs={3}>
+                  <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
+                    ND
+                  </Typography>{" "}
+                  <Typography variant="p" sx={{ ml: 2, color: "#707070" }}>
+                    Doctor
+                  </Typography>
+                  {/* <FaWhatsapp /> <FaFacebook /> <FaEnvelope /> */}
+                </Grid>
+              </Grid>
+            </Box>
+            <Typography
+              variant="h5"
+              sx={{
+                mt: 3,
+                color: "#505050",
+                // bgcolor: "#EBF2FA",
+                p: 2,
+                borderRadius: "10px",
+              }}
+            >
+              This Tom Brown Meal is heavenly. I felt like superman at the gym
+              yesterday
+            </Typography>
+            <Box sx={{ mt: 5 }}></Box>
+            <Rating name="read-only" value={4} readOnly />
+            <br />
+            <FaWhatsapp style={{ marginRight: 8, color: "green" }} />{" "}
+            <FaFacebook style={{ marginRight: 8, color: "skyblue" }} />{" "}
+            <FaRegEnvelope style={{ marginRight: 8, color: "red" }} />
           </Card>
         </li>
 

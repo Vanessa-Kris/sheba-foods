@@ -39,7 +39,7 @@ let theme = createTheme({
     },
     background: {
       default: "#FFFBE7",
-      paper: "#fdfbf0",
+      paper: "#fff",
     },
   },
 });
