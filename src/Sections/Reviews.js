@@ -75,7 +75,14 @@ export default function Reviews() {
                   <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
                     ND
                   </Typography>{" "}
-                  <Typography variant="p" sx={{ ml: 0, color: "#707070" }}>
+                  <Typography
+                    variant="body2"
+                    sx={{
+                      ml: 2,
+                      color: "#707070",
+                      //fontFamily: "Ubuntu !important",
+                    }}
+                  >
                     General contractor
                   </Typography>
                   {/* <FaWhatsapp /> <FaFacebook /> <FaEnvelope /> */}
@@ -96,7 +103,7 @@ export default function Reviews() {
               yesterday
             </Typography>
             <Box sx={{ mt: 5 }}></Box>
-            <Rating name="read-only" value={4} readOnly />
+            <Rating name="read-only" value={5} readOnly />
             <br />
             <FaWhatsapp style={{ marginRight: 8, color: "green" }} />{" "}
             <FaFacebook style={{ marginRight: 8, color: "skyblue" }} />{" "}
@@ -140,8 +147,7 @@ export default function Reviews() {
                 borderRadius: "10px",
               }}
             >
-              I eat it everyday. It's really nice. I like the tase no dislikes
-              at all
+              It's nice. I like the taste no dislikes.
             </Typography>
             <Box sx={{ mt: 5 }}></Box>
             <Rating name="read-only" value={4} readOnly />
@@ -170,7 +176,7 @@ export default function Reviews() {
 
                 <Grid item md={3} sm={6} xs={3}>
                   <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
-                    ND
+                    Mr Kiss
                   </Typography>{" "}
                   <Typography variant="p" sx={{ ml: 2, color: "#707070" }}>
                     Doctor
@@ -189,8 +195,7 @@ export default function Reviews() {
                 borderRadius: "10px",
               }}
             >
-              This Tom Brown Meal is heavenly. I felt like superman at the gym
-              yesterday
+              I and my baby really love Tom Brown whole meal.
             </Typography>
             <Box sx={{ mt: 5 }}></Box>
             <Rating name="read-only" value={4} readOnly />
@@ -219,7 +224,7 @@ export default function Reviews() {
 
                 <Grid item md={3} sm={6} xs={3}>
                   <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
-                    ND
+                    OG Successful
                   </Typography>{" "}
                   <Typography variant="p" sx={{ ml: 2, color: "#707070" }}>
                     Doctor
@@ -238,8 +243,7 @@ export default function Reviews() {
                 borderRadius: "10px",
               }}
             >
-              This Tom Brown Meal is heavenly. I felt like superman at the gym
-              yesterday
+              Person no believe say na 2k I buy am, e goes wellll.
             </Typography>
             <Box sx={{ mt: 5 }}></Box>
             <Rating name="read-only" value={4} readOnly />
@@ -253,7 +257,7 @@ export default function Reviews() {
         {/*  */}
 
         <li className="listitems">
-          <Box component="img" src="/review5.jpeg" sx={{ width: "100%" }} />
+          <Box component="img" src="/review7.jpeg" sx={{ width: "100%" }} />
         </li>
 
         <li className="listitems">
@@ -268,7 +272,7 @@ export default function Reviews() {
 
                 <Grid item md={3} sm={6} xs={3}>
                   <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
-                    ND
+                    Benny
                   </Typography>{" "}
                   <Typography variant="p" sx={{ ml: 2, color: "#707070" }}>
                     Doctor
@@ -287,8 +291,9 @@ export default function Reviews() {
                 borderRadius: "10px",
               }}
             >
-              This Tom Brown Meal is heavenly. I felt like superman at the gym
-              yesterday
+              Tom Brown is such a unique whole meal different from others and
+              the taste is out of this world but I think you need to work on the
+              quantity
             </Typography>
             <Box sx={{ mt: 5 }}></Box>
             <Rating name="read-only" value={4} readOnly />
@@ -299,102 +304,56 @@ export default function Reviews() {
           </Card>
         </li>
 
+        {/*  */}
+
         <li className="listitems">
-          <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
-              "This your product really go well, I enjoyed it to the fullest!"
-            </Typography>
-            <Box sx={{ mt: 5 }}>
-              <CardMedia>
-                <Avatar />
-              </CardMedia>
-              <Typography variant="h6" sx={{ mt: 3 }}>
-                ThaniBlow
-              </Typography>
-            </Box>
-          </Card>
+          <Box component="img" src="/review8.jpeg" sx={{ width: "100%" }} />
         </li>
 
         <li className="listitems">
           <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
-              "Sheba Foods you be doing the most, mehn! this is so good, so so
-              good."
-            </Typography>
-            <Box sx={{ mt: 5 }}>
-              <CardMedia>
-                <Avatar />
-              </CardMedia>
-              <Typography variant="h6" sx={{ mt: 3 }}>
-                OG Successful
-              </Typography>
+            <Box>
+              <Grid container>
+                <Grid item md={2} sm={6} xs={2}>
+                  <CardMedia>
+                    <Avatar />
+                  </CardMedia>
+                </Grid>
+
+                <Grid item md={3} sm={6} xs={3}>
+                  <Typography variant="h6" sx={{ ml: 2, mt: { md: 1, xs: 0 } }}>
+                    Michelle
+                  </Typography>{" "}
+                  <Typography variant="p" sx={{ ml: 2, color: "#707070" }}>
+                    Artist
+                  </Typography>
+                  {/* <FaWhatsapp /> <FaFacebook /> <FaEnvelope /> */}
+                </Grid>
+              </Grid>
             </Box>
+            <Typography
+              variant="h5"
+              sx={{
+                mt: 3,
+                color: "#505050",
+                // bgcolor: "#EBF2FA",
+                p: 2,
+                borderRadius: "10px",
+              }}
+            >
+              I look good beacuse of Tom Brown. Tom Brown always comes through
+              for me morning and night. Tom Brown dey save me from kwashiokor
+            </Typography>
+            <Box sx={{ mt: 5 }}></Box>
+            <Rating name="read-only" value={4} readOnly />
+            <br />
+            <FaWhatsapp style={{ marginRight: 8, color: "green" }} />{" "}
+            <FaFacebook style={{ marginRight: 8, color: "skyblue" }} />{" "}
+            <FaRegEnvelope style={{ marginRight: 8, color: "red" }} />
           </Card>
         </li>
-        <li className="listitems">
-          <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
-              "I eat it everyday. It's really nice. I like the tase no dislikes
-              at all"
-            </Typography>
-            <Box sx={{ mt: 5 }}>
-              <CardMedia>
-                <Avatar />
-              </CardMedia>
-              <Typography variant="h6" sx={{ mt: 3 }}>
-                Danino
-              </Typography>
-            </Box>
-          </Card>
-        </li>
-        <li className="listitems">
-          <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
-              "Omo person no believe say na 2k I buy am oo, e goessss. I dey
-              make am like pap!"
-            </Typography>
-            <Box sx={{ mt: 5 }}>
-              <CardMedia>
-                <Avatar />
-              </CardMedia>
-              <Typography variant="h6" sx={{ mt: 3 }}>
-                OG Successful
-              </Typography>
-            </Box>
-          </Card>
-        </li>
-        <li className="listitems">
-          <Card sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
-              " Omo as I dey do am all my guys gather we chop am with bread come
-              sleep wella!"
-            </Typography>
-            <Box sx={{ mt: 5 }}>
-              <CardMedia>
-                <Avatar />
-              </CardMedia>
-              <Typography variant="h6" sx={{ mt: 3 }}>
-                ThaniBlow
-              </Typography>
-            </Box>
-          </Card>
-        </li>
-        <li className="listitems">
-          <Card className="card" sx={{ p: 3 }}>
-            <Typography variant="h5" sx={{ pt: 3, color: "#505050" }}>
-              "I don finish am! I go need like 2 packs again . I wan buy one for
-              myself and one for the house"
-            </Typography>
-            <Box sx={{ mt: 5 }}>
-              <CardMedia>
-                <Avatar />
-              </CardMedia>
-              <Typography variant="h6" sx={{ mt: 3 }}>
-                Mr Kizz
-              </Typography>
-            </Box>
-          </Card>
-        </li>
+
+        {/*  */}
       </ul>
     </Box>
   );
