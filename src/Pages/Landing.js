@@ -285,7 +285,7 @@ export default function Landing() {
         <Reviews />
       </Box>
 
-      <Box sx={{ my: 5 }}>
+      <Box sx={{ mb: 5 }}>
         <Typography
           variant="h3"
           sx={{

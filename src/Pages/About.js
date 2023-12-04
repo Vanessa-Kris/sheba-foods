@@ -192,14 +192,10 @@ export default function About() {
             textAlign="center"
             sx={{ color: "#505050" }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            At Sheba Meals, we believe in cultivating more than just fantastic
+            flavors - we're sowing the seeds for a greener, healthier planet.
+            Our blended grains and nuts powders aren't just a culinary delight;
+            they're a commitment to environmental well-being.
           </Typography>
           <Typography
             align="center"
@@ -207,14 +203,43 @@ export default function About() {
             textAlign="center"
             sx={{ color: "#505050" }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            Step into a world where your health journey intertwines with the
+            planet's well-being.
+          </Typography>
+          <br />
+
+          <Typography
+            align="center"
+            variant="p"
+            textAlign="center"
+            sx={{ color: "#505050" }}
+          >
+            We despise waste as much as you do. That's why our blends are
+            crafted to utilize every part of the ingredients, leaving no room
+            for unnecessary waste.
+          </Typography>
+
+          <br />
+          <Typography
+            align="center"
+            variant="p"
+            textAlign="center"
+            sx={{ color: "#505050" }}
+          >
+            Every spoonful from Sheba Meals is a vote for the environment. We
+            invite you to savor the goodness of our blends and join us in making
+            choices that matter. Our products aren't just about nourishing your
+            body; they're about nurturing the Earth we all call home.moving
+            towards a world where conscious consumption is the norm.
+          </Typography>
+          <br />
+          <Typography
+            align="center"
+            variant="p"
+            textAlign="center"
+            sx={{ color: "#505050" }}
+          >
+            Welcome to Sheba Meals – Where Every Blend Tells a Green Tale!
           </Typography>
           <br />
         </Box>
@@ -224,8 +249,8 @@ export default function About() {
       <Box>
         <Box
           component="img"
-          src="https://img.freepik.com/free-photo/medium-shot-smiley-farmer-cornfield_23-2149142834.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph"
-          sx={{ width: "100%" }}
+          src="/grain.jpg"
+          sx={{ width: "100%", height: "70% !important" }}
         />
       </Box>
 
@@ -274,13 +299,15 @@ export default function About() {
             my="auto"
           >
             <Typography variant="p" sx={{ color: "#505050" }}>
-              Explore the comprehensive nutritional profile and myriad health
-              advantages associated with this wholesome wholemeal.
+              Step into a world where your health journey intertwines with the
+              planet's well-being. Our blended grains and nuts powders are
+              carefully curated, ensuring every nutrient-packed bite is a step
+              towards a healthier you and a happier Earth.
             </Typography>
             <br />
             <Typography variant="p" sx={{ color: "#505050" }}>
-              Explore the comprehensive nutritional profile and myriad health
-              advantages associated with this wholesome wholemeal.
+              We're not just blending flavors; we're blending sustainability
+              into every pouch.
             </Typography>
           </Grid>
           {/*  */}
@@ -323,14 +350,12 @@ export default function About() {
             textAlign="center"
             sx={{ color: "#505050" }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            Harvested with Heart: Support local farmers and celebrate
+            biodiversity with us. Sheba Meals is dedicated to sourcing
+            ingredients responsibly. By prioritizing ethical and sustainable
+            practices, we create a positive impact on communities and
+            ecosystems. Your choice for wellness extends its roots deep into the
+            heart of our shared planet.
           </Typography>
           <Typography
             align="center"
@@ -338,16 +363,23 @@ export default function About() {
             textAlign="center"
             sx={{ color: "#505050" }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            We prioritize direct relationships with local farmers, ensuring fair
+            compensation for their hard work. By establishing direct sourcing
+            channels, we eliminate unnecessary intermediaries, allowing farmers
+            to receive a more significant portion of the profits.
           </Typography>
           <br />
+          <Typography
+            align="center"
+            variant="p"
+            textAlign="center"
+            sx={{ color: "#505050" }}
+          >
+            We believe in building long-term partnerships with local farmers.
+            Stability in our relationships means stability for the farmers,
+            providing them with a reliable market for their produce. We view
+            local farmers as integral members of our community.
+          </Typography>
         </Box>
       </Box>
 
