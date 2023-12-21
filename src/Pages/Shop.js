@@ -31,7 +31,7 @@ export default function Shop() {
           >
             <Box
               component="img"
-              src="/shop1.png"
+              src="/file.jpeg"
               alt=""
               sx={{ width: "100%" }}
             />

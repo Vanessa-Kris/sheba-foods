@@ -19,6 +19,7 @@ export default function Landing() {
   return (
     <Box>
       {isLoading ? <Loader /> : <BannerCarousel />}
+
       <Divider sx={{ mx: 7 }} />
       <Box sx={{ m: { md: 15, sm: 10, xs: 5 } }}>
         <Grid container align="center" columnSpacing={2}>

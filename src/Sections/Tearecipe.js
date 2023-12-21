@@ -51,7 +51,7 @@ export default function Tearecipe() {
           <ListItem>
             <Box
               component="img"
-              src="/boilingwater.jpg"
+              src="/1.jpeg"
               sx={{ width: { md: "40%", xs: "80%" } }}
             />
           </ListItem>
@@ -64,7 +64,7 @@ export default function Tearecipe() {
           <ListItem>
             <Box
               component="img"
-              src="/boilingwater.jpg"
+              src="/2.jpeg"
               sx={{ width: { md: "40%", xs: "80%" } }}
             />
           </ListItem>
@@ -78,7 +78,7 @@ export default function Tearecipe() {
           <ListItem>
             <Box
               component="img"
-              src="/boilingwater.jpg"
+              src="/3.jpeg"
               sx={{ width: { md: "40%", xs: "80%" } }}
             />
           </ListItem>
@@ -87,13 +87,6 @@ export default function Tearecipe() {
             <ListItemText>
               5. Sip on this highly nutritious tea and relish its unique flavor.
             </ListItemText>
-          </ListItem>
-          <ListItem>
-            <Box
-              component="img"
-              src="/boilingwater.jpg"
-              sx={{ width: { md: "40%", xs: "80%" } }}
-            />
           </ListItem>
         </List>
 

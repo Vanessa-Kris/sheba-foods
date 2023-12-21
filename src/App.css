@@ -1,5 +1,5 @@
 
-@font-face {
+/* @font-face {
   font-family: 'Josefine Sans';
   src:  
        url('/public/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('woff');
@@ -8,10 +8,14 @@
 * {
   font-family: 'Josefine Sans', sans-serif !important;
   font-style: normal;
-}
+} */
 
 body {
   background-color: #FFFBE7 !important;
+}
+
+.bgg {
+  background-image: url(/public/father.png);
 }
 
 .apostrophe{

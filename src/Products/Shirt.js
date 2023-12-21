@@ -1,5 +1,14 @@
-import { Box, Button, Grid, Typography, Card } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
+import {
+  Box,
+  Button,
+  Grid,
+  Typography,
+  Card,
+  Modal,
+  Backdrop,
+  Fade,
+} from "@mui/material";
 import { QuantityInput } from "./WholeMeal";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -11,10 +20,20 @@ import ImageWithLoader from "../Components/ImageWithLoader";
 
 export default function Shirt() {
   const [size, setSize] = React.useState("");
+  const [isUnavailableModalOpen, setIsUnavailableModalOpen] = useState(false);
 
   const handleChange = (event) => {
     setSize(event.target.value);
   };
+
+  const handleUnavailableClick = () => {
+    setIsUnavailableModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsUnavailableModalOpen(false);
+  };
+
   return (
     <Box sx={{ m: { md: 15, sm: 10, xs: 3 }, pt: { md: 5, sm: 13, xs: 12 } }}>
       <Grid container columnSpacing={5} rowSpacing={3}>
@@ -81,9 +100,51 @@ export default function Shirt() {
                 </Grid>
               </Grid>
             </Box>
-            <Button fullWidth variant="outlined" sx={{ mt: 5, p: 2 }}>
-              Buy Now
+            <Button
+              fullWidth
+              variant="outlined"
+              color="error"
+              sx={{ mt: 5, p: 2 }}
+              onClick={handleUnavailableClick}
+            >
+              Unavailable
             </Button>
+
+            {/* Unavailable Modal */}
+            <Modal
+              aria-labelledby="transition-modal-title"
+              aria-describedby="transition-modal-description"
+              open={isUnavailableModalOpen}
+              onClose={handleCloseModal}
+              closeAfterTransition
+              BackdropComponent={Backdrop}
+              BackdropProps={{
+                timeout: 500,
+              }}
+            >
+              <Fade in={isUnavailableModalOpen}>
+                <Box
+                  sx={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    bgcolor: "background.paper",
+                    boxShadow: 24,
+                    p: 4,
+                    minWidth: 300,
+                    textAlign: "center",
+                  }}
+                >
+                  <Typography variant="h5" gutterBottom>
+                    Product is currently unavailable
+                  </Typography>
+                  <Button variant="outlined" onClick={handleCloseModal}>
+                    OK
+                  </Button>
+                </Box>
+              </Fade>
+            </Modal>
           </Card>
         </Grid>
       </Grid>
@@ -115,7 +176,7 @@ export default function Shirt() {
               Tom Brown Whole Meal
             </Typography>
             <Typography variant="body2" sx={{ fontWeight: 300 }}>
-              NGN 3000
+              NGN 2000
             </Typography>
           </Grid>
           <Grid item md={4} sm={4} xs={6} component="a" href="/products/mug">

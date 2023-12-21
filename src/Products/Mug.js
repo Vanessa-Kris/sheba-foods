@@ -1,10 +1,33 @@
-import { Box, Button, Grid, Typography, Card } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
+import {
+  Box,
+  Button,
+  Grid,
+  Typography,
+  Card,
+  Modal,
+  Backdrop,
+  Fade,
+} from "@mui/material";
 import { QuantityInput } from "./WholeMeal";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import ImageWithLoader from "../Components/ImageWithLoader";
 
 export default function Mug() {
+  const [isUnavailableModalOpen, setIsUnavailableModalOpen] = useState(false);
+  const handleUnavailableClick = () => {
+    setIsUnavailableModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsUnavailableModalOpen(false);
+  };
+
   return (
     <Box sx={{ m: { md: 15, sm: 10, xs: 3 }, pt: { md: 5, sm: 13, xs: 12 } }}>
       <Grid container columnSpacing={5} rowSpacing={3}>
@@ -54,9 +77,51 @@ export default function Mug() {
                 </Grid>
               </Grid>
             </Box>
-            <Button fullWidth variant="outlined" sx={{ mt: 5, p: 2 }}>
-              Buy Now
+
+            <Button
+              fullWidth
+              variant="outlined"
+              color="error"
+              sx={{ mt: 5, p: 2 }}
+              onClick={handleUnavailableClick}
+            >
+              Unavailable
             </Button>
+            {/* Unavailable Modal */}
+            <Modal
+              aria-labelledby="transition-modal-title"
+              aria-describedby="transition-modal-description"
+              open={isUnavailableModalOpen}
+              onClose={handleCloseModal}
+              closeAfterTransition
+              BackdropComponent={Backdrop}
+              BackdropProps={{
+                timeout: 500,
+              }}
+            >
+              <Fade in={isUnavailableModalOpen}>
+                <Box
+                  sx={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    bgcolor: "background.paper",
+                    boxShadow: 24,
+                    p: 4,
+                    minWidth: 300,
+                    textAlign: "center",
+                  }}
+                >
+                  <Typography variant="h5" gutterBottom>
+                    Product is currently unavailable
+                  </Typography>
+                  <Button variant="outlined" onClick={handleCloseModal}>
+                    OK
+                  </Button>
+                </Box>
+              </Fade>
+            </Modal>
           </Card>
         </Grid>
       </Grid>
@@ -88,7 +153,7 @@ export default function Mug() {
               Tom Brown Whole Meal
             </Typography>
             <Typography variant="body2" sx={{ fontWeight: 300 }}>
-              NGN 3000
+              NGN 2000
             </Typography>
           </Grid>
           {/* <Grid item md={4} sm={3} xs={6} component="a" href="/products/mug">
