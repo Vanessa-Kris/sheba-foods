@@ -26,7 +26,7 @@ export default function Puddingrecipe() {
           For those looking for a quick and convenient way to enjoy Tom Brown’s
           nutritional benefits
         </Typography>
-        <Typography variant="p">To get started:</Typography>
+
         <List>
           <ListItem>
             <ListItemText>

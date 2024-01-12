@@ -1,4 +1,15 @@
-import { Box, Button, Card, Grid, Typography, Modal } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  Grid,
+  Typography,
+  Modal,
+  Avatar,
+  Rating,
+  Input,
+  TextField,
+} from "@mui/material";
 import React, { useState } from "react";
 import { Unstable_NumberInput as BaseNumberInput } from "@mui/base/Unstable_NumberInput";
 import { styled } from "@mui/system";
@@ -9,6 +20,36 @@ import { Carousel } from "react-responsive-carousel";
 import ImageWithLoader from "../Components/ImageWithLoader";
 import emailjs from "emailjs-com";
 import Loader from "../Components/Loader";
+import {
+  GoogleFormProvider,
+  useGoogleForm,
+  useShortAnswerInput,
+  useLongAnswerInput,
+} from "react-google-forms-hooks";
+import form from "../Scripts/review_form.json";
+
+export function ShortAnswerInput({ id }) {
+  const { register, label } = useShortAnswerInput(id);
+
+  return (
+    <div>
+      <Typography variant="p">{label}</Typography> <br />
+      <TextField type="text" {...register()} sx={{ mb: 3 }} />
+    </div>
+  );
+}
+
+export function LongAnswerInput({ id }) {
+  const { register, label } = useLongAnswerInput(id);
+
+  return (
+    <div>
+      <Typography variant="p">{label}</Typography> <br />
+      <TextField type="text" rows={4} multiline {...register()} />
+      {/* <input type="text" {...register()} /> */}
+    </div>
+  );
+}
 
 const NumberInput = React.forwardRef(function CustomNumberInput(props, ref) {
   return (
@@ -150,6 +191,18 @@ const StyledButton = styled("button")(
 );
 
 export default function WholeMeal() {
+  const handleReviewSubmit = async (data) => {
+    await methods.submitToGoogleForms(data);
+    methods.reset(); // Clear the form fields
+    setShowSuccessModal(true);
+    alert("Thank you for your review");
+  };
+
+  const methods = useGoogleForm({ form });
+  const onSubmit = async (data) => {
+    await methods.submitToGoogleForms(data);
+  };
+
   const [quantity, setQuantity] = useState(1);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -242,7 +295,7 @@ export default function WholeMeal() {
               fullWidth
               variant="outlined"
               onClick={handleBuyNowClick}
-              sx={{ mt: 5, p: 2 }}
+              sx={{ mt: 5, p: 2, bgcolor: "green" }}
             >
               {loading ? <Loader /> : "Buy Now"}
             </Button>
@@ -281,63 +334,83 @@ export default function WholeMeal() {
           </Card>
         </Grid>
       </Grid>
-
-      <Box sx={{ mt: 10 }} className="Shop">
-        <Typography variant="h6">
-          Check out other products from Sheba foods
+      <Box sx={{ pt: 10 }}>
+        <Typography variant="h5" sx={{ py: 3, fontWeight: 500 }}>
+          Customer Reviews
         </Typography>
-        <Grid container columnSpacing={8} rowSpacing={4} sx={{ mt: 2 }}>
-          {/* <Grid
-            justifyContent="center"
-            alignItems="center"
-            align="center"
-            mx="auto"
-            item
-            md={3}
-            sm={3}
-            xs={6}
-            component="a"
-            href="/products/tom-brown-whole-meal"
+        <Box>
+          <Avatar />
+          <Typography variant="body2">
+            {" "}
+            Tom Brown is such a unique whole meal different from others and the
+            taste is out of this world, but I think you need to work on the
+            quantity.{" "}
+          </Typography>
+          <Rating value={4} />
+          <br />
+          <Typography variant="p">Benny Boy</Typography>
+        </Box>
+        {/*  */}
+        <Box sx={{ pt: 5 }}>
+          <Avatar />
+          <Typography variant="body2">
+            {" "}
+            Person no fit believe say na 2k I buy am. E goess.{" "}
+          </Typography>
+          <Rating value={5} />
+          <br />
+          <Typography variant="p">OG Successful</Typography>
+        </Box>
+        {/*  */}
+        <Box sx={{ pt: 5 }}>
+          <Avatar />
+          <Typography variant="body2">
+            {" "}
+            It's really good, I like the taste no dislikes{" "}
+          </Typography>
+          <Rating value={5} />
+          <br />
+          <Typography variant="p">Danino</Typography>
+        </Box>
+        {/*  */}
+        <Box sx={{ pt: 5 }}>
+          <Avatar />
+          <Typography variant="body2">
+            {" "}
+            Tom Brown is my life saver, I eat it everyday and I'm looking fresh
+            because of Tom Brown{" "}
+          </Typography>
+          <Rating value={5} />
+          <br />
+          <Typography variant="p">Michelle</Typography>
+        </Box>
+        {/*  */}
+        <Box sx={{ pt: 5 }}>
+          <Avatar />
+          <Typography variant="body2">
+            {" "}
+            I and my baby really love Tom Brown Whole meal{" "}
+          </Typography>
+          <Rating value={5} />
+          <br />
+          <Typography variant="p">Mr Kizz</Typography>
+        </Box>
+
+        <Typography variant="h6" sx={{ py: 3, fontWeight: 500 }}>
+          Leave a review
+        </Typography>
+        <GoogleFormProvider {...methods}>
+          <Box
+            component="form"
+            onSubmit={methods.handleSubmit(handleReviewSubmit)}
           >
-            <Box
-              component="img"
-              src="/shop1.png"
-              alt=""
-              sx={{ width: "100%" }}
-            />
-            <Typography variant="h6">Tom Brown Whole Meal</Typography>
-            <Typography variant="p" sx={{ fontWeight: 500 }}>
-              NGN 3000
-            </Typography>
-          </Grid> */}
-          <Grid item md={4} sm={4} xs={6} component="a" href="/products/mug">
-            <ImageWithLoader src="/mug.png" alt="" sx={{ width: "100%" }} />
-            <Typography variant="p" sx={{ fontWeight: 500 }}>
-              Sheba Foods Coffee Mug
-            </Typography>
-            <Typography variant="body2" sx={{ fontWeight: 300 }}>
-              NGN 3000
-            </Typography>
-          </Grid>
-          <Grid item md={4} sm={4} xs={6} component="a" href="/products/shirt">
-            <ImageWithLoader src="/shirt.png" alt="" sx={{ width: "100%" }} />
-            <Typography variant="p" sx={{ fontWeight: 500 }}>
-              Sheba Foods T Shirt
-            </Typography>
-            <Typography variant="body2" sx={{ fontWeight: 300 }}>
-              NGN 5000
-            </Typography>
-          </Grid>
-          <Grid item md={4} sm={4} xs={6} component="a" href="/products/apron">
-            <ImageWithLoader src="/apron.png" alt="" sx={{ width: "100%" }} />
-            <Typography variant="p" sx={{ fontWeight: 500 }}>
-              Sheba Foods Apron
-            </Typography>
-            <Typography variant="body2" sx={{ fontWeight: 300 }}>
-              NGN 2000
-            </Typography>
-          </Grid>
-        </Grid>
+            <ShortAnswerInput id="2021980687" />
+            <LongAnswerInput id="751519843" /> <br />
+            <Button type="submit" sx={{ bgcolor: "green" }}>
+              Submit
+            </Button>
+          </Box>
+        </GoogleFormProvider>
       </Box>
     </Box>
   );

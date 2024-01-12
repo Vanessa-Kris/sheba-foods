@@ -27,7 +27,7 @@ export default function BannerCarousel() {
             >
               <span
                 style={{
-                  color: "#698F3C",
+                  color: "#268703",
                   fontFamily: "monospace",
                 }}
               >
@@ -55,7 +55,7 @@ export default function BannerCarousel() {
               Amazing
               <span
                 style={{
-                  color: "#698F3C",
+                  color: "#268703",
                   fontFamily: "monospace",
                 }}
               >
@@ -110,7 +110,7 @@ export default function BannerCarousel() {
               Freshly sourced from local{" "}
               <span
                 style={{
-                  color: "#698F3C",
+                  color: "#268703",
                   fontFamily: "monospace",
                 }}
               >
@@ -141,7 +141,7 @@ export default function BannerCarousel() {
             >
               <span
                 style={{
-                  color: "#698F3C",
+                  color: "#268703",
                   fontFamily: "monospace",
                 }}
               >
@@ -226,7 +226,7 @@ export default function BannerCarousel() {
               Freshly made with
               <span
                 style={{
-                  color: "#698F3C",
+                  color: "#268703",
                   fontFamily: "monospace",
                 }}
               >

@@ -11,7 +11,14 @@
 } */
 
 body {
-  background-color: #FFFBE7 !important;
+  background-color: #FFF !important;
+}
+
+.grad {
+  /* background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%); */
+  /* background-image: linear-gradient( 117deg,  rgba(123,216,96,1) 39.2%, rgba(255,255,255,1) 156.2% ); */
+  background-image: url(/public/stacked.svg);
+ padding-top: 40px;
 }
 
 .bgg {
@@ -23,10 +30,7 @@ body {
   /* font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important; */
 }
 
- button {
-  text-transform: none !important;
-  border-radius: 30px;
-}
+ 
 
 img {
   transition: transform 0.3s; /* Add a smooth transition effect */
@@ -175,7 +179,7 @@ img:hover {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.327); 
+  background: rgba(80, 55, 55, 0.327); 
   pointer-events: none; 
 }
 
@@ -213,7 +217,6 @@ circle {
   fill: none;
 }
 
-
 .list {
   display: flex;
   list-style: none;
@@ -232,5 +235,28 @@ li {
 
 li:last-of-type {
   margin: 0;
+}
+
+/* section {
+  padding-top: 15vh;
+  padding-bottom: 8vh;
+  position: relative;
+  background-color: #00ccff;
+
+} */
+
+.parallax {
+  overflow: hidden;
+  white-space: nowrap;  
+}
+
+.parallax .scroller {
+  font-family:  Ubuntu, sans-serif;
+  display: flex;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
 }
 

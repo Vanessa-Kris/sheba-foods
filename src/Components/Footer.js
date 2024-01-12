@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <Box
       component="footer"
-      sx={{ bgcolor: "#43291F", color: "text.secondary" }}
+      sx={{ bgcolor: "#00921C", color: "text.secondary" }}
     >
       <Box
         justifyContent="center"

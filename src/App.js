@@ -23,23 +23,24 @@ import Pancakerecipe from "./Sections/Pancakerecipe";
 import Puddingrecipe from "./Sections/Puddingrecipe";
 import Swallowrecipe from "./Sections/Swallowrecipe";
 import Loader from "./Components/Loader";
+import Pierecipe from "./Sections/pierecipe";
 
 let theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#698F3C",
+      main: "#fff",
     },
     secondary: {
-      main: "#d68c0e",
+      main: "#268703",
     },
     text: {
       primary: "#2b2929",
       secondary: "#FFFBE7",
     },
     background: {
-      default: "#FFFBE7",
-      paper: "#fff",
+      default: "#fff",
+      paper: "#E4E4DF",
     },
   },
 });
@@ -122,6 +123,10 @@ function App() {
     {
       path: "/recipies/swallow-recipe",
       element: <Swallowrecipe />,
+    },
+    {
+      path: "/recipies/pie-recipe",
+      element: <Pierecipe />,
     },
   ]);
   return (

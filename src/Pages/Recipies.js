@@ -91,6 +91,24 @@ export default function Recipies() {
                 </Box>
               </Card>
             </Grid>
+            <Grid item md={6} sm={6} xs={12}>
+              <Card>
+                <ImageWithLoader
+                  src="/pie.jpeg"
+                  alt=""
+                  sx={{ width: "40% " }}
+                />
+                <Box sx={{ p: 3 }}>
+                  <Typography
+                    component="a"
+                    href="/recipies/pie-recipe"
+                    variant="subtitle1"
+                  >
+                    Tom Brown Whole Meal Pie Recipe <FaArrowRight />
+                  </Typography>
+                </Box>
+              </Card>
+            </Grid>
           </Grid>
         </Box>
       </Box>

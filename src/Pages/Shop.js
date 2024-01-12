@@ -14,7 +14,7 @@ export default function Shop() {
 
       <Box sx={{ m: { md: 15, sm: 10, xs: 5 } }} align="center">
         <Typography variant="h4" sx={{ fontWeight: 500 }}>
-          Shop all our amazing products
+          Shop our amazing product
         </Typography>
         <Grid container columnSpacing={5} rowSpacing={4} sx={{ mt: 5 }}>
           <Grid
@@ -23,7 +23,7 @@ export default function Shop() {
             align="center"
             mx="auto"
             item
-            md={4}
+            md={6}
             sm={6}
             xs={12}
             component="a"
@@ -33,40 +33,9 @@ export default function Shop() {
               component="img"
               src="/file.jpeg"
               alt=""
-              sx={{ width: "100%" }}
+              sx={{ width: "90%" }}
             />
             <Typography variant="h6">Tom Brown Whole Meal</Typography>
-            <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
-              NGN 3000
-            </Typography>
-          </Grid>
-          <Grid item md={4} sm={6} xs={12} component="a" href="/products/mug">
-            <ImageWithLoader src="/mug.png" alt="" sx={{ width: "100%" }} />
-            <Typography variant="h6">Sheba Foods Coffee Mug</Typography>
-            <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
-              NGN 3000
-            </Typography>
-          </Grid>
-          <Grid item md={4} sm={6} xs={12} component="a" href="/products/shirt">
-            <Box
-              component="img"
-              src="/shirt.png"
-              alt=""
-              sx={{ width: "100%" }}
-            />
-            <Typography variant="h6">Sheba Foods Coffee TShirt</Typography>
-            <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
-              NGN 5000
-            </Typography>
-          </Grid>
-          <Grid item md={4} sm={6} xs={12} component="a" href="/products/apron">
-            <Box
-              component="img"
-              src="/apron.png"
-              alt=""
-              sx={{ width: "100%" }}
-            />
-            <Typography variant="h6">Sheba Foods Apron</Typography>
             <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
               NGN 2000
             </Typography>

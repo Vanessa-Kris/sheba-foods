@@ -128,7 +128,7 @@ function NavBar(props) {
       <AppBar>
         <Box
           sx={{
-            bgcolor: "orange",
+            bgcolor: "#268703",
             align: "center",
             justifyContent: "center",
             display: upperNavVisible ? "flex" : "none",
@@ -150,6 +150,7 @@ function NavBar(props) {
                 fontSize: { xs: "13px" },
                 fontWeight: 500,
                 px: { md: 2, sm: 2, xs: 0 },
+                color: "#fff !important",
               }}
             >
               Get balanced diet! get Tom Brown Whole Meal Now.{" "}
@@ -157,10 +158,11 @@ function NavBar(props) {
             <Button
               component="a"
               href="/products"
-              variant="contained"
+              // variant="outlined"
               size="small"
               sx={{
-                textTransform: "none",
+                textDecoration: "underline",
+                color: "#fff",
               }}
             >
               Buy Now
@@ -169,12 +171,16 @@ function NavBar(props) {
           <Box justifyContent="flex-end">
             <FaCircleXmark
               onClick={handleNavToggle}
-              style={{ marginRight: 7, fontSize: "20px" }}
+              style={{
+                marginRight: 7,
+                fontSize: "20px",
+                color: "#fff",
+              }}
             />{" "}
           </Box>
         </Box>
 
-        <Toolbar sx={{ bgcolor: "#43291F" }}>
+        <Toolbar sx={{ bgcolor: "#fff" }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -191,6 +197,7 @@ function NavBar(props) {
               flexGrow: 1,
               display: { xs: "none", sm: "block" },
               my: { md: 1, sm: 2 },
+              color: "text.primary",
             }}
           >
             👨‍🍳 Sheba Foods
@@ -210,7 +217,7 @@ function NavBar(props) {
               href="/"
               sx={{
                 my: { md: 1, sm: 2 },
-                color: "text.secondary",
+                color: "text.primary",
                 textTransform: "none",
               }}
             >
@@ -221,7 +228,7 @@ function NavBar(props) {
               href="/about"
               sx={{
                 my: { md: 1, sm: 2 },
-                color: "text.secondary",
+                color: "text.primary",
                 textTransform: "none",
               }}
             >
@@ -232,7 +239,7 @@ function NavBar(props) {
               href="/products"
               sx={{
                 my: { md: 1, sm: 2 },
-                color: "text.secondary",
+                color: "text.primary",
                 textTransform: "none",
               }}
             >
@@ -243,7 +250,7 @@ function NavBar(props) {
               href="/stockist"
               sx={{
                 my: { md: 1, sm: 2 },
-                color: "text.secondary",
+                color: "text.primary",
                 textTransform: "none",
               }}
             >
@@ -254,7 +261,7 @@ function NavBar(props) {
               href="/recipies"
               sx={{
                 my: { md: 1, sm: 2 },
-                color: "text.secondary",
+                color: "text.primary",
                 textTransform: "none",
               }}
             >
@@ -265,7 +272,7 @@ function NavBar(props) {
               href="/health-book"
               sx={{
                 my: { md: 1, sm: 2 },
-                color: "text.secondary",
+                color: "text.primary",
                 textTransform: "none",
               }}
             >
@@ -276,7 +283,7 @@ function NavBar(props) {
               href="/events"
               sx={{
                 my: { md: 1, sm: 2 },
-                color: "text.secondary",
+                color: "text.primary",
                 textTransform: "none",
               }}
             >
@@ -287,7 +294,7 @@ function NavBar(props) {
               href="/contact"
               sx={{
                 my: { md: 1, sm: 2 },
-                color: "text.secondary",
+                color: "text.primary",
                 textTransform: "none",
               }}
             >

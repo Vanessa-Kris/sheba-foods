@@ -28,7 +28,7 @@ export default function About() {
             About{" "}
             <span
               style={{
-                color: "#698F3C",
+                color: "#268703",
                 fontFamily: "monospace",
               }}
             >
@@ -41,26 +41,13 @@ export default function About() {
             textAlign="center"
             sx={{ color: "#505050" }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Sheba Foods, established in 2023, is dedicated to delivering
+            high-quality and nutritious food suitable for all age groups. Our
+            mission is to ensure that our recipes not only tantalize your taste
+            buds but also encompass all the essential nutrients required for a
+            vibrant and healthy lifestyle.
           </Typography>
           <br />
-          <br />
-          <Typography
-            align="center"
-            variant="p"
-            textAlign="center"
-            sx={{ color: "#505050" }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat
-          </Typography>
         </Box>
         <Grid container rowSpacing={7} columnSpacing={5} sx={{ mt: 5 }}>
           <Grid item md={6} sm={6} xs={12}>
@@ -90,7 +77,7 @@ export default function About() {
               Our{" "}
               <span
                 style={{
-                  color: "#698F3C",
+                  color: "#268703",
                   fontFamily: "monospace",
                 }}
               >
@@ -129,7 +116,7 @@ export default function About() {
               Our{" "}
               <span
                 style={{
-                  color: "#698F3C",
+                  color: "#268703",
                   fontFamily: "monospace",
                 }}
               >
@@ -179,7 +166,7 @@ export default function About() {
             Our{" "}
             <span
               style={{
-                color: "#698F3C",
+                color: "#268703",
                 fontFamily: "monospace",
               }}
             >
@@ -272,7 +259,7 @@ export default function About() {
         >
           <span
             style={{
-              color: "#698F3C",
+              color: "#268703",
               fontFamily: "monospace",
             }}
           >
@@ -337,7 +324,7 @@ export default function About() {
             Local{" "}
             <span
               style={{
-                color: "#698F3C",
+                color: "#268703",
                 fontFamily: "monospace",
               }}
             >
