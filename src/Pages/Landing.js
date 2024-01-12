@@ -262,7 +262,7 @@ export default function Landing() {
           sm={6}
           xs={12}
           my="auto"
-          sx={{ mx: { xs: 2, md: 0 } }}
+          sx={{ mx: { xs: 2, md: 0 }, my: { xs: 3, md: 0 } }}
         >
           <Typography variant="h6">Tom Brown Whole Meal</Typography>
           <Typography
@@ -357,7 +357,7 @@ export default function Landing() {
               variant="h3"
               sx={{
                 fontWeight: 700,
-                mb: 5,
+                my: 5,
               }}
             >
               Our{" "}
@@ -408,7 +408,7 @@ export default function Landing() {
               variant="h3"
               sx={{
                 fontWeight: 700,
-                mb: 5,
+                my: 5,
               }}
             >
               <span
@@ -467,7 +467,7 @@ export default function Landing() {
               variant="h3"
               sx={{
                 fontWeight: 700,
-                mb: 5,
+                my: 5,
               }}
             >
               <span
