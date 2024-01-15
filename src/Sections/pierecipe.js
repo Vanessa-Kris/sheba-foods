@@ -135,9 +135,7 @@ export default function Pierecipe() {
               <br />
               <li>Milk</li>
             </ul>
-            <Typography variant="body2">
-              See full preparation video in video
-            </Typography>
+            <Typography variant="body2">See full preparation video</Typography>
           </Grid>
           <Grid item md={6} sm={6} xs={12}>
             <Box item md={3} sm={3} xs={12}>
