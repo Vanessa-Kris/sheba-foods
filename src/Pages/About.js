@@ -1,5 +1,13 @@
-import { Box, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from "@mui/material";
 import React from "react";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function About() {
   return (
@@ -41,7 +49,7 @@ export default function About() {
             textAlign="center"
             sx={{ color: "#505050" }}
           >
-            Sheba Foods, established in 2023, is dedicated to delivering
+            Sheba Meals, established in 2023, is dedicated to delivering
             high-quality and nutritious food suitable for all age groups. Our
             mission is to ensure that our recipes not only tantalize your taste
             buds but also encompass all the essential nutrients required for a
@@ -150,6 +158,7 @@ export default function About() {
         sx={{ mt: { md: 4, sm: 4, xs: 4 }, bgcolor: "#FFFFCC", py: 10 }}
       >
         <Box
+          id="our-impact"
           align="center"
           sx={{
             mx: { md: 15, sm: 10, xs: 5 },
@@ -183,7 +192,7 @@ export default function About() {
             flavors - we're sowing the seeds for a greener, healthier planet.
             Our blended grains and nuts powders aren't just a culinary delight;
             they're a commitment to environmental well-being.
-          </Typography>
+          </Typography>{" "}
           <Typography
             align="center"
             variant="p"
@@ -194,7 +203,6 @@ export default function About() {
             planet's well-being.
           </Typography>
           <br />
-
           <Typography
             align="center"
             variant="p"
@@ -205,7 +213,6 @@ export default function About() {
             crafted to utilize every part of the ingredients, leaving no room
             for unnecessary waste.
           </Typography>
-
           <br />
           <Typography
             align="center"
@@ -216,7 +223,7 @@ export default function About() {
             Every spoonful from Sheba Meals is a vote for the environment. We
             invite you to savor the goodness of our blends and join us in making
             choices that matter. Our products aren't just about nourishing your
-            body; they're about nurturing the Earth we all call home.moving
+            body; they're about nurturing the Earth we all call home. Moving
             towards a world where conscious consumption is the norm.
           </Typography>
           <br />
@@ -243,6 +250,7 @@ export default function About() {
 
       {/*  */}
       <Box
+        id="green-environment"
         sx={{
           mt: { md: 7, sm: 5, xs: 5 },
           py: 10,
@@ -271,7 +279,7 @@ export default function About() {
           <Grid item md={6} sm={6} xs={12}>
             <Box
               component="img"
-              src="https://img.freepik.com/free-photo/hands-cupping-plant-save-environment-campaign_53876-129539.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
+              src="https://img.freepik.com/free-photo/organic-plants-farming-concept_23-2148573872.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
               alt=""
               sx={{ width: "100%", borderRadius: "30px" }}
             />
@@ -302,6 +310,7 @@ export default function About() {
       </Box>
 
       <Box
+        id="local-farming"
         align="center"
         sx={{ mt: { md: 4, sm: 4, xs: 4 }, bgcolor: "#FFFFCC", py: 10 }}
       >
@@ -348,7 +357,7 @@ export default function About() {
             align="center"
             variant="p"
             textAlign="center"
-            sx={{ color: "#505050" }}
+            sx={{ color: "#505050", pt: 3 }}
           >
             We prioritize direct relationships with local farmers, ensuring fair
             compensation for their hard work. By establishing direct sourcing
@@ -382,11 +391,78 @@ export default function About() {
           <Grid item md={6} sm={6} xs={12}>
             <Box
               component="img"
-              src="https://img.freepik.com/free-photo/medium-shot-smiley-farmer-cornfield_23-2149142834.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph"
+              src="https://img.freepik.com/free-photo/selective-focus-shot-green-plant-field_181624-21437.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
               sx={{ width: "100%" }}
             />
           </Grid>
         </Grid>
+      </Box>
+
+      <Box
+        id="faqs"
+        sx={{
+          mx: { md: 15, sm: 10, xs: 5 },
+          my: { md: 15, sm: 10, xs: 5 },
+        }}
+      >
+        <Typography
+          variant="h3"
+          textAlign="center"
+          sx={{
+            fontWeight: 700,
+            my: 5,
+          }}
+        >
+          Frequently Asked Questions
+        </Typography>
+
+        {/* FAQ 1 */}
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="p" sx={{ color: "#268703", fontWeight: 600 }}>
+              What is Sheba Meals?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography variant="p" sx={{ color: "#505050" }}>
+              Sheba Meals is dedicated to delivering high-quality and nutritious
+              food suitable for all age groups. Our mission is to ensure that
+              our recipes not only tantalize your taste buds but also encompass
+              all the essential nutrients required for a vibrant and healthy
+              lifestyle.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
+        {/* FAQ 2 */}
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="p" sx={{ color: "#268703", fontWeight: 600 }}>
+              What are the health benefits of Tom Brown Whole Meal?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography variant="p" sx={{ color: "#505050" }}>
+              Explore the comprehensive nutritional profile and myriad health
+              advantages associated with our wholesome wholemeal{" "}
+              <a href="/health-book">here</a>.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
+        {/* FAQ 3 */}
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="p" sx={{ color: "#268703", fontWeight: 600 }}>
+              How much is Tom Brown Whole Meal 500g
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography variant="p" sx={{ color: "#505050" }}>
+              NGN 2000 <a href="/products/tom-brown-whole-meal">buy now</a>.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
       </Box>
     </>
   );

@@ -55,7 +55,7 @@ export default function Shirt() {
         <Grid item md={6} sm={6} xs={12} justifyContent="center" my="auto">
           <Card sx={{ p: 3 }}>
             <Typography variant="h3" sx={{ mb: 3 }}>
-              Sheba Foods Merch Shirt
+              Sheba Meals Merch Shirt
             </Typography>
             <Typography variant="h4">NGN 5000</Typography>
             <br />
@@ -93,9 +93,9 @@ export default function Shirt() {
                   <Typography sx={{ fontWeight: 500 }}>Use: </Typography>
                 </Grid>
                 <Grid item md={6} sm={6} xs={8} sx={{ color: "#505050" }}>
-                  <Typography> Sheba Foods Merch Shirt </Typography>
+                  <Typography> Sheba Meals Merch Shirt </Typography>
                   <Typography>Merch</Typography>
-                  <Typography>Sheba Foods </Typography>
+                  <Typography>Sheba Meals </Typography>
                   <Typography>Dress Shirt </Typography>
                 </Grid>
               </Grid>
@@ -182,7 +182,7 @@ export default function Shirt() {
           <Grid item md={4} sm={4} xs={6} component="a" href="/products/mug">
             <ImageWithLoader src="/mug.png" alt="" sx={{ width: "100%" }} />
             <Typography variant="p" sx={{ fontWeight: 500 }}>
-              Sheba Foods Coffee Mug
+              Sheba Meals Coffee Mug
             </Typography>
             <Typography variant="body2" sx={{ fontWeight: 300 }}>
               NGN 3000
@@ -195,7 +195,7 @@ export default function Shirt() {
               alt=""
               sx={{ width: "100%" }}
             />
-            <Typography variant="p" sx={{ fontWeight: 500 }}>Sheba Foods T Shirt</Typography>
+            <Typography variant="p" sx={{ fontWeight: 500 }}>Sheba Meals T Shirt</Typography>
             <Typography variant="body2" sx={{ fontWeight: 300 }}>
               NGN 5000
             </Typography>
@@ -208,7 +208,7 @@ export default function Shirt() {
               sx={{ width: "100%" }}
             />
             <Typography variant="p" sx={{ fontWeight: 500 }}>
-              Sheba Foods Apron
+              Sheba Meals Apron
             </Typography>
             <Typography variant="body2" sx={{ fontWeight: 300 }}>
               NGN 2000

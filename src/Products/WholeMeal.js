@@ -34,7 +34,7 @@ export function ShortAnswerInput({ id }) {
   return (
     <div>
       <Typography variant="p">{label}</Typography> <br />
-      <TextField type="text" {...register()} sx={{ mb: 3 }} />
+      <TextField type="text" {...register()} sx={{ mb: 3, width: "70%" }} />
     </div>
   );
 }
@@ -45,7 +45,13 @@ export function LongAnswerInput({ id }) {
   return (
     <div>
       <Typography variant="p">{label}</Typography> <br />
-      <TextField type="text" rows={4} multiline {...register()} />
+      <TextField
+        type="text"
+        rows={4}
+        multiline
+        {...register()}
+        sx={{ width: "70%" }}
+      />
       {/* <input type="text" {...register()} /> */}
     </div>
   );
@@ -194,7 +200,6 @@ export default function WholeMeal() {
   const handleReviewSubmit = async (data) => {
     await methods.submitToGoogleForms(data);
     methods.reset(); // Clear the form fields
-    setShowSuccessModal(true);
     alert("Thank you for your review");
   };
 
@@ -284,7 +289,7 @@ export default function WholeMeal() {
                   <Typography>Tom brown whole meal </Typography>
                   <Typography>500 grams </Typography>
                   <Typography>Grains </Typography>
-                  <Typography>Sheba Foods </Typography>
+                  <Typography>Sheba Meals </Typography>
                   <Typography component="a" href="/health-book">
                     See here{" "}
                   </Typography>

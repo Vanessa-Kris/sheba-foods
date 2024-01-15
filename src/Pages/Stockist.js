@@ -12,7 +12,7 @@ export default function Stockist() {
       />
       <Box sx={{ m: { md: 15, sm: 10, xs: 3 } }}>
         <Typography variant="h6">
-          Find Stores and retailers of Sheba Foods near you.
+          Find Stores and retailers of Sheba Meals near you.
         </Typography>
 
         <Box sx={{ mt: 10 }}>

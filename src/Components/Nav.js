@@ -42,7 +42,7 @@ function NavBar(props) {
       sx={{ textAlign: "center", color: "text.primary" }}
     >
       <Typography variant="h6" sx={{ my: 2 }}>
-        Sheba Foods
+        Sheba Meals
       </Typography>
       <Divider />
       <Box>
@@ -200,7 +200,7 @@ function NavBar(props) {
               color: "text.primary",
             }}
           >
-            👨‍🍳 Sheba Foods
+            👨‍🍳 Sheba Meals
           </Typography>
 
           <Box

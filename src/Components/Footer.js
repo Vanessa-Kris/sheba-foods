@@ -1,6 +1,6 @@
 import { Box, Divider, Grid, List, ListItem, Typography } from "@mui/material";
 import React from "react";
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -62,6 +62,20 @@ export default function Footer() {
             }}
           />
         </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://wa.me/2348084434959"
+          style={{ color: "#fff" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "23px",
+              color: "text.secondary",
+              marginLeft: 15,
+            }}
+          />
+        </a>
       </Box>
       <Divider sx={{ color: "#fff !important" }} />
       <Grid
@@ -78,7 +92,7 @@ export default function Footer() {
             variant="p"
             sx={{ mb: { md: 5, xs: 1 }, fontWeight: 700 }}
           >
-            Sheba Foods
+            Sheba Meals
           </Typography>
           <br />
           <Typography variant="body2">
@@ -99,21 +113,21 @@ export default function Footer() {
             </ListItem>
             <ListItem
               component="a"
-              href="/about"
+              href="/about#our-impact"
               sx={{ color: "text.secondary" }}
             >
               <Typography variant="body2">Our Impact</Typography>
             </ListItem>
             <ListItem
               component="a"
-              href="/about"
+              href="/about#green-environment"
               sx={{ color: "text.secondary" }}
             >
               <Typography variant="body2">Green Environment</Typography>
             </ListItem>
             <ListItem
               component="a"
-              href="/about"
+              href="/about#local-farming"
               sx={{ color: "text.secondary" }}
             >
               <Typography variant="body2">Local Farming</Typography>
@@ -127,7 +141,7 @@ export default function Footer() {
           <List>
             <ListItem
               component="a"
-              href="/about"
+              href="/health-book"
               sx={{ color: "text.secondary" }}
             >
               <Typography variant="body2">Nutritional Value</Typography>
@@ -169,7 +183,7 @@ export default function Footer() {
             </ListItem>
             <ListItem
               component="a"
-              href="/about"
+              href="/about#faqs"
               sx={{ color: "text.secondary" }}
             >
               <Typography variant="body2">FAQS</Typography>
@@ -181,11 +195,7 @@ export default function Footer() {
             >
               <Typography variant="body2">Events</Typography>
             </ListItem>
-            <ListItem
-              component="a"
-              href="/about"
-              sx={{ color: "text.secondary" }}
-            >
+            <ListItem component="a" href="/" sx={{ color: "text.secondary" }}>
               <Typography variant="body2">Terms & Conditions</Typography>
             </ListItem>
           </List>
@@ -193,7 +203,7 @@ export default function Footer() {
       </Grid>
       <Divider />
       <Typography variant="body2" textAlign="center" sx={{ p: 2 }}>
-        &copy; 2023 Sheba Foods. All rights reserved.
+        &copy; 2023 Sheba Meals. All rights reserved.
       </Typography>
     </Box>
   );

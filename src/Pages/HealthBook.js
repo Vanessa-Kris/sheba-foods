@@ -17,26 +17,40 @@ import {
 
 export default function HealthBook() {
   const rows = [
-    { ingredient: "Corn", nutritionalValue: "Rich in carbohydrates and fiber" },
     {
-      ingredient: "Guinea Corn",
-      nutritionalValue: "Good source of energy and nutrients",
+      ingredient: "Corn",
+      nutritionalValue:
+        "Rich in carbohydrates, dietary fiber, vitamins (B, C, E), minerals (magnesium, phosphorus, zinc), and antioxidants like lutein and zeaxanthin.",
+    },
+    {
+      ingredient: "Guinea Corn (Sorghum)",
+      nutritionalValue:
+        "Rich in fiber, protein, vitamins (B, especially niacin and riboflavin), and minerals (iron, magnesium, phosphorus, potassium), providing essential nutrients for a balanced diet.",
     },
     {
       ingredient: "Millet",
-      nutritionalValue: "High in antioxidants and vitamins",
+      nutritionalValue:
+        "Rich in fiber, protein, B vitamins, minerals (magnesium, phosphorus, manganese, copper), and antioxidants.",
     },
     {
       ingredient: "Dates",
-      nutritionalValue: "High in fiber, vitamins, and minerals",
+      nutritionalValue:
+        "Rich in natural sugars, dietary fiber, vitamins (B6, niacin, riboflavin), minerals (potassium, magnesium, copper, manganese, iron), and antioxidants.",
     },
     {
       ingredient: "Soya Beans",
-      nutritionalValue: "Excellent source of protein and fiber",
+      nutritionalValue:
+        "Rich in protein, healthy fats, dietary fiber, vitamins (B6, folate, C, K), and minerals (iron, manganese, phosphorus).",
     },
     {
       ingredient: "Tiger Nuts",
-      nutritionalValue: "Rich in fiber, vitamins, and minerals",
+      nutritionalValue:
+        " Rich in dietary fiber, healthy fats, vitamins (E, C), minerals (iron, magnesium, potassium), and provide some protein.",
+    },
+    {
+      ingredient: "Groundnuts",
+      nutritionalValue:
+        "Rich in protein,  healthy fats, vitamins (E, niacin, folate), minerals (magnesium, phosphorus, potassium), dietary fiber, and antioxidants.",
     },
   ];
 
@@ -89,7 +103,7 @@ export default function HealthBook() {
     <Box>
       <Box
         component="img"
-        src="https://img.freepik.com/free-photo/healthy-food-medical-equipment_23-2148108966.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph"
+        src="https://img.freepik.com/free-photo/close-up-doctor-with-stethoscope_23-2149191362.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph"
         alt=""
         sx={{ width: "100%", pt: { xs: 7 } }}
       />

@@ -189,7 +189,7 @@ export default function Landing() {
             ensuring a healthy choice for all. Packed with corn, guinea corn,
             millet, groundnuts, tiger nuts, soya beans, and dates, this
             wholesome meal is a powerhouse of essential nutrients. Elevate your
-            well-being with every bite. Opt for Tom Brown – where taste meets
+            well-being with every (SCOOP). Opt for Tom Brown – where taste meets
             nourishment for a vibrant life!
           </Typography>
         </Grid>
@@ -229,7 +229,7 @@ export default function Landing() {
           <br />
           <Button
             component="a"
-            href="/health-book"
+            href="/products/tom-brown-whole-meal"
             variant="contained"
             sx={{ mt: 4, textTransform: "none", px: 5, mb: { md: 0, xs: 5 } }}
           >
@@ -251,7 +251,7 @@ export default function Landing() {
       <Grid
         container
         columnSpacing={5}
-        sx={{ my: 15, bgcolor: "green", color: "#FFFBE7" }}
+        sx={{ my: { md: 10, xs: 5 }, bgcolor: "green", color: "#FFFBE7" }}
       >
         <Grid item md={6} sm={6} xs={12}>
           <Box component="img" src="3.png" sx={{ width: "100%" }} />
@@ -262,7 +262,7 @@ export default function Landing() {
           sm={6}
           xs={12}
           my="auto"
-          sx={{ mx: { xs: 2, md: 0 }, my: { xs: 3, md: 0 } }}
+          sx={{ mx: { xs: 2, md: 0 }, my: { xs: 3, md: "auto" } }}
         >
           <Typography variant="h6">Tom Brown Whole Meal</Typography>
           <Typography
