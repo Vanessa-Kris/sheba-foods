@@ -7,7 +7,6 @@ import {
   Modal,
   Avatar,
   Rating,
-  Input,
   TextField,
 } from "@mui/material";
 import React, { useState } from "react";
@@ -17,7 +16,6 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import ImageWithLoader from "../Components/ImageWithLoader";
 import emailjs from "emailjs-com";
 import Loader from "../Components/Loader";
 import {

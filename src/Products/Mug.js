@@ -10,13 +10,8 @@ import {
   Fade,
 } from "@mui/material";
 import { QuantityInput } from "./WholeMeal";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import ImageWithLoader from "../Components/ImageWithLoader";
 
 export default function Mug() {
   const [isUnavailableModalOpen, setIsUnavailableModalOpen] = useState(false);

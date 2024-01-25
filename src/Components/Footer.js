@@ -95,9 +95,7 @@ export default function Footer() {
             Sheba Meals
           </Typography>
           <br />
-          <Typography variant="body2">
-            Lorem Ipsum dolor sit amet supposed catch phrase.
-          </Typography>
+          <Typography variant="body2">Eat Healthy. Eat Tom Brown</Typography>
         </Grid>
         <Grid item md={2} sm={2} xs={12} sx={{ mt: { md: 0, sm: 0, xs: 3 } }}>
           <Typography variant="p" sx={{ pl: 2, fontWeight: 700 }}>

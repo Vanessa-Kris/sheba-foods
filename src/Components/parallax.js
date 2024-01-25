@@ -10,7 +10,7 @@ import {
   useAnimationFrame,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
-import { Avatar, Rating, Typography } from "@mui/material";
+import { Avatar, Typography } from "@mui/material";
 import { FaStar } from "react-icons/fa6";
 
 function ParallaxText({ reviews, baseVelocity = 100 }) {

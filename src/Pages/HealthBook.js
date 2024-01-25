@@ -56,46 +56,82 @@ export default function HealthBook() {
 
   const rows2 = [
     {
-      ingredients: "Corn",
-      protein: "90%",
-      carbohydrates: "90%",
-      fiber: "90%",
-      calories: "20%",
+      parameter: "Description",
+      lr: "Composite Flour",
+      ews: "As Declared",
+      remark: "WL",
     },
     {
-      ingredients: "Guinea Corn",
-      protein: "90%",
-      carbohydrates: "90%",
-      fiber: "90%",
-      calories: "20%",
+      parameter: "Odour",
+      lr: "Unobjectionable",
+      ews: "Unobjectionable",
+      remark: "WL",
     },
     {
-      ingredients: "Millet",
-      protein: "90%",
-      carbohydrates: "90%",
-      fiber: "90%",
-      calories: "20%",
+      parameter: "Taste",
+      lr: "Unobjectionable",
+      ews: "Unobjectionable",
+      remark: "WL",
     },
     {
-      ingredients: "Dates",
-      protein: "90%",
-      carbohydrates: "90%",
-      fiber: "90%",
-      calories: "20%",
+      parameter: "Foreign Matter",
+      lr: "0.00",
+      ews: "-",
+      remark: "",
     },
     {
-      ingredients: "Soya Beans",
-      protein: "90%",
-      carbohydrates: "90%",
-      fiber: "90%",
-      calories: "20%",
+      parameter: "%Moisture Content",
+      lr: "3.59",
+      ews: "-",
+      remark: "",
     },
     {
-      ingredients: "Tiger Nuts",
-      protein: "90%",
-      carbohydrates: "90%",
-      fiber: "90%",
-      calories: "20%",
+      parameter: "%Crude Protein",
+      lr: "24.18",
+      ews: "-",
+      remark: "",
+    },
+    {
+      parameter: "%Fat Content",
+      lr: "19.09",
+      ews: "-",
+      remark: "",
+    },
+    {
+      parameter: "%Ash",
+      lr: "2.56",
+      ews: "-",
+      remark: "",
+    },
+    {
+      parameter: "%Crude Fibre Content",
+      lr: "7.72",
+      ews: "-",
+      remark: "",
+    },
+    {
+      parameter: "%Carbohydrates",
+      lr: "24.18",
+      ews: "-",
+      remark: "",
+    },
+    {
+      parameter: "Calcium",
+      lr: "224.48",
+      ews: "-",
+      remark: "",
+    },
+    {
+      parameter: "Iron",
+      lr: "56.39",
+      ews: "-",
+      remark: "",
+    },
+    {
+      parameter: "Zinc",
+      lr: "38.80",
+      ews: "-",
+      remark: "",
     },
   ];
 
@@ -131,7 +167,9 @@ export default function HealthBook() {
               <TableBody>
                 {rows.map((row, index) => (
                   <TableRow key={index}>
-                    <TableCell>{row.ingredient}</TableCell>
+                    <TableCell>
+                      <b>{row.ingredient}</b>
+                    </TableCell>
                     <TableCell>{row.nutritionalValue}</TableCell>
                   </TableRow>
                 ))}
@@ -145,21 +183,21 @@ export default function HealthBook() {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>Ingredient</TableCell>
-                  <TableCell>Protein</TableCell>
-                  <TableCell>Carbohydrates</TableCell>
-                  <TableCell>Fiber</TableCell>
-                  <TableCell>Calories</TableCell>
+                  <TableCell>Parameter</TableCell>
+                  <TableCell>Laboratory Result</TableCell>
+                  <TableCell>Expected WHO specification</TableCell>
+                  <TableCell>Remark</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 {rows2.map((row2, index) => (
                   <TableRow key={index}>
-                    <TableCell>{row2.ingredients}</TableCell>
-                    <TableCell>{row2.protein}</TableCell>
-                    <TableCell>{row2.carbohydrates}</TableCell>
-                    <TableCell>{row2.fiber}</TableCell>
-                    <TableCell>{row2.calories}</TableCell>
+                    <TableCell>
+                      <b>{row2.parameter}</b>
+                    </TableCell>
+                    <TableCell>{row2.lr}</TableCell>
+                    <TableCell>{row2.ews}</TableCell>
+                    <TableCell>{row2.remark}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -176,11 +214,11 @@ export default function HealthBook() {
                 sx={{ width: "100%", borderRadius: "30px" }}
               />
             </Grid>
-            <Grid item md={6} sm={6} xs={12}>
+            <Grid item md={6} sm={6} xs={12} my="auto">
               <Typography variant="h5" sx={{ mb: 3, fontWeight: 500 }}>
                 The Power of Tom Brown Whole Meal for Children's Health
               </Typography>
-              <Typography variant="p" sx={{ mb: 3, color: "#505050" }}>
+              <Typography variant="p" sx={{ color: "#505050" }}>
                 Tom Brown Whole Meal can be considered a nutritious option for
                 children for several reasons, given its ingredient composition.
                 Here are some benefits of the ingredients in Tom Brown Whole
@@ -188,46 +226,46 @@ export default function HealthBook() {
               </Typography>
             </Grid>
             <Grid item md={12} sm={12} xs={12}>
-              <List sx={{ color: "#505050" }}>
-                <ListItem>
-                  1. Corn: Rich in fiber, vitamins, and minerals, corn provides
-                  energy and supports digestive health.
-                </ListItem>
-                <ListItem>
-                  2. Millet: Millet is a good source of essential nutrients such
-                  as magnesium, phosphorus, and iron. It also contains fiber,
-                  which aids digestion.
-                </ListItem>
-                <ListItem>
-                  3. Guinea Corn (Sorghum): This grain is high in antioxidants,
-                  rich in fiber, and provides essential nutrients like iron,
-                  magnesium, and B vitamins.
-                </ListItem>
-                <ListItem>
-                  3. Guinea Corn (Sorghum): This grain is high in antioxidants,
-                  rich in fiber, and provides essential nutrients like iron,
-                  magnesium, and B vitamins.
-                </ListItem>
-                <ListItem>
-                  4. Tiger Nut: Tiger nuts are a good source of healthy fats,
-                  fiber, and various vitamins and minerals. They provide energy
-                  and can contribute to heart health.
-                </ListItem>
-                <ListItem>
-                  5. Dates: Dates are a natural sweetener and provide natural
-                  sugars, fiber, and various vitamins and minerals.
-                </ListItem>
-                <ListItem>
-                  6. Soya Beans: Soya beans are a complete protein source,
+              <ul style={{ color: "#505050" }}>
+                <li>
+                  <b>Corn</b>: Rich in fiber, vitamins, and minerals, corn
+                  provides energy and supports digestive health.
+                </li>
+                <li>
+                  <b>Millet</b>: Millet is a good source of essential nutrients
+                  such as magnesium, phosphorus, and iron. It also contains
+                  fiber, which aids digestion.
+                </li>
+                <li>
+                  <b>Guinea Corn (Sorghum)</b>: This grain is high in
+                  antioxidants, rich in fiber, and provides essential nutrients
+                  like iron, magnesium, and B vitamins.
+                </li>
+                <li>
+                  <b>Guinea Corn (Sorghum)</b>: This grain is high in
+                  antioxidants, rich in fiber, and provides essential nutrients
+                  like iron, magnesium, and B vitamins.
+                </li>
+                <li>
+                  <b> Tiger Nut</b>: Tiger nuts are a good source of healthy
+                  fats, fiber, and various vitamins and minerals. They provide
+                  energy and can contribute to heart health.
+                </li>
+                <li>
+                  <b>Dates</b>: Dates are a natural sweetener and provide
+                  natural sugars, fiber, and various vitamins and minerals.
+                </li>
+                <li>
+                  <b>Soya Beans</b>: Soya beans are a complete protein source,
                   containing all essential amino acids. They also provide
                   healthy fats, vitamins, and minerals.
-                </ListItem>
-                <Typography variant="p" sx={{ color: "#505050" }}>
-                  7. Groundnuts (Peanuts): Groundnuts are a good source of
+                </li>
+                <li>
+                  <b>Groundnuts (Peanuts)</b>: Groundnuts are a good source of
                   protein, healthy fats, and various vitamins and minerals,
                   including folate and niacin.
-                </Typography>
-              </List>
+                </li>
+              </ul>
               <Typography variant="p" sx={{ mt: 3, color: "#505050" }}>
                 In combination, these ingredients offer a diverse range of
                 nutrients, including carbohydrates for energy, protein for

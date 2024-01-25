@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import ImageWithLoader from "../Components/ImageWithLoader";
 
 export default function Shop() {
   return (

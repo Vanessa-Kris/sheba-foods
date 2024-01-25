@@ -1,22 +1,8 @@
-import {
-  Box,
-  Typography,
-  Card,
-  CardMedia,
-  Avatar,
-  Grid,
-  Rating,
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import "../App.css";
-import {
-  FaEnvelope,
-  FaFacebook,
-  FaRegEnvelope,
-  FaWhatsapp,
-} from "react-icons/fa6";
 
 export default function Reviews() {
   const ref = useRef(null);

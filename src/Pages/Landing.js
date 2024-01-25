@@ -1,11 +1,8 @@
 import { Box, Grid, Typography, Button } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { FaCircleCheck } from "react-icons/fa6";
-import BannerCarousel from "../Components/Carousel";
 import ImageWithLoader from "../Components/ImageWithLoader";
 import Loader from "../Components/Loader";
-import Reviews from "../Sections/Reviews";
-import Shop from "../Sections/Shop";
 import Divider from "@mui/material/Divider";
 import Parallax from "../Components/parallax";
 
@@ -189,7 +186,7 @@ export default function Landing() {
             ensuring a healthy choice for all. Packed with corn, guinea corn,
             millet, groundnuts, tiger nuts, soya beans, and dates, this
             wholesome meal is a powerhouse of essential nutrients. Elevate your
-            well-being with every (SCOOP). Opt for Tom Brown – where taste meets
+            well-being with every scoop. Opt for Tom Brown – where taste meets
             nourishment for a vibrant life!
           </Typography>
         </Grid>
@@ -528,12 +525,18 @@ export default function Landing() {
         >
           Share your Tom Brown Whole meal recipe with us using{" "}
           <span style={{ fontStyle: "italic", fontWeight: 500 }}>
-            #ShebaFoodTBWM
+            #shebameals
           </span>
           .
         </Typography>
         <Grid container columnSpacing={0}>
-          <Grid item md={3} sm={3} xs={6}>
+          <Grid
+            item
+            md={3}
+            sm={3}
+            xs={6}
+            sx={{ display: { md: "block", sm: "block", xs: "none" } }}
+          >
             <Box
               component="video"
               autoPlay
@@ -541,7 +544,9 @@ export default function Landing() {
               muted
               src="/tb.mp4"
               alt=""
-              sx={{ width: "100%" }}
+              sx={{
+                width: "100%",
+              }}
             />
           </Grid>
           <Grid item md={3} sm={3} xs={6}>
@@ -552,7 +557,22 @@ export default function Landing() {
               muted
               src="/tb3.mp4"
               alt=""
-              sx={{ width: "100%" }}
+              sx={{
+                width: "100%",
+              }}
+            />
+          </Grid>
+          <Grid item md={3} sm={3} xs={6}>
+            <Box
+              component="video"
+              autoPlay
+              loop
+              muted
+              src="/pie.mp4"
+              alt=""
+              sx={{
+                width: "100%",
+              }}
             />
           </Grid>
           <Grid
@@ -569,24 +589,9 @@ export default function Landing() {
               muted
               src="/tb2.mp4"
               alt=""
-              sx={{ width: "100%" }}
-            />
-          </Grid>
-          <Grid
-            item
-            md={3}
-            sm={3}
-            xs={6}
-            sx={{ display: { md: "block", sm: "block", xs: "none" } }}
-          >
-            <Box
-              component="video"
-              autoPlay
-              loop
-              muted
-              src="/pie.mp4"
-              alt=""
-              sx={{ width: "100%" }}
+              sx={{
+                width: "100%",
+              }}
             />
           </Grid>
         </Grid>
