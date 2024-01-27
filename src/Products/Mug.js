@@ -50,7 +50,7 @@ export default function Mug() {
             <br />
             <Box>
               <Typography variant="h6"> Quantity :</Typography>
-              <QuantityInput />
+              {/* <QuantityInput /> */}
             </Box>
             <Box sx={{ mt: 5 }}>
               <Grid container columnSpacing={2}>

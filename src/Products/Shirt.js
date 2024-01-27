@@ -61,7 +61,7 @@ export default function Shirt() {
             <br />
             <Box>
               <Typography variant="h6"> Quantity :</Typography>
-              <QuantityInput />
+              {/* <QuantityInput /> */}
             </Box>
             <Typography variant="h6" sx={{ mt: 3 }}>
               {" "}

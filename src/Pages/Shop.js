@@ -6,7 +6,7 @@ export default function Shop() {
     <Box className="Shop">
       <Box
         component="img"
-        src="/shopbanner.png"
+        src="/ban.png"
         alt=""
         sx={{ width: "100%", pt: { xs: 7 } }}
       />
@@ -28,12 +28,7 @@ export default function Shop() {
             component="a"
             href="/products/tom-brown-whole-meal"
           >
-            <Box
-              component="img"
-              src="/file.jpeg"
-              alt=""
-              sx={{ width: "90%" }}
-            />
+            <Box component="img" src="/item.png" alt="" sx={{ width: "90%" }} />
             <Typography variant="h6">Tom Brown Whole Meal</Typography>
             <Typography variant="p" sx={{ fontWeight: 500, color: "#505050" }}>
               NGN 2000

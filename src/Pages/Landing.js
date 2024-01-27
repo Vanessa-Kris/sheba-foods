@@ -23,7 +23,7 @@ export default function Landing() {
       ) : (
         <>
           <Box
-            sx={{ display: { md: "block", xs: "none" } }}
+            sx={{ display: { md: "block", sm: "block", xs: "none" } }}
             className="grad"
             justifyContent="center"
             align="center"
@@ -33,10 +33,15 @@ export default function Landing() {
               <Grid
                 item
                 md={6}
+                sm={6}
                 xs={12}
                 justifyContent="center"
                 my="auto"
-                sx={{ pl: { md: 7, xs: 2 }, textAlign: "left" }} // Set textAlign to 'left'
+                sx={{
+                  pl: { md: 7, xs: 2, sm: 3 },
+                  textAlign: "left",
+                  pb: { md: 0, xs: 0, sm: 3 },
+                }} // Set textAlign to 'left'
               >
                 <Typography
                   variant="h3"
@@ -65,13 +70,13 @@ export default function Landing() {
                   Shop
                 </Button>
               </Grid>
-              <Grid item md={6} xs={12}>
+              <Grid item md={6} sm={6} xs={12}>
                 <Box
                   component="img"
                   src="/file2.png"
                   sx={{
-                    mt: { md: 10, xs: 0 },
-                    width: { md: "70%", xs: "100%" },
+                    mt: { md: 10, xs: 0, sm: 7 },
+                    width: { md: "70%", xs: "100%", sm: "100%" },
                   }}
                 />
               </Grid>
@@ -83,7 +88,7 @@ export default function Landing() {
             justifyContent="center"
             align="center"
             my="auto"
-            sx={{ display: { md: "none", xs: "block" } }}
+            sx={{ display: { md: "none", sm: "none", xs: "block" } }}
           >
             <Grid container>
               <Grid item md={6} xs={12}>
@@ -140,7 +145,7 @@ export default function Landing() {
       <Grid
         container
         columnSpacing={0}
-        sx={{ px: { md: "auto", xs: 3 } }}
+        sx={{ px: { md: "auto", xs: 3 }, py: { md: "auto", xs: 0, sm: 5 } }}
         justifyContent="center"
         align="center"
         my="auto"
@@ -150,7 +155,10 @@ export default function Landing() {
             component="img"
             src="/approved.png"
             alt=""
-            sx={{ width: "50%", my: { md: 7, xs: 5 } }}
+            sx={{
+              width: { md: "50%", sm: "80%", xs: "50%" },
+              my: { md: 7, xs: 5, sm: 5 },
+            }}
           />
         </Grid>
         <Grid
@@ -248,9 +256,13 @@ export default function Landing() {
       <Grid
         container
         columnSpacing={5}
-        sx={{ my: { md: 10, xs: 5 }, bgcolor: "green", color: "#FFFBE7" }}
+        sx={{
+          my: { md: 10, xs: 5, sm: 5 },
+          bgcolor: "green",
+          color: "#FFFBE7",
+        }}
       >
-        <Grid item md={6} sm={6} xs={12}>
+        <Grid item md={6} sm={6} xs={12} my="auto">
           <Box component="img" src="3.png" sx={{ width: "100%" }} />
         </Grid>
         <Grid
@@ -259,70 +271,85 @@ export default function Landing() {
           sm={6}
           xs={12}
           my="auto"
-          sx={{ mx: { xs: 2, md: 0 }, my: { xs: 3, md: "auto" } }}
+          sx={{
+            mx: { xs: 2, md: 0, sm: 0 },
+            my: { xs: 3, md: "auto", sm: 5 },
+          }}
         >
           <Typography variant="h6">Tom Brown Whole Meal</Typography>
           <Typography
-            variant="h4"
+            variant="h5"
             sx={{ pt: 3, color: "#fff", fontWeight: 500 }}
           >
             The Family Way
           </Typography>
           <Grid container>
             <Grid item md={10} sm={10} xs={10} sx={{ mt: 3 }}>
-              <Typography variant="h6">Rich in protein</Typography>
+              <Typography variant="p">Rich in protein</Typography>
             </Grid>
-            <Grid item md={2} sm={2} xs={2}>
-              <FaCircleCheck style={{ fontSize: "30px", marginTop: 30 }} />
-            </Grid>
-          </Grid>
-          <Divider orientation="horizontal" dark />
-          {/*  */}
-          <Grid container>
-            <Grid item md={10} sm={10} xs={10} sx={{ mt: 3 }}>
-              <Typography variant="h6">No artificial flavouring</Typography>
-            </Grid>
-            <Grid item md={2} sm={2} xs={2}>
-              <FaCircleCheck style={{ fontSize: "30px", marginTop: 30 }} />
+            <Grid item md={2} sm={2} xs={2} mt="auto">
+              <FaCircleCheck
+                style={{ fontSize: "26px", marginTop: 0, marginY: "auto" }}
+              />
             </Grid>
           </Grid>
           <Divider orientation="horizontal" dark />
           {/*  */}
           <Grid container>
             <Grid item md={10} sm={10} xs={10} sx={{ mt: 3 }}>
-              <Typography variant="h6">No added sugar</Typography>
+              <Typography variant="p">No artificial flavouring</Typography>
             </Grid>
-            <Grid item md={2} sm={2} xs={2}>
-              <FaCircleCheck style={{ fontSize: "30px", marginTop: 30 }} />
-            </Grid>
-          </Grid>
-          <Divider orientation="horizontal" dark />
-          {/*  */}
-          <Grid container>
-            <Grid item md={10} sm={10} xs={10} sx={{ mt: 3 }}>
-              <Typography variant="h6">All natural ingredients</Typography>
-            </Grid>
-            <Grid item md={2} sm={2} xs={2}>
-              <FaCircleCheck style={{ fontSize: "30px", marginTop: 30 }} />
+            <Grid item md={2} sm={2} xs={2} mt="auto">
+              <FaCircleCheck
+                style={{ fontSize: "26px", marginTop: 0, marginY: "auto" }}
+              />
             </Grid>
           </Grid>
           <Divider orientation="horizontal" dark />
           {/*  */}
           <Grid container>
             <Grid item md={10} sm={10} xs={10} sx={{ mt: 3 }}>
-              <Typography variant="h6">No Preservatives</Typography>
+              <Typography variant="p">No added sugar</Typography>
             </Grid>
-            <Grid item md={2} sm={2} xs={2}>
-              <FaCircleCheck style={{ fontSize: "30px", marginTop: 30 }} />
+            <Grid item md={2} sm={2} xs={2} mt="auto">
+              <FaCircleCheck
+                style={{ fontSize: "26px", marginTop: 0, marginY: "auto" }}
+              />
+            </Grid>
+          </Grid>
+          <Divider orientation="horizontal" dark />
+          {/*  */}
+          <Grid container>
+            <Grid item md={10} sm={10} xs={10} sx={{ mt: 3 }}>
+              <Typography variant="p">All natural ingredients</Typography>
+            </Grid>
+            <Grid item md={2} sm={2} xs={2} mt="auto">
+              <FaCircleCheck
+                style={{ fontSize: "26px", marginTop: 0, marginY: "auto" }}
+              />
+            </Grid>
+          </Grid>
+          <Divider orientation="horizontal" dark />
+          {/*  */}
+          <Grid container>
+            <Grid item md={10} sm={10} xs={10} sx={{ mt: 3 }}>
+              <Typography variant="p">No Preservatives</Typography>
+            </Grid>
+            <Grid item md={2} sm={2} xs={2} mt="auto">
+              <FaCircleCheck
+                style={{ fontSize: "26px", marginTop: 0, marginY: "auto" }}
+              />
             </Grid>
           </Grid>
           <Divider orientation="horizontal" dark />
           <Grid container>
             <Grid item md={10} sm={10} xs={10} sx={{ mt: 3 }}>
-              <Typography variant="h6">Environmental friendly</Typography>
+              <Typography variant="p">Environmental friendly</Typography>
             </Grid>
-            <Grid item md={2} sm={2} xs={2}>
-              <FaCircleCheck style={{ fontSize: "30px", marginTop: 30 }} />
+            <Grid item md={2} sm={2} xs={2} mt="auto">
+              <FaCircleCheck
+                style={{ fontSize: "26px", marginTop: 0, marginY: "auto" }}
+              />
             </Grid>
           </Grid>
           <Divider orientation="horizontal" dark />
@@ -332,7 +359,7 @@ export default function Landing() {
       <Box
         sx={{
           mt: { md: 5, sm: 5, xs: 0 },
-          py: 10,
+          py: { md: 7, sm: 7, xs: 2 },
           px: { md: 10, sm: 7, xs: 2 },
         }}
       >
@@ -354,7 +381,8 @@ export default function Landing() {
               variant="h3"
               sx={{
                 fontWeight: 700,
-                my: 5,
+                mb: { md: 5, xs: 1, sm: 2 },
+                mt: { md: 0, xs: 4, sm: 0 },
               }}
             >
               Our{" "}
@@ -371,16 +399,14 @@ export default function Landing() {
             <Typography variant="p" sx={{ color: "#505050" }}>
               Embark on a delightful culinary journey, where you can uncover a
               treasure trove of mouthwatering dishes, all made possible with
-              this incredibly nutritious whole meal. You'll reveal a multitude
-              of exquisite recipes and discover the remarkable potential hidden
-              within this wholemeal.
+              this incredibly nutritious whole meal.
             </Typography>
             <br />
             <Button
               component="a"
               href="/recipies"
               variant="contained"
-              sx={{ mt: 4, textTransform: "none" }}
+              sx={{ mt: { md: 4, sm: 1, xs: 2 }, textTransform: "none" }}
             >
               Read More{" "}
             </Button>
@@ -405,7 +431,8 @@ export default function Landing() {
               variant="h3"
               sx={{
                 fontWeight: 700,
-                my: 5,
+                mb: { md: 5, xs: 1, sm: 2 },
+                mt: { md: 0, xs: 4, sm: 0 },
               }}
             >
               <span
@@ -428,7 +455,7 @@ export default function Landing() {
               component="a"
               href="/health-book"
               variant="contained"
-              sx={{ mt: 4, textTransform: "none" }}
+              sx={{ mt: { md: 4, sm: 1, xs: 2 }, textTransform: "none" }}
             >
               Read More
             </Button>
@@ -464,7 +491,8 @@ export default function Landing() {
               variant="h3"
               sx={{
                 fontWeight: 700,
-                my: 5,
+                mb: { md: 5, xs: 1, sm: 2 },
+                mt: { md: 0, xs: 4, sm: 0 },
               }}
             >
               <span
@@ -487,7 +515,7 @@ export default function Landing() {
               component="a"
               href="/health-book"
               variant="contained"
-              sx={{ mt: 4, textTransform: "none" }}
+              sx={{ mt: { md: 4, sm: 1, xs: 2 }, textTransform: "none" }}
             >
               Read More
             </Button>

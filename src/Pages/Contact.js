@@ -1,7 +1,8 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import { useGoogleForm, GoogleFormProvider } from "react-google-forms-hooks";
-import { LongAnswerInput, ShortAnswerInput } from "../Products/WholeMeal";
+// import { LongAnswerInput, ShortAnswerInput } from "../Products/WholeMeal";
+import { LongAnswerInput, ShortAnswerInput } from "./Reviews";
 import form from "../Scripts/contact_form.json";
 import Helmet from "react-helmet";
 

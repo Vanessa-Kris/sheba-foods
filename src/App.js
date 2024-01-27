@@ -24,6 +24,8 @@ import Puddingrecipe from "./Sections/Puddingrecipe";
 import Swallowrecipe from "./Sections/Swallowrecipe";
 import Loader from "./Components/Loader";
 import Pierecipe from "./Sections/pierecipe";
+import Checkout from "./Pages/Checkout";
+import Pay from "./Pages/Pay";
 
 let theme = createTheme({
   palette: {
@@ -127,6 +129,14 @@ function App() {
     {
       path: "/recipies/pie-recipe",
       element: <Pierecipe />,
+    },
+    {
+      path: "/products/tom-brown-whole-meal/checkout",
+      element: <Checkout />,
+    },
+    {
+      path: "/products/tom-brown-whole-meal/checkout/pay",
+      element: <Pay />,
     },
   ]);
   return (

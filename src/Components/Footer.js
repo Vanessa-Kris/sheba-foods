@@ -81,24 +81,44 @@ export default function Footer() {
       <Grid
         container
         sx={{
-          py: { md: 5, sm: 7, xs: 5 },
-          px: { md: 7, sm: 7, xs: 2 },
+          py: { md: 3, sm: 7, xs: 3 },
+          px: { md: 4, sm: 7, xs: 0 },
+
           color: "text.secondary",
         }}
         columnSpacing={2}
       >
-        <Grid item md={5} sm={5} xs={12} sx={{ ml: { xs: 2 } }}>
+        <Grid item md={5} sm={3} xs={12}>
+          <Box
+            component="img"
+            src="/logo3.png"
+            sx={{
+              // display: { xs: "none", sm: "block" },
+              width: "80px !important",
+            }}
+          />
           <Typography
             variant="p"
-            sx={{ mb: { md: 5, xs: 1 }, fontWeight: 700 }}
+            sx={{
+              mb: { md: 0, xs: 1 },
+              fontWeight: 700,
+              display: { xs: "none", sm: "block", md: "block" },
+            }}
           >
             Sheba Meals
           </Typography>
           <br />
-          <Typography variant="body2">Eat Healthy. Eat Tom Brown</Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              display: { xs: "none", sm: "block", md: "block" },
+            }}
+          >
+            Eat Healthy. Eat Tom Brown
+          </Typography>
         </Grid>
         <Grid item md={2} sm={2} xs={12} sx={{ mt: { md: 0, sm: 0, xs: 3 } }}>
-          <Typography variant="p" sx={{ pl: 2, fontWeight: 700 }}>
+          <Typography variant="p" sx={{ fontWeight: 700, pl: 2 }}>
             Know Us
           </Typography>
           <List>
@@ -132,7 +152,7 @@ export default function Footer() {
             </ListItem>
           </List>
         </Grid>
-        <Grid item md={2} sm={2} xs={12} sx={{ mt: { md: 0, sm: 0, xs: 3 } }}>
+        <Grid item md={2} sm={3} xs={12} sx={{ mt: { md: 0, sm: 0, xs: 3 } }}>
           <Typography variant="p" sx={{ pl: 2, fontWeight: 700 }}>
             Tom Brown
           </Typography>
@@ -167,7 +187,7 @@ export default function Footer() {
             </ListItem>
           </List>
         </Grid>
-        <Grid item md={2} sm={2} xs={12} sx={{ mt: { md: 0, sm: 0, xs: 3 } }}>
+        <Grid item md={2} sm={3} xs={12} sx={{ mt: { md: 0, sm: 0, xs: 3 } }}>
           <Typography variant="p" sx={{ pl: 2, fontWeight: 700 }}>
             Customer Service
           </Typography>

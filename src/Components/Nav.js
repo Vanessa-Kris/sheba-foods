@@ -41,9 +41,7 @@ function NavBar(props) {
       onClick={handleDrawerToggle}
       sx={{ textAlign: "center", color: "text.primary" }}
     >
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Sheba Meals
-      </Typography>
+      <Box component="img" src="/logo2.png" sx={{ width: "80px" }} />
       <Divider />
       <Box>
         <List sx={{ flexDirection: "column" }}>
@@ -172,7 +170,7 @@ function NavBar(props) {
             <FaCircleXmark
               onClick={handleNavToggle}
               style={{
-                marginRight: 7,
+                marginRight: 5,
                 fontSize: "20px",
                 color: "#fff",
               }}
@@ -190,7 +188,7 @@ function NavBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          {/* <Typography
             variant="h6"
             component="div"
             sx={{
@@ -201,14 +199,23 @@ function NavBar(props) {
             }}
           >
             👨‍🍳 Sheba Meals
-          </Typography>
-
+          </Typography> */}
           <Box
+            component="img"
+            src="/logo.png"
+            sx={{
+              // flexGrow: 1,
+              display: { xs: "none", sm: "block" },
+              width: "45px !important",
+            }}
+          />
+          <Box
+            ml="auto"
             sx={{
               display: {
                 xs: "none",
-                sm: "block",
-                md: "block",
+                sm: "flex",
+                md: "flex",
               },
             }}
           >
