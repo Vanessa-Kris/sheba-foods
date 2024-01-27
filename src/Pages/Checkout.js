@@ -130,7 +130,7 @@ export default function Checkout() {
             <Quantity id="668826625" setQuantity={setQuantity} />
             <PhoneNumber id="1822547612" />
             <Typography variant="p" align="center" sx={{ pt: 2, pb: 2 }}>
-              Total Amount: {calculateTotalAmount()}
+              Total Amount: ₦{calculateTotalAmount()}
             </Typography>
 
             <Button
