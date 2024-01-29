@@ -2,7 +2,6 @@ import { Box, Button, Card, Grid, Typography } from "@mui/material";
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import Loader from "../Components/Loader";
 import Review from "../Pages/Reviews";
 import { Link } from "react-router-dom";
 

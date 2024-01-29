@@ -9,7 +9,6 @@ import {
   Backdrop,
   Fade,
 } from "@mui/material";
-import { QuantityInput } from "./WholeMeal";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -58,10 +57,9 @@ export default function Shirt() {
               Sheba Meals Merch Shirt
             </Typography>
             <Typography variant="h4">NGN 5000</Typography>
-            <br />
+            <br /> {/* <QuantityInput /> */}
             <Box>
               <Typography variant="h6"> Quantity :</Typography>
-              {/* <QuantityInput /> */}
             </Box>
             <Typography variant="h6" sx={{ mt: 3 }}>
               {" "}
@@ -109,7 +107,6 @@ export default function Shirt() {
             >
               Unavailable
             </Button>
-
             {/* Unavailable Modal */}
             <Modal
               aria-labelledby="transition-modal-title"

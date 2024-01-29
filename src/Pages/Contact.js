@@ -1,21 +1,20 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import { useGoogleForm, GoogleFormProvider } from "react-google-forms-hooks";
-// import { LongAnswerInput, ShortAnswerInput } from "../Products/WholeMeal";
 import { LongAnswerInput, ShortAnswerInput } from "./Reviews";
 import form from "../Scripts/contact_form.json";
 import Helmet from "react-helmet";
 
 export default function Contact() {
-  const handleReviewSubmit = async (data) => {
+  const handleContactSubmit = async (data) => {
     await methods.submitToGoogleForms(data);
-    methods.reset(); // Clear the form fields
+    methods.reset();
     alert("Thank you for your review");
   };
 
   const methods = useGoogleForm({ form });
-  const onSubmit = async (data) => {
-    await methods.submitToGoogleForms(data);
+  const handleContact = async () => {
+    await methods.handleSubmit(handleContactSubmit)();
   };
   return (
     <Box mx="auto" justifyContent="center">
@@ -39,14 +38,14 @@ export default function Contact() {
             <Box
               sx={{ px: { md: 0, xs: 3 } }}
               component="form"
-              onSubmit={methods.handleSubmit(handleReviewSubmit)}
+              onSubmit={methods.handleSubmit(handleContactSubmit)}
             >
               <ShortAnswerInput
                 id="1286537877"
                 style={{ width: "100% !important" }}
               />
               <LongAnswerInput id="433958561" /> <br />
-              <Button type="submit" variant="contained">
+              <Button onClick={handleContact} type="submit" variant="contained">
                 Submit
               </Button>
             </Box>

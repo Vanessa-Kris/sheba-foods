@@ -10,7 +10,6 @@ export default function Landing() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate an async operation
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);

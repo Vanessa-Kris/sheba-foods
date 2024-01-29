@@ -9,7 +9,6 @@ import {
   Backdrop,
   Fade,
 } from "@mui/material";
-import { QuantityInput } from "./WholeMeal";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
@@ -50,7 +49,6 @@ export default function Mug() {
             <br />
             <Box>
               <Typography variant="h6"> Quantity :</Typography>
-              {/* <QuantityInput /> */}
             </Box>
             <Box sx={{ mt: 5 }}>
               <Grid container columnSpacing={2}>

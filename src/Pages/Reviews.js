@@ -6,7 +6,7 @@ import {
   Rating,
   TextField,
 } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {
   GoogleFormProvider,
@@ -53,8 +53,8 @@ export default function Review() {
   };
 
   const methods = useGoogleForm({ form });
-  const onSubmit = async (data) => {
-    await methods.submitToGoogleForms(data);
+  const handleReview = async () => {
+    await methods.handleSubmit(handleReviewSubmit)();
   };
 
   return (
@@ -131,7 +131,11 @@ export default function Review() {
           >
             <ShortAnswerInput id="2021980687" />
             <LongAnswerInput id="751519843" /> <br />
-            <Button type="submit" sx={{ bgcolor: "green" }}>
+            <Button
+              onClick={handleReview}
+              type="submit"
+              sx={{ bgcolor: "green" }}
+            >
               Submit
             </Button>
           </Box>

@@ -95,14 +95,12 @@ export default function Checkout() {
   const methods = useGoogleForm({ form });
 
   const calculateTotalAmount = () => {
-    const rate = 2000; // Assuming rate is 2000
+    const rate = 2000;
     return quantity * rate;
   };
 
   const handlePayButtonClick = async () => {
-    // Submit the form before navigating
     await methods.handleSubmit(handleOrderSubmit)();
-    // Navigate to the pay page
     navigate(`/products/tom-brown-whole-meal/checkout/pay`);
   };
 
@@ -114,7 +112,7 @@ export default function Checkout() {
           onSubmit={methods.handleSubmit(handleOrderSubmit)}
           sx={{
             p: { md: 15, sm: 10, xs: 3 },
-            pt: { md: 15, sm: 13, xs: 13 },
+            pt: { md: 15, sm: 13, xs: 17 },
           }}
         >
           <Box
